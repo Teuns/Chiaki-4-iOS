@@ -22,24 +22,14 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		013CBEF36C08CA8C982F8838 /* manualhostdialog.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = 2F7A8C5B242E959A258C3CFB /* manualhostdialog.cpp */; settings = {ATTRIBUTES = (); }; };
-		0C043A6A8188E66BBF22CB67 /* avopenglwidget.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = 67552239A1FE22E447DB21A5 /* avopenglwidget.cpp */; settings = {ATTRIBUTES = (); }; };
 		0CE02722F00CAD43741297B5 /* CoreGraphics.framework in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 6AE3EC31EE5BB1FCEE84137C /* CoreGraphics.framework */; };
-		110B02A44248674D4DB4B3D8 /* discoverymanager.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = 3A17CC3089BCC23558E2FC2D /* discoverymanager.cpp */; settings = {ATTRIBUTES = (); }; };
-		172268C483400363EB2E6445 /* moc_controllermanager.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = 08838758D14055EDEBDB18BD /* moc_controllermanager.cpp */; settings = {ATTRIBUTES = (); }; };
-		17C4966B40F03C6A351DBE16 /* settingskeycapturedialog.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = 29BF99551922C9B2480F38DD /* settingskeycapturedialog.cpp */; settings = {ATTRIBUTES = (); }; };
-		1A140487B323AC45EE5D647C /* moc_settingskeycapturedialog.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = EFC29ABC60FA6878F57E11CA /* moc_settingskeycapturedialog.cpp */; settings = {ATTRIBUTES = (); }; };
-		1BF7F2F127BCE9E067CD5878 /* moc_loginpindialog.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = 8EAA999770D298FFE6505F7B /* moc_loginpindialog.cpp */; settings = {ATTRIBUTES = (); }; };
-		21F434D32ED3EA112C8647B4 /* loginpindialog.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = CDDF2972D86AE57F6CD069BD /* loginpindialog.cpp */; settings = {ATTRIBUTES = (); }; };
 		23D6A472DE33DA1BFBA31088 /* qjpeg in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 23635312C6D724A0245AD0CB /* qjpeg */; };
 		250AE8B5516EBA8A225E2F05 /* qtlibpng in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 04DCC54C7034190418F8FF12 /* qtlibpng */; };
 		270090F818B237CEDCFBE7B3 /* qtiff in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 9AFB385DA4F9453FAD5AA2F2 /* qtiff */; };
 		2B02D9DC58A01E45248DDBCE /* CoreText.framework in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 7D7B02101166B76FD2D4F8B4 /* CoreText.framework */; };
 		34FC27B9D2322D16E8E3C47D /* qwebp in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 454D1E617B59B658F77582FF /* qwebp */; };
 		35FD3D0014622250C5A38D6F /* qgif in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 1696BCD1AFC5C81B0D07B6F0 /* qgif */; };
-		3DF670B2A9526D3B64AB4F6D /* chiaki_plugin_import.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = 61FE08D136B221EA254DFA54 /* chiaki_plugin_import.cpp */; settings = {ATTRIBUTES = (); }; };
 		40985A8274FC0872C9EFC89D /* qmacheif in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 888C0DB6CCF8D32D02B29CBD /* qmacheif */; };
-		438CFA7E7A790C8CD88B8C39 /* moc_dynamicgridwidget.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = 56F76DA0CE1EC8185117884D /* moc_dynamicgridwidget.cpp */; settings = {ATTRIBUTES = (); }; };
 		45075F812F485E6BD3B05639 /* Qt5Widgets in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = D790C02937983348F047BACE /* Qt5Widgets */; };
 		45128CC42A88248D00D6F2BA /* libgf_complete.a in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 45128CBC2A88248D00D6F2BA /* libgf_complete.a */; };
 		45128CC52A88248D00D6F2BA /* libopus.a in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 45128CBD2A88248D00D6F2BA /* libopus.a */; };
@@ -81,47 +71,58 @@
 		45128D072A88309400D6F2BA /* Settings.bundle in Copy Bundle Resources */ = {isa = PBXBuildFile; fileRef = 45128D062A88309400D6F2BA /* Settings.bundle */; };
 		45128D092A8830A300D6F2BA /* LaunchScreen.storyboard in Copy Bundle Resources */ = {isa = PBXBuildFile; fileRef = 45128D082A8830A300D6F2BA /* LaunchScreen.storyboard */; };
 		45128D0B2A8830A800D6F2BA /* Default-568h@2x.png in Copy Bundle Resources */ = {isa = PBXBuildFile; fileRef = 45128D0A2A8830A800D6F2BA /* Default-568h@2x.png */; };
+		45F0F0672A8831DE005F82DA /* mainwindow.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = 45F0F02C2A8831DD005F82DA /* mainwindow.cpp */; };
+		45F0F06A2A8831DE005F82DA /* streamsession.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = 45F0F02F2A8831DD005F82DA /* streamsession.cpp */; };
+		45F0F06B2A8831DE005F82DA /* dynamicgridwidget.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = 45F0F0312A8831DD005F82DA /* dynamicgridwidget.cpp */; };
+		45F0F0702A8831DE005F82DA /* registdialog.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = 45F0F0372A8831DD005F82DA /* registdialog.cpp */; };
+		45F0F0712A8831DE005F82DA /* settingskeycapturedialog.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = 45F0F0392A8831DD005F82DA /* settingskeycapturedialog.cpp */; };
+		45F0F0742A8831DE005F82DA /* avopenglwidget.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = 45F0F03E2A8831DD005F82DA /* avopenglwidget.cpp */; };
+		45F0F0762A8831DE005F82DA /* host.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = 45F0F0422A8831DD005F82DA /* host.cpp */; };
+		45F0F0772A8831DE005F82DA /* main.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = 45F0F0432A8831DD005F82DA /* main.cpp */; };
+		45F0F0782A8831DE005F82DA /* streamwindow.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = 45F0F0462A8831DD005F82DA /* streamwindow.cpp */; };
+		45F0F0792A8831DE005F82DA /* settings.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = 45F0F0482A8831DD005F82DA /* settings.cpp */; };
+		45F0F07A2A8831DE005F82DA /* loginpindialog.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = 45F0F0492A8831DD005F82DA /* loginpindialog.cpp */; };
+		45F0F07B2A8831DE005F82DA /* manualhostdialog.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = 45F0F04A2A8831DD005F82DA /* manualhostdialog.cpp */; };
+		45F0F07C2A8831DE005F82DA /* sessionlog.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = 45F0F04B2A8831DD005F82DA /* sessionlog.cpp */; };
+		45F0F07D2A8831DE005F82DA /* discoverymanager.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = 45F0F04C2A8831DD005F82DA /* discoverymanager.cpp */; };
+		45F0F07E2A8831DE005F82DA /* chiaki_plugin_import.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = 45F0F0502A8831DE005F82DA /* chiaki_plugin_import.cpp */; };
+		45F0F07F2A8831DE005F82DA /* avopenglframeuploader.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = 45F0F0512A8831DE005F82DA /* avopenglframeuploader.cpp */; };
+		45F0F0802A8831DE005F82DA /* settingsdialog.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = 45F0F0552A8831DE005F82DA /* settingsdialog.cpp */; };
+		45F0F0832A8831DE005F82DA /* serveritemwidget.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = 45F0F05B2A8831DE005F82DA /* serveritemwidget.cpp */; };
+		45F0F0882A8831DE005F82DA /* controllermanager.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = 45F0F0632A8831DE005F82DA /* controllermanager.cpp */; };
+		45F0F0892A8831DE005F82DA /* servericonwidget.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = 45F0F0642A8831DE005F82DA /* servericonwidget.cpp */; };
+		45F0F09C2A883297005F82DA /* moc_streamsession.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = 45F0F08B2A883296005F82DA /* moc_streamsession.cpp */; };
+		45F0F09D2A883297005F82DA /* moc_dynamicgridwidget.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = 45F0F08C2A883296005F82DA /* moc_dynamicgridwidget.cpp */; };
+		45F0F09F2A883297005F82DA /* moc_discoverymanager.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = 45F0F08E2A883296005F82DA /* moc_discoverymanager.cpp */; };
+		45F0F0A02A883297005F82DA /* moc_manualhostdialog.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = 45F0F08F2A883296005F82DA /* moc_manualhostdialog.cpp */; };
+		45F0F0A12A883297005F82DA /* moc_mainwindow.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = 45F0F0902A883296005F82DA /* moc_mainwindow.cpp */; };
+		45F0F0A22A883297005F82DA /* moc_streamwindow.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = 45F0F0912A883296005F82DA /* moc_streamwindow.cpp */; };
+		45F0F0A32A883297005F82DA /* moc_settingsdialog.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = 45F0F0922A883296005F82DA /* moc_settingsdialog.cpp */; };
+		45F0F0A42A883297005F82DA /* moc_avopenglwidget.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = 45F0F0932A883296005F82DA /* moc_avopenglwidget.cpp */; };
+		45F0F0A52A883297005F82DA /* moc_serveritemwidget.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = 45F0F0942A883296005F82DA /* moc_serveritemwidget.cpp */; };
+		45F0F0A62A883297005F82DA /* moc_controllermanager.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = 45F0F0952A883296005F82DA /* moc_controllermanager.cpp */; };
+		45F0F0A72A883297005F82DA /* moc_servericonwidget.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = 45F0F0962A883296005F82DA /* moc_servericonwidget.cpp */; };
+		45F0F0A82A883297005F82DA /* moc_loginpindialog.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = 45F0F0972A883296005F82DA /* moc_loginpindialog.cpp */; };
+		45F0F0A92A883297005F82DA /* moc_avopenglframeuploader.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = 45F0F0982A883297005F82DA /* moc_avopenglframeuploader.cpp */; };
+		45F0F0AA2A883297005F82DA /* moc_settings.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = 45F0F0992A883297005F82DA /* moc_settings.cpp */; };
+		45F0F0AB2A883297005F82DA /* moc_settingskeycapturedialog.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = 45F0F09A2A883297005F82DA /* moc_settingskeycapturedialog.cpp */; };
+		45F0F0AC2A883297005F82DA /* moc_registdialog.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = 45F0F09B2A883297005F82DA /* moc_registdialog.cpp */; };
 		4EB68D0C8182BCE33529C421 /* AudioToolbox.framework in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 3C44131FDCFEF4396B9EA2BA /* AudioToolbox.framework */; };
-		5436AF34FEDD90EF31282F75 /* moc_servericonwidget.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = F350D14589F286C6A277347C /* moc_servericonwidget.cpp */; settings = {ATTRIBUTES = (); }; };
-		5F21E8710E6292F5981C7DB2 /* registdialog.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = 072C4F7F3EF252496CC18645 /* registdialog.cpp */; settings = {ATTRIBUTES = (); }; };
 		604878DF028F5D1DBBA85449 /* qwbmp in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = BD107EC573F1437222B4A5CA /* qwbmp */; };
 		61EEC397DC8556BF8C4E36A7 /* ImageIO.framework in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 3A8EF9C62A8D4790CBB89CEA /* ImageIO.framework */; };
 		6AE66B00AC52EF3D4F5EFEFF /* Qt5ClipboardSupport in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 752FF3794770B634CA2C9635 /* Qt5ClipboardSupport */; };
 		6EC2D764C807879B2AD2D45B /* qtharfbuzz in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 10192DE9114BF84B09435291 /* qtharfbuzz */; };
 		712CF96E03ABD638FAA52DB2 /* qios in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 6CAB2F00E09FC9A72EDC0628 /* qios */; };
-		71DDEDD4376C062E771003F2 /* serveritemwidget.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = 227B622FBF36415322FDE1DE /* serveritemwidget.cpp */; settings = {ATTRIBUTES = (); }; };
 		71EAF5D5D3C0395852545F7E /* Qt5FontDatabaseSupport in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = B0A00C1B0B528771DF1EC33F /* Qt5FontDatabaseSupport */; };
-		727DB1EB2E3B15BFA066E2E7 /* moc_serveritemwidget.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = 09C149045E79A5F2EE2ACE14 /* moc_serveritemwidget.cpp */; settings = {ATTRIBUTES = (); }; };
-		734DB4BCF7DF292203E726F3 /* settingsdialog.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = B85FE7AD09B3647BA443CFDB /* settingsdialog.cpp */; settings = {ATTRIBUTES = (); }; };
-		84809110A392935EE731CFE0 /* sessionlog.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = 4CFA931D3E069C8C271CBF98 /* sessionlog.cpp */; settings = {ATTRIBUTES = (); }; };
-		862D626FE1A84EBD39E33D0C /* moc_settings.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = 67718B32685F1AE3859AA5C1 /* moc_settings.cpp */; settings = {ATTRIBUTES = (); }; };
-		87034FC3C9AF7F9CE27AE655 /* streamwindow.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = C69FC58097D4D7C61138A0C5 /* streamwindow.cpp */; settings = {ATTRIBUTES = (); }; };
-		8A92BEA5F698FAB841F64146 /* avopenglframeuploader.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = F022C798F166ACC6628AEE9B /* avopenglframeuploader.cpp */; settings = {ATTRIBUTES = (); }; };
-		8CCC7AEF845873A116EA1263 /* host.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = 3212ACAF55FB0CBA48D76431 /* host.cpp */; settings = {ATTRIBUTES = (); }; };
-		8F08BD29682AE5BF5CE26B35 /* moc_avopenglwidget.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = CE94A87A6AACAB421B7C81C5 /* moc_avopenglwidget.cpp */; settings = {ATTRIBUTES = (); }; };
 		98D62A848B393276A5A837C1 /* qicns in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = AB7EA0C9479C5EF1D6B26C5A /* qicns */; };
-		990533766568D9FCA6CC342D /* moc_settingsdialog.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = 226CA882382CF2DA3EB364EB /* moc_settingsdialog.cpp */; settings = {ATTRIBUTES = (); }; };
-		9F67203B02ACFF2E94B74072 /* moc_discoverymanager.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = 4FC671AABE79F335C4381AE3 /* moc_discoverymanager.cpp */; settings = {ATTRIBUTES = (); }; };
-		A5343EAF03665F8F9BE7B253 /* mainwindow.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = FE3D92B7D2FE651B1069F3BF /* mainwindow.cpp */; settings = {ATTRIBUTES = (); }; };
-		B3C2F14BA90022D5E88F899F /* moc_registdialog.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = A7FECAE93AF16233B87B975F /* moc_registdialog.cpp */; settings = {ATTRIBUTES = (); }; };
 		B3FE8FAC746D3D5BB24FA398 /* Metal.framework in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 1B2543FCC48E9436F21C4F63 /* Metal.framework */; };
 		B460F624007324313696BE86 /* QuartzCore.framework in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 7EC00404ACD5AB0E97726B0E /* QuartzCore.framework */; };
-		B6A9F68BF7DB2C798634CFAE /* servericonwidget.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = 5A4DE35828BE5D0C80E1ED60 /* servericonwidget.cpp */; settings = {ATTRIBUTES = (); }; };
-		C110BE1832F560601C0EF6F3 /* streamsession.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = F62A96A41AB28E0BB5173B35 /* streamsession.cpp */; settings = {ATTRIBUTES = (); }; };
-		C21F47F771649B9E934267D1 /* main.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = 7CFB20846CE7F790C544A253 /* main.cpp */; settings = {ATTRIBUTES = (); }; };
-		C3C88E28C4AD5FAE89FD9E30 /* moc_streamwindow.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = B75C1A3504383967E9D389D6 /* moc_streamwindow.cpp */; settings = {ATTRIBUTES = (); }; };
 		C5FAF61B543F70A10AA3B79D /* qtga in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 83C9505DDDFA16B999BEA3F8 /* qtga */; };
-		C7A1985E659BC3740C9ECDB7 /* moc_streamsession.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = A7860FCB292DD7258813B571 /* moc_streamsession.cpp */; settings = {ATTRIBUTES = (); }; };
 		CF6AA39DF6BE2F6FF122981E /* Qt5Gui in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 9DAD141C56A96DCE56957211 /* Qt5Gui */; };
-		D22CC1A325FA9B2F726A70FF /* settings.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = DE7EE5CC648BE589E6E33D1D /* settings.cpp */; settings = {ATTRIBUTES = (); }; };
-		D504C7AE1EA673474734BA7F /* moc_avopenglframeuploader.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = 36B56A81D187E8D69A137337 /* moc_avopenglframeuploader.cpp */; settings = {ATTRIBUTES = (); }; };
 		DC7A30D2B5C1AEA511CDAAB6 /* qtpcre2 in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 985CFCB8485692DF79579FD4 /* qtpcre2 */; };
-		DD6766C41A965A30E218C56A /* dynamicgridwidget.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = C2EC329BBC759B2631186B29 /* dynamicgridwidget.cpp */; settings = {ATTRIBUTES = (); }; };
-		DE95F67F17CFBE3BDD3C721F /* moc_manualhostdialog.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = F251C5BE1408DDDFD3489AB2 /* moc_manualhostdialog.cpp */; settings = {ATTRIBUTES = (); }; };
 		DF69E43AD94AE36CDD4496B5 /* Qt5Core in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 5A0658F970BE95BDF5A87CE5 /* Qt5Core */; };
 		E7FCEE92F2F100263FF0FD84 /* Qt5GraphicsSupport in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 1BD1AE87F437CEAF36EE050A /* Qt5GraphicsSupport */; };
 		E897630D38637D7C6ECA066B /* qico in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = B6D84FE24EC921D49F5D656A /* qico */; };
-		EDEF77EE18AC5C249159513F /* controllermanager.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = 309BCFE057BFB4B19A99BCC4 /* controllermanager.cpp */; settings = {ATTRIBUTES = (); }; };
 		F26454630C80841CBDCFE1CA /* Foundation.framework in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = FCC237CA5AD60B9BA4447615 /* Foundation.framework */; };
 		F716BBE99DA127A8FE7A63B2 /* qmacjp2 in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 6F07EC9CFC16DF73B79DF610 /* qmacjp2 */; };
 		F8B465CE34D8DF87AAE95913 /* CoreFoundation.framework in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 4D765E1B1EA6C757220C63E7 /* CoreFoundation.framework */; };
@@ -153,28 +154,12 @@
 
 /* Begin PBXFileReference section */
 		04DCC54C7034190418F8FF12 /* qtlibpng */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = qtlibpng; path = "/Users/teun/Qt/5.15.2/ios/lib/libqtlibpng$(QT_LIBRARY_SUFFIX).a"; sourceTree = "<absolute>"; };
-		072C4F7F3EF252496CC18645 /* registdialog.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = registdialog.cpp; path = "/Users/teun/build-untitled1-Qt_5_15_2_for_iOS-Debug/registdialog.cpp"; sourceTree = "<absolute>"; };
-		08838758D14055EDEBDB18BD /* moc_controllermanager.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = moc_controllermanager.cpp; path = "/Users/teun/build-untitled1-Qt_5_15_2_for_iOS-Debug/moc_controllermanager.cpp"; sourceTree = "<absolute>"; };
-		09C149045E79A5F2EE2ACE14 /* moc_serveritemwidget.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = moc_serveritemwidget.cpp; path = "/Users/teun/build-untitled1-Qt_5_15_2_for_iOS-Debug/moc_serveritemwidget.cpp"; sourceTree = "<absolute>"; };
 		0BE9C48FF97ADD9EEE0E776D /* .qmake.stash */ = {isa = PBXFileReference; lastKnownFileType = text; name = .qmake.stash; path = "/Users/teun/build-untitled1-Qt_5_15_2_for_iOS-Debug/.qmake.stash"; sourceTree = "<absolute>"; };
 		10192DE9114BF84B09435291 /* qtharfbuzz */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = qtharfbuzz; path = "/Users/teun/Qt/5.15.2/ios/lib/libqtharfbuzz$(QT_LIBRARY_SUFFIX).a"; sourceTree = "<absolute>"; };
-		14CD76FF61C114A1CB5C786B /* logsniffer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = logsniffer.h; path = "/Users/teun/build-untitled1-Qt_5_15_2_for_iOS-Debug/logsniffer.h"; sourceTree = "<absolute>"; };
 		1696BCD1AFC5C81B0D07B6F0 /* qgif */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = qgif; path = "/Users/teun/Qt/5.15.2/ios/plugins/imageformats/libqgif$(QT_LIBRARY_SUFFIX).a"; sourceTree = "<absolute>"; };
 		1B2543FCC48E9436F21C4F63 /* Metal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Metal.framework; path = /System/Library/Frameworks/Metal.framework; sourceTree = "<absolute>"; };
 		1BD1AE87F437CEAF36EE050A /* Qt5GraphicsSupport */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = Qt5GraphicsSupport; path = "/Users/teun/Qt/5.15.2/ios/lib/libQt5GraphicsSupport$(QT_LIBRARY_SUFFIX).a"; sourceTree = "<absolute>"; };
-		1D84089FAE1992157FB4F27E /* streamwindow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = streamwindow.h; path = "/Users/teun/build-untitled1-Qt_5_15_2_for_iOS-Debug/streamwindow.h"; sourceTree = "<absolute>"; };
-		226CA882382CF2DA3EB364EB /* moc_settingsdialog.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = moc_settingsdialog.cpp; path = "/Users/teun/build-untitled1-Qt_5_15_2_for_iOS-Debug/moc_settingsdialog.cpp"; sourceTree = "<absolute>"; };
-		227B622FBF36415322FDE1DE /* serveritemwidget.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = serveritemwidget.cpp; path = "/Users/teun/build-untitled1-Qt_5_15_2_for_iOS-Debug/serveritemwidget.cpp"; sourceTree = "<absolute>"; };
 		23635312C6D724A0245AD0CB /* qjpeg */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = qjpeg; path = "/Users/teun/Qt/5.15.2/ios/plugins/imageformats/libqjpeg$(QT_LIBRARY_SUFFIX).a"; sourceTree = "<absolute>"; };
-		27B5930FFA1A1B56B5E03134 /* streamsession.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = streamsession.h; path = "/Users/teun/build-untitled1-Qt_5_15_2_for_iOS-Debug/streamsession.h"; sourceTree = "<absolute>"; };
-		29BF99551922C9B2480F38DD /* settingskeycapturedialog.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = settingskeycapturedialog.cpp; path = "/Users/teun/build-untitled1-Qt_5_15_2_for_iOS-Debug/settingskeycapturedialog.cpp"; sourceTree = "<absolute>"; };
-		2F7A8C5B242E959A258C3CFB /* manualhostdialog.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = manualhostdialog.cpp; path = "/Users/teun/build-untitled1-Qt_5_15_2_for_iOS-Debug/manualhostdialog.cpp"; sourceTree = "<absolute>"; };
-		309BCFE057BFB4B19A99BCC4 /* controllermanager.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = controllermanager.cpp; path = "/Users/teun/build-untitled1-Qt_5_15_2_for_iOS-Debug/controllermanager.cpp"; sourceTree = "<absolute>"; };
-		3212ACAF55FB0CBA48D76431 /* host.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = host.cpp; path = "/Users/teun/build-untitled1-Qt_5_15_2_for_iOS-Debug/host.cpp"; sourceTree = "<absolute>"; };
-		3365E8FF2B002E66C90CB2F3 /* manualhostdialog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = manualhostdialog.h; path = "/Users/teun/build-untitled1-Qt_5_15_2_for_iOS-Debug/manualhostdialog.h"; sourceTree = "<absolute>"; };
-		358BD29D847D5E3C5366E738 /* loginpindialog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = loginpindialog.h; path = "/Users/teun/build-untitled1-Qt_5_15_2_for_iOS-Debug/loginpindialog.h"; sourceTree = "<absolute>"; };
-		36B56A81D187E8D69A137337 /* moc_avopenglframeuploader.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = moc_avopenglframeuploader.cpp; path = "/Users/teun/build-untitled1-Qt_5_15_2_for_iOS-Debug/moc_avopenglframeuploader.cpp"; sourceTree = "<absolute>"; };
-		3A17CC3089BCC23558E2FC2D /* discoverymanager.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = discoverymanager.cpp; path = "/Users/teun/build-untitled1-Qt_5_15_2_for_iOS-Debug/discoverymanager.cpp"; sourceTree = "<absolute>"; };
 		3A8EF9C62A8D4790CBB89CEA /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = /System/Library/Frameworks/ImageIO.framework; sourceTree = "<absolute>"; };
 		3C44131FDCFEF4396B9EA2BA /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = /System/Library/Frameworks/AudioToolbox.framework; sourceTree = "<absolute>"; };
 		45128CBC2A88248D00D6F2BA /* libgf_complete.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libgf_complete.a; path = lib/libgf_complete.a; sourceTree = "<group>"; };
@@ -218,68 +203,86 @@
 		45128D082A8830A300D6F2BA /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = "Chiaki iOS.xcodeproj/LaunchScreen.storyboard"; sourceTree = "<group>"; };
 		45128D0A2A8830A800D6F2BA /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "Chiaki iOS.xcodeproj/Default-568h@2x.png"; sourceTree = "<group>"; };
 		454D1E617B59B658F77582FF /* qwebp */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = qwebp; path = "/Users/teun/Qt/5.15.2/ios/plugins/imageformats/libqwebp$(QT_LIBRARY_SUFFIX).a"; sourceTree = "<absolute>"; };
-		4CFA931D3E069C8C271CBF98 /* sessionlog.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = sessionlog.cpp; path = "/Users/teun/build-untitled1-Qt_5_15_2_for_iOS-Debug/sessionlog.cpp"; sourceTree = "<absolute>"; };
+		45F0F02C2A8831DD005F82DA /* mainwindow.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = mainwindow.cpp; sourceTree = "<group>"; };
+		45F0F02F2A8831DD005F82DA /* streamsession.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = streamsession.cpp; sourceTree = "<group>"; };
+		45F0F0302A8831DD005F82DA /* dynamicgridwidget.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dynamicgridwidget.h; sourceTree = "<group>"; };
+		45F0F0312A8831DD005F82DA /* dynamicgridwidget.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = dynamicgridwidget.cpp; sourceTree = "<group>"; };
+		45F0F0362A8831DD005F82DA /* manualhostdialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = manualhostdialog.h; sourceTree = "<group>"; };
+		45F0F0372A8831DD005F82DA /* registdialog.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = registdialog.cpp; sourceTree = "<group>"; };
+		45F0F0382A8831DD005F82DA /* exception.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = exception.h; sourceTree = "<group>"; };
+		45F0F0392A8831DD005F82DA /* settingskeycapturedialog.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = settingskeycapturedialog.cpp; sourceTree = "<group>"; };
+		45F0F03A2A8831DD005F82DA /* loginpindialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = loginpindialog.h; sourceTree = "<group>"; };
+		45F0F03C2A8831DD005F82DA /* streamsession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = streamsession.h; sourceTree = "<group>"; };
+		45F0F03E2A8831DD005F82DA /* avopenglwidget.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = avopenglwidget.cpp; sourceTree = "<group>"; };
+		45F0F03F2A8831DD005F82DA /* streamwindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = streamwindow.h; sourceTree = "<group>"; };
+		45F0F0412A8831DD005F82DA /* mainwindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mainwindow.h; sourceTree = "<group>"; };
+		45F0F0422A8831DD005F82DA /* host.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = host.cpp; sourceTree = "<group>"; };
+		45F0F0432A8831DD005F82DA /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		45F0F0442A8831DD005F82DA /* settingskeycapturedialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = settingskeycapturedialog.h; sourceTree = "<group>"; };
+		45F0F0452A8831DD005F82DA /* serveritemwidget.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = serveritemwidget.h; sourceTree = "<group>"; };
+		45F0F0462A8831DD005F82DA /* streamwindow.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = streamwindow.cpp; sourceTree = "<group>"; };
+		45F0F0472A8831DD005F82DA /* settings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = settings.h; sourceTree = "<group>"; };
+		45F0F0482A8831DD005F82DA /* settings.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = settings.cpp; sourceTree = "<group>"; };
+		45F0F0492A8831DD005F82DA /* loginpindialog.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = loginpindialog.cpp; sourceTree = "<group>"; };
+		45F0F04A2A8831DD005F82DA /* manualhostdialog.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = manualhostdialog.cpp; sourceTree = "<group>"; };
+		45F0F04B2A8831DD005F82DA /* sessionlog.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = sessionlog.cpp; sourceTree = "<group>"; };
+		45F0F04C2A8831DD005F82DA /* discoverymanager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = discoverymanager.cpp; sourceTree = "<group>"; };
+		45F0F04D2A8831DD005F82DA /* host.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = host.h; sourceTree = "<group>"; };
+		45F0F04E2A8831DD005F82DA /* ui_mainwindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ui_mainwindow.h; sourceTree = "<group>"; };
+		45F0F04F2A8831DD005F82DA /* registdialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = registdialog.h; sourceTree = "<group>"; };
+		45F0F0502A8831DE005F82DA /* chiaki_plugin_import.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = chiaki_plugin_import.cpp; sourceTree = "<group>"; };
+		45F0F0512A8831DE005F82DA /* avopenglframeuploader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = avopenglframeuploader.cpp; sourceTree = "<group>"; };
+		45F0F0522A8831DE005F82DA /* sessionlog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sessionlog.h; sourceTree = "<group>"; };
+		45F0F0532A8831DE005F82DA /* settingsdialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = settingsdialog.h; sourceTree = "<group>"; };
+		45F0F0542A8831DE005F82DA /* transformmode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = transformmode.h; sourceTree = "<group>"; };
+		45F0F0552A8831DE005F82DA /* settingsdialog.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = settingsdialog.cpp; sourceTree = "<group>"; };
+		45F0F0572A8831DE005F82DA /* logsniffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = logsniffer.h; sourceTree = "<group>"; };
+		45F0F0582A8831DE005F82DA /* controllermanager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = controllermanager.h; sourceTree = "<group>"; };
+		45F0F05A2A8831DE005F82DA /* avopenglframeuploader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = avopenglframeuploader.h; sourceTree = "<group>"; };
+		45F0F05B2A8831DE005F82DA /* serveritemwidget.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = serveritemwidget.cpp; sourceTree = "<group>"; };
+		45F0F05C2A8831DE005F82DA /* discoverymanager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = discoverymanager.h; sourceTree = "<group>"; };
+		45F0F05E2A8831DE005F82DA /* avopenglwidget.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = avopenglwidget.h; sourceTree = "<group>"; };
+		45F0F05F2A8831DE005F82DA /* servericonwidget.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = servericonwidget.h; sourceTree = "<group>"; };
+		45F0F0632A8831DE005F82DA /* controllermanager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = controllermanager.cpp; sourceTree = "<group>"; };
+		45F0F0642A8831DE005F82DA /* servericonwidget.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = servericonwidget.cpp; sourceTree = "<group>"; };
+		45F0F08B2A883296005F82DA /* moc_streamsession.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = moc_streamsession.cpp; sourceTree = "<group>"; };
+		45F0F08C2A883296005F82DA /* moc_dynamicgridwidget.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = moc_dynamicgridwidget.cpp; sourceTree = "<group>"; };
+		45F0F08E2A883296005F82DA /* moc_discoverymanager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = moc_discoverymanager.cpp; sourceTree = "<group>"; };
+		45F0F08F2A883296005F82DA /* moc_manualhostdialog.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = moc_manualhostdialog.cpp; sourceTree = "<group>"; };
+		45F0F0902A883296005F82DA /* moc_mainwindow.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = moc_mainwindow.cpp; sourceTree = "<group>"; };
+		45F0F0912A883296005F82DA /* moc_streamwindow.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = moc_streamwindow.cpp; sourceTree = "<group>"; };
+		45F0F0922A883296005F82DA /* moc_settingsdialog.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = moc_settingsdialog.cpp; sourceTree = "<group>"; };
+		45F0F0932A883296005F82DA /* moc_avopenglwidget.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = moc_avopenglwidget.cpp; sourceTree = "<group>"; };
+		45F0F0942A883296005F82DA /* moc_serveritemwidget.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = moc_serveritemwidget.cpp; sourceTree = "<group>"; };
+		45F0F0952A883296005F82DA /* moc_controllermanager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = moc_controllermanager.cpp; sourceTree = "<group>"; };
+		45F0F0962A883296005F82DA /* moc_servericonwidget.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = moc_servericonwidget.cpp; sourceTree = "<group>"; };
+		45F0F0972A883296005F82DA /* moc_loginpindialog.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = moc_loginpindialog.cpp; sourceTree = "<group>"; };
+		45F0F0982A883297005F82DA /* moc_avopenglframeuploader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = moc_avopenglframeuploader.cpp; sourceTree = "<group>"; };
+		45F0F0992A883297005F82DA /* moc_settings.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = moc_settings.cpp; sourceTree = "<group>"; };
+		45F0F09A2A883297005F82DA /* moc_settingskeycapturedialog.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = moc_settingskeycapturedialog.cpp; sourceTree = "<group>"; };
+		45F0F09B2A883297005F82DA /* moc_registdialog.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = moc_registdialog.cpp; sourceTree = "<group>"; };
 		4D765E1B1EA6C757220C63E7 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = /System/Library/Frameworks/CoreFoundation.framework; sourceTree = "<absolute>"; };
-		4F07AEDEAC4A1AB0F3803031 /* discoverymanager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = discoverymanager.h; path = "/Users/teun/build-untitled1-Qt_5_15_2_for_iOS-Debug/discoverymanager.h"; sourceTree = "<absolute>"; };
-		4FC671AABE79F335C4381AE3 /* moc_discoverymanager.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = moc_discoverymanager.cpp; path = "/Users/teun/build-untitled1-Qt_5_15_2_for_iOS-Debug/moc_discoverymanager.cpp"; sourceTree = "<absolute>"; };
-		56F76DA0CE1EC8185117884D /* moc_dynamicgridwidget.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = moc_dynamicgridwidget.cpp; path = "/Users/teun/build-untitled1-Qt_5_15_2_for_iOS-Debug/moc_dynamicgridwidget.cpp"; sourceTree = "<absolute>"; };
-		573FE3AB9E2F74F2E89D9CCA /* exception.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = exception.h; path = "/Users/teun/build-untitled1-Qt_5_15_2_for_iOS-Debug/exception.h"; sourceTree = "<absolute>"; };
 		5A0658F970BE95BDF5A87CE5 /* Qt5Core */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = Qt5Core; path = "/Users/teun/Qt/5.15.2/ios/lib/libQt5Core$(QT_LIBRARY_SUFFIX).a"; sourceTree = "<absolute>"; };
-		5A4DE35828BE5D0C80E1ED60 /* servericonwidget.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = servericonwidget.cpp; path = "/Users/teun/build-untitled1-Qt_5_15_2_for_iOS-Debug/servericonwidget.cpp"; sourceTree = "<absolute>"; };
-		5B6A9B64C2A3EB09E2739A2C /* sessionlog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = sessionlog.h; path = "/Users/teun/build-untitled1-Qt_5_15_2_for_iOS-Debug/sessionlog.h"; sourceTree = "<absolute>"; };
-		5B7A87B839F4D8BA74B0331E /* controllermanager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = controllermanager.h; path = "/Users/teun/build-untitled1-Qt_5_15_2_for_iOS-Debug/controllermanager.h"; sourceTree = "<absolute>"; };
-		61FE08D136B221EA254DFA54 /* chiaki_plugin_import.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = chiaki_plugin_import.cpp; path = "/Users/teun/build-untitled1-Qt_5_15_2_for_iOS-Debug/chiaki_plugin_import.cpp"; sourceTree = "<absolute>"; };
-		67552239A1FE22E447DB21A5 /* avopenglwidget.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = avopenglwidget.cpp; path = "/Users/teun/build-untitled1-Qt_5_15_2_for_iOS-Debug/avopenglwidget.cpp"; sourceTree = "<absolute>"; };
-		67718B32685F1AE3859AA5C1 /* moc_settings.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = moc_settings.cpp; path = "/Users/teun/build-untitled1-Qt_5_15_2_for_iOS-Debug/moc_settings.cpp"; sourceTree = "<absolute>"; };
 		6AE3EC31EE5BB1FCEE84137C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = /System/Library/Frameworks/CoreGraphics.framework; sourceTree = "<absolute>"; };
 		6CAB2F00E09FC9A72EDC0628 /* qios */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = qios; path = "/Users/teun/Qt/5.15.2/ios/plugins/platforms/libqios$(QT_LIBRARY_SUFFIX).a"; sourceTree = "<absolute>"; };
 		6F07EC9CFC16DF73B79DF610 /* qmacjp2 */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = qmacjp2; path = "/Users/teun/Qt/5.15.2/ios/plugins/imageformats/libqmacjp2$(QT_LIBRARY_SUFFIX).a"; sourceTree = "<absolute>"; };
-		7036DD99B0A60261A99F89A3 /* servericonwidget.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = servericonwidget.h; path = "/Users/teun/build-untitled1-Qt_5_15_2_for_iOS-Debug/servericonwidget.h"; sourceTree = "<absolute>"; };
-		74034303F8923DA15AB6D18A /* avopenglframeuploader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = avopenglframeuploader.h; path = "/Users/teun/build-untitled1-Qt_5_15_2_for_iOS-Debug/avopenglframeuploader.h"; sourceTree = "<absolute>"; };
 		752FF3794770B634CA2C9635 /* Qt5ClipboardSupport */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = Qt5ClipboardSupport; path = "/Users/teun/Qt/5.15.2/ios/lib/libQt5ClipboardSupport$(QT_LIBRARY_SUFFIX).a"; sourceTree = "<absolute>"; };
 		7603780903FD7E46E12B16EC /* qtfreetype */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = qtfreetype; path = "/Users/teun/Qt/5.15.2/ios/lib/libqtfreetype$(QT_LIBRARY_SUFFIX).a"; sourceTree = "<absolute>"; };
 		7ADF703FA2B0857A366D2EAC /* chiaki.pro */ = {isa = PBXFileReference; lastKnownFileType = text; name = chiaki.pro; path = "/Users/teun/build-untitled1-Qt_5_15_2_for_iOS-Debug/chiaki.pro"; sourceTree = "<absolute>"; };
-		7CFB20846CE7F790C544A253 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = "/Users/teun/build-untitled1-Qt_5_15_2_for_iOS-Debug/main.cpp"; sourceTree = "<absolute>"; };
 		7D7B02101166B76FD2D4F8B4 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = /System/Library/Frameworks/CoreText.framework; sourceTree = "<absolute>"; };
 		7EC00404ACD5AB0E97726B0E /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = /System/Library/Frameworks/QuartzCore.framework; sourceTree = "<absolute>"; };
 		83C9505DDDFA16B999BEA3F8 /* qtga */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = qtga; path = "/Users/teun/Qt/5.15.2/ios/plugins/imageformats/libqtga$(QT_LIBRARY_SUFFIX).a"; sourceTree = "<absolute>"; };
 		888C0DB6CCF8D32D02B29CBD /* qmacheif */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = qmacheif; path = "/Users/teun/Qt/5.15.2/ios/plugins/imageformats/libqmacheif$(QT_LIBRARY_SUFFIX).a"; sourceTree = "<absolute>"; };
-		8C36CFD1D73954B9BB0FE74A /* host.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = host.h; path = "/Users/teun/build-untitled1-Qt_5_15_2_for_iOS-Debug/host.h"; sourceTree = "<absolute>"; };
-		8E284B7885005FEC523F0968 /* serveritemwidget.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = serveritemwidget.h; path = "/Users/teun/build-untitled1-Qt_5_15_2_for_iOS-Debug/serveritemwidget.h"; sourceTree = "<absolute>"; };
-		8EAA999770D298FFE6505F7B /* moc_loginpindialog.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = moc_loginpindialog.cpp; path = "/Users/teun/build-untitled1-Qt_5_15_2_for_iOS-Debug/moc_loginpindialog.cpp"; sourceTree = "<absolute>"; };
 		985CFCB8485692DF79579FD4 /* qtpcre2 */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = qtpcre2; path = "/Users/teun/Qt/5.15.2/ios/lib/libqtpcre2$(QT_LIBRARY_SUFFIX).a"; sourceTree = "<absolute>"; };
 		9AFB385DA4F9453FAD5AA2F2 /* qtiff */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = qtiff; path = "/Users/teun/Qt/5.15.2/ios/plugins/imageformats/libqtiff$(QT_LIBRARY_SUFFIX).a"; sourceTree = "<absolute>"; };
 		9D635E522D536B91890F7AF9 /* Chiaki.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Chiaki.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DAD141C56A96DCE56957211 /* Qt5Gui */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = Qt5Gui; path = "/Users/teun/Qt/5.15.2/ios/lib/libQt5Gui$(QT_LIBRARY_SUFFIX).a"; sourceTree = "<absolute>"; };
-		9FFC116BF4E393DCD8750569 /* dynamicgridwidget.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = dynamicgridwidget.h; path = "/Users/teun/build-untitled1-Qt_5_15_2_for_iOS-Debug/dynamicgridwidget.h"; sourceTree = "<absolute>"; };
-		A498F86444B8E15340F43EF3 /* settingsdialog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = settingsdialog.h; path = "/Users/teun/build-untitled1-Qt_5_15_2_for_iOS-Debug/settingsdialog.h"; sourceTree = "<absolute>"; };
-		A528CA6AC1BF7466B68A1B17 /* settings.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = settings.h; path = "/Users/teun/build-untitled1-Qt_5_15_2_for_iOS-Debug/settings.h"; sourceTree = "<absolute>"; };
-		A7860FCB292DD7258813B571 /* moc_streamsession.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = moc_streamsession.cpp; path = "/Users/teun/build-untitled1-Qt_5_15_2_for_iOS-Debug/moc_streamsession.cpp"; sourceTree = "<absolute>"; };
-		A7FECAE93AF16233B87B975F /* moc_registdialog.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = moc_registdialog.cpp; path = "/Users/teun/build-untitled1-Qt_5_15_2_for_iOS-Debug/moc_registdialog.cpp"; sourceTree = "<absolute>"; };
 		AB7EA0C9479C5EF1D6B26C5A /* qicns */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = qicns; path = "/Users/teun/Qt/5.15.2/ios/plugins/imageformats/libqicns$(QT_LIBRARY_SUFFIX).a"; sourceTree = "<absolute>"; };
 		B0A00C1B0B528771DF1EC33F /* Qt5FontDatabaseSupport */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = Qt5FontDatabaseSupport; path = "/Users/teun/Qt/5.15.2/ios/lib/libQt5FontDatabaseSupport$(QT_LIBRARY_SUFFIX).a"; sourceTree = "<absolute>"; };
-		B381ABF403C697E53D54C408 /* mainwindow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = mainwindow.h; path = "/Users/teun/build-untitled1-Qt_5_15_2_for_iOS-Debug/mainwindow.h"; sourceTree = "<absolute>"; };
 		B6D84FE24EC921D49F5D656A /* qico */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = qico; path = "/Users/teun/Qt/5.15.2/ios/plugins/imageformats/libqico$(QT_LIBRARY_SUFFIX).a"; sourceTree = "<absolute>"; };
-		B75C1A3504383967E9D389D6 /* moc_streamwindow.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = moc_streamwindow.cpp; path = "/Users/teun/build-untitled1-Qt_5_15_2_for_iOS-Debug/moc_streamwindow.cpp"; sourceTree = "<absolute>"; };
-		B85FE7AD09B3647BA443CFDB /* settingsdialog.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = settingsdialog.cpp; path = "/Users/teun/build-untitled1-Qt_5_15_2_for_iOS-Debug/settingsdialog.cpp"; sourceTree = "<absolute>"; };
 		BD107EC573F1437222B4A5CA /* qwbmp */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = qwbmp; path = "/Users/teun/Qt/5.15.2/ios/plugins/imageformats/libqwbmp$(QT_LIBRARY_SUFFIX).a"; sourceTree = "<absolute>"; };
-		C2EC329BBC759B2631186B29 /* dynamicgridwidget.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = dynamicgridwidget.cpp; path = "/Users/teun/build-untitled1-Qt_5_15_2_for_iOS-Debug/dynamicgridwidget.cpp"; sourceTree = "<absolute>"; };
-		C69FC58097D4D7C61138A0C5 /* streamwindow.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = streamwindow.cpp; path = "/Users/teun/build-untitled1-Qt_5_15_2_for_iOS-Debug/streamwindow.cpp"; sourceTree = "<absolute>"; };
-		CDDF2972D86AE57F6CD069BD /* loginpindialog.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = loginpindialog.cpp; path = "/Users/teun/build-untitled1-Qt_5_15_2_for_iOS-Debug/loginpindialog.cpp"; sourceTree = "<absolute>"; };
-		CE94A87A6AACAB421B7C81C5 /* moc_avopenglwidget.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = moc_avopenglwidget.cpp; path = "/Users/teun/build-untitled1-Qt_5_15_2_for_iOS-Debug/moc_avopenglwidget.cpp"; sourceTree = "<absolute>"; };
 		D790C02937983348F047BACE /* Qt5Widgets */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = Qt5Widgets; path = "/Users/teun/Qt/5.15.2/ios/lib/libQt5Widgets$(QT_LIBRARY_SUFFIX).a"; sourceTree = "<absolute>"; };
-		D7D9BCBFCD7A6C236B2ED243 /* transformmode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = transformmode.h; path = "/Users/teun/build-untitled1-Qt_5_15_2_for_iOS-Debug/transformmode.h"; sourceTree = "<absolute>"; };
-		DE7EE5CC648BE589E6E33D1D /* settings.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = settings.cpp; path = "/Users/teun/build-untitled1-Qt_5_15_2_for_iOS-Debug/settings.cpp"; sourceTree = "<absolute>"; };
-		E059C311960D16F5DBC11D23 /* registdialog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = registdialog.h; path = "/Users/teun/build-untitled1-Qt_5_15_2_for_iOS-Debug/registdialog.h"; sourceTree = "<absolute>"; };
-		E429FAC2EE1C87A7F1095FD0 /* settingskeycapturedialog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = settingskeycapturedialog.h; path = "/Users/teun/build-untitled1-Qt_5_15_2_for_iOS-Debug/settingskeycapturedialog.h"; sourceTree = "<absolute>"; };
-		EB6A070CCB64F8D8D9357CC7 /* avopenglwidget.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = avopenglwidget.h; path = "/Users/teun/build-untitled1-Qt_5_15_2_for_iOS-Debug/avopenglwidget.h"; sourceTree = "<absolute>"; };
-		EFC29ABC60FA6878F57E11CA /* moc_settingskeycapturedialog.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = moc_settingskeycapturedialog.cpp; path = "/Users/teun/build-untitled1-Qt_5_15_2_for_iOS-Debug/moc_settingskeycapturedialog.cpp"; sourceTree = "<absolute>"; };
-		F022C798F166ACC6628AEE9B /* avopenglframeuploader.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = avopenglframeuploader.cpp; path = "/Users/teun/build-untitled1-Qt_5_15_2_for_iOS-Debug/avopenglframeuploader.cpp"; sourceTree = "<absolute>"; };
-		F251C5BE1408DDDFD3489AB2 /* moc_manualhostdialog.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = moc_manualhostdialog.cpp; path = "/Users/teun/build-untitled1-Qt_5_15_2_for_iOS-Debug/moc_manualhostdialog.cpp"; sourceTree = "<absolute>"; };
-		F350D14589F286C6A277347C /* moc_servericonwidget.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = moc_servericonwidget.cpp; path = "/Users/teun/build-untitled1-Qt_5_15_2_for_iOS-Debug/moc_servericonwidget.cpp"; sourceTree = "<absolute>"; };
-		F62A96A41AB28E0BB5173B35 /* streamsession.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = streamsession.cpp; path = "/Users/teun/build-untitled1-Qt_5_15_2_for_iOS-Debug/streamsession.cpp"; sourceTree = "<absolute>"; };
 		FCC237CA5AD60B9BA4447615 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
-		FE3D92B7D2FE651B1069F3BF /* mainwindow.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = mainwindow.cpp; path = "/Users/teun/build-untitled1-Qt_5_15_2_for_iOS-Debug/mainwindow.cpp"; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -353,22 +356,22 @@
 		25B08E2869634E9BCBA333A2 /* Generated Sources */ = {
 			isa = PBXGroup;
 			children = (
-				61FE08D136B221EA254DFA54 /* chiaki_plugin_import.cpp */,
-				36B56A81D187E8D69A137337 /* moc_avopenglframeuploader.cpp */,
-				CE94A87A6AACAB421B7C81C5 /* moc_avopenglwidget.cpp */,
-				08838758D14055EDEBDB18BD /* moc_controllermanager.cpp */,
-				4FC671AABE79F335C4381AE3 /* moc_discoverymanager.cpp */,
-				56F76DA0CE1EC8185117884D /* moc_dynamicgridwidget.cpp */,
-				8EAA999770D298FFE6505F7B /* moc_loginpindialog.cpp */,
-				F251C5BE1408DDDFD3489AB2 /* moc_manualhostdialog.cpp */,
-				A7FECAE93AF16233B87B975F /* moc_registdialog.cpp */,
-				F350D14589F286C6A277347C /* moc_servericonwidget.cpp */,
-				09C149045E79A5F2EE2ACE14 /* moc_serveritemwidget.cpp */,
-				67718B32685F1AE3859AA5C1 /* moc_settings.cpp */,
-				226CA882382CF2DA3EB364EB /* moc_settingsdialog.cpp */,
-				EFC29ABC60FA6878F57E11CA /* moc_settingskeycapturedialog.cpp */,
-				A7860FCB292DD7258813B571 /* moc_streamsession.cpp */,
-				B75C1A3504383967E9D389D6 /* moc_streamwindow.cpp */,
+				45F0F0982A883297005F82DA /* moc_avopenglframeuploader.cpp */,
+				45F0F0932A883296005F82DA /* moc_avopenglwidget.cpp */,
+				45F0F0952A883296005F82DA /* moc_controllermanager.cpp */,
+				45F0F08E2A883296005F82DA /* moc_discoverymanager.cpp */,
+				45F0F08C2A883296005F82DA /* moc_dynamicgridwidget.cpp */,
+				45F0F0972A883296005F82DA /* moc_loginpindialog.cpp */,
+				45F0F0902A883296005F82DA /* moc_mainwindow.cpp */,
+				45F0F08F2A883296005F82DA /* moc_manualhostdialog.cpp */,
+				45F0F09B2A883297005F82DA /* moc_registdialog.cpp */,
+				45F0F0962A883296005F82DA /* moc_servericonwidget.cpp */,
+				45F0F0942A883296005F82DA /* moc_serveritemwidget.cpp */,
+				45F0F0992A883297005F82DA /* moc_settings.cpp */,
+				45F0F0922A883296005F82DA /* moc_settingsdialog.cpp */,
+				45F0F09A2A883297005F82DA /* moc_settingskeycapturedialog.cpp */,
+				45F0F08B2A883296005F82DA /* moc_streamsession.cpp */,
+				45F0F0912A883296005F82DA /* moc_streamwindow.cpp */,
 			);
 			name = "Generated Sources";
 			sourceTree = "<group>";
@@ -376,46 +379,48 @@
 		2EB56BE3C2D93CDAB0C52E67 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				F022C798F166ACC6628AEE9B /* avopenglframeuploader.cpp */,
-				67552239A1FE22E447DB21A5 /* avopenglwidget.cpp */,
-				309BCFE057BFB4B19A99BCC4 /* controllermanager.cpp */,
-				3A17CC3089BCC23558E2FC2D /* discoverymanager.cpp */,
-				C2EC329BBC759B2631186B29 /* dynamicgridwidget.cpp */,
-				3212ACAF55FB0CBA48D76431 /* host.cpp */,
-				CDDF2972D86AE57F6CD069BD /* loginpindialog.cpp */,
-				7CFB20846CE7F790C544A253 /* main.cpp */,
-				FE3D92B7D2FE651B1069F3BF /* mainwindow.cpp */,
-				2F7A8C5B242E959A258C3CFB /* manualhostdialog.cpp */,
-				072C4F7F3EF252496CC18645 /* registdialog.cpp */,
-				5A4DE35828BE5D0C80E1ED60 /* servericonwidget.cpp */,
-				227B622FBF36415322FDE1DE /* serveritemwidget.cpp */,
-				4CFA931D3E069C8C271CBF98 /* sessionlog.cpp */,
-				DE7EE5CC648BE589E6E33D1D /* settings.cpp */,
-				B85FE7AD09B3647BA443CFDB /* settingsdialog.cpp */,
-				29BF99551922C9B2480F38DD /* settingskeycapturedialog.cpp */,
-				F62A96A41AB28E0BB5173B35 /* streamsession.cpp */,
-				C69FC58097D4D7C61138A0C5 /* streamwindow.cpp */,
-				74034303F8923DA15AB6D18A /* avopenglframeuploader.h */,
-				EB6A070CCB64F8D8D9357CC7 /* avopenglwidget.h */,
-				5B7A87B839F4D8BA74B0331E /* controllermanager.h */,
-				4F07AEDEAC4A1AB0F3803031 /* discoverymanager.h */,
-				9FFC116BF4E393DCD8750569 /* dynamicgridwidget.h */,
-				573FE3AB9E2F74F2E89D9CCA /* exception.h */,
-				8C36CFD1D73954B9BB0FE74A /* host.h */,
-				358BD29D847D5E3C5366E738 /* loginpindialog.h */,
-				14CD76FF61C114A1CB5C786B /* logsniffer.h */,
-				B381ABF403C697E53D54C408 /* mainwindow.h */,
-				3365E8FF2B002E66C90CB2F3 /* manualhostdialog.h */,
-				E059C311960D16F5DBC11D23 /* registdialog.h */,
-				7036DD99B0A60261A99F89A3 /* servericonwidget.h */,
-				8E284B7885005FEC523F0968 /* serveritemwidget.h */,
-				5B6A9B64C2A3EB09E2739A2C /* sessionlog.h */,
-				A528CA6AC1BF7466B68A1B17 /* settings.h */,
-				A498F86444B8E15340F43EF3 /* settingsdialog.h */,
-				E429FAC2EE1C87A7F1095FD0 /* settingskeycapturedialog.h */,
-				27B5930FFA1A1B56B5E03134 /* streamsession.h */,
-				1D84089FAE1992157FB4F27E /* streamwindow.h */,
-				D7D9BCBFCD7A6C236B2ED243 /* transformmode.h */,
+				45F0F0512A8831DE005F82DA /* avopenglframeuploader.cpp */,
+				45F0F05A2A8831DE005F82DA /* avopenglframeuploader.h */,
+				45F0F03E2A8831DD005F82DA /* avopenglwidget.cpp */,
+				45F0F05E2A8831DE005F82DA /* avopenglwidget.h */,
+				45F0F0502A8831DE005F82DA /* chiaki_plugin_import.cpp */,
+				45F0F0632A8831DE005F82DA /* controllermanager.cpp */,
+				45F0F0582A8831DE005F82DA /* controllermanager.h */,
+				45F0F04C2A8831DD005F82DA /* discoverymanager.cpp */,
+				45F0F05C2A8831DE005F82DA /* discoverymanager.h */,
+				45F0F0312A8831DD005F82DA /* dynamicgridwidget.cpp */,
+				45F0F0302A8831DD005F82DA /* dynamicgridwidget.h */,
+				45F0F0382A8831DD005F82DA /* exception.h */,
+				45F0F0422A8831DD005F82DA /* host.cpp */,
+				45F0F04D2A8831DD005F82DA /* host.h */,
+				45F0F0492A8831DD005F82DA /* loginpindialog.cpp */,
+				45F0F03A2A8831DD005F82DA /* loginpindialog.h */,
+				45F0F0572A8831DE005F82DA /* logsniffer.h */,
+				45F0F0432A8831DD005F82DA /* main.cpp */,
+				45F0F02C2A8831DD005F82DA /* mainwindow.cpp */,
+				45F0F0412A8831DD005F82DA /* mainwindow.h */,
+				45F0F04A2A8831DD005F82DA /* manualhostdialog.cpp */,
+				45F0F0362A8831DD005F82DA /* manualhostdialog.h */,
+				45F0F0372A8831DD005F82DA /* registdialog.cpp */,
+				45F0F04F2A8831DD005F82DA /* registdialog.h */,
+				45F0F0642A8831DE005F82DA /* servericonwidget.cpp */,
+				45F0F05F2A8831DE005F82DA /* servericonwidget.h */,
+				45F0F05B2A8831DE005F82DA /* serveritemwidget.cpp */,
+				45F0F0452A8831DD005F82DA /* serveritemwidget.h */,
+				45F0F04B2A8831DD005F82DA /* sessionlog.cpp */,
+				45F0F0522A8831DE005F82DA /* sessionlog.h */,
+				45F0F0482A8831DD005F82DA /* settings.cpp */,
+				45F0F0472A8831DD005F82DA /* settings.h */,
+				45F0F0552A8831DE005F82DA /* settingsdialog.cpp */,
+				45F0F0532A8831DE005F82DA /* settingsdialog.h */,
+				45F0F0392A8831DD005F82DA /* settingskeycapturedialog.cpp */,
+				45F0F0442A8831DD005F82DA /* settingskeycapturedialog.h */,
+				45F0F02F2A8831DD005F82DA /* streamsession.cpp */,
+				45F0F03C2A8831DD005F82DA /* streamsession.h */,
+				45F0F0462A8831DD005F82DA /* streamwindow.cpp */,
+				45F0F03F2A8831DD005F82DA /* streamwindow.h */,
+				45F0F0542A8831DE005F82DA /* transformmode.h */,
+				45F0F04E2A8831DD005F82DA /* ui_mainwindow.h */,
 			);
 			name = Sources;
 			sourceTree = "<group>";
@@ -621,7 +626,7 @@
 			name = "Qt Qmake";
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "make -C /Users/teun/build-untitled1-Qt_5_15_2_for_iOS-Debug -f 'Chiaki iOS.xcodeproj/qt_makeqmake.mak'\n";
+			shellScript = "make -C . -f 'Chiaki iOS.xcodeproj/qt_makeqmake.mak'\n";
 			showEnvVarsInLog = 0;
 		};
 		7EF0942E79C014DCEC8976BC /* Qt Preprocessors */ = {
@@ -632,7 +637,7 @@
 			name = "Qt Preprocessors";
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "make -C /Users/teun/build-untitled1-Qt_5_15_2_for_iOS-Debug -f 'Chiaki iOS.xcodeproj/qt_preprocess.mak'\n";
+			shellScript = "make -C . -f 'Chiaki iOS.xcodeproj/qt_preprocess.mak'\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -642,42 +647,43 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8A92BEA5F698FAB841F64146 /* avopenglframeuploader.cpp in Compile Sources */,
-				0C043A6A8188E66BBF22CB67 /* avopenglwidget.cpp in Compile Sources */,
-				EDEF77EE18AC5C249159513F /* controllermanager.cpp in Compile Sources */,
-				110B02A44248674D4DB4B3D8 /* discoverymanager.cpp in Compile Sources */,
-				DD6766C41A965A30E218C56A /* dynamicgridwidget.cpp in Compile Sources */,
-				8CCC7AEF845873A116EA1263 /* host.cpp in Compile Sources */,
-				21F434D32ED3EA112C8647B4 /* loginpindialog.cpp in Compile Sources */,
-				C21F47F771649B9E934267D1 /* main.cpp in Compile Sources */,
-				A5343EAF03665F8F9BE7B253 /* mainwindow.cpp in Compile Sources */,
-				013CBEF36C08CA8C982F8838 /* manualhostdialog.cpp in Compile Sources */,
-				5F21E8710E6292F5981C7DB2 /* registdialog.cpp in Compile Sources */,
-				B6A9F68BF7DB2C798634CFAE /* servericonwidget.cpp in Compile Sources */,
-				71DDEDD4376C062E771003F2 /* serveritemwidget.cpp in Compile Sources */,
-				84809110A392935EE731CFE0 /* sessionlog.cpp in Compile Sources */,
-				D22CC1A325FA9B2F726A70FF /* settings.cpp in Compile Sources */,
-				734DB4BCF7DF292203E726F3 /* settingsdialog.cpp in Compile Sources */,
-				17C4966B40F03C6A351DBE16 /* settingskeycapturedialog.cpp in Compile Sources */,
-				C110BE1832F560601C0EF6F3 /* streamsession.cpp in Compile Sources */,
-				87034FC3C9AF7F9CE27AE655 /* streamwindow.cpp in Compile Sources */,
-				3DF670B2A9526D3B64AB4F6D /* chiaki_plugin_import.cpp in Compile Sources */,
-				D504C7AE1EA673474734BA7F /* moc_avopenglframeuploader.cpp in Compile Sources */,
-				8F08BD29682AE5BF5CE26B35 /* moc_avopenglwidget.cpp in Compile Sources */,
-				172268C483400363EB2E6445 /* moc_controllermanager.cpp in Compile Sources */,
-				9F67203B02ACFF2E94B74072 /* moc_discoverymanager.cpp in Compile Sources */,
-				438CFA7E7A790C8CD88B8C39 /* moc_dynamicgridwidget.cpp in Compile Sources */,
-				1BF7F2F127BCE9E067CD5878 /* moc_loginpindialog.cpp in Compile Sources */,
-				DE95F67F17CFBE3BDD3C721F /* moc_manualhostdialog.cpp in Compile Sources */,
-				B3C2F14BA90022D5E88F899F /* moc_registdialog.cpp in Compile Sources */,
-				5436AF34FEDD90EF31282F75 /* moc_servericonwidget.cpp in Compile Sources */,
+				45F0F07D2A8831DE005F82DA /* discoverymanager.cpp in Compile Sources */,
+				45F0F09F2A883297005F82DA /* moc_discoverymanager.cpp in Compile Sources */,
+				45F0F0882A8831DE005F82DA /* controllermanager.cpp in Compile Sources */,
+				45F0F0A02A883297005F82DA /* moc_manualhostdialog.cpp in Compile Sources */,
+				45F0F0A92A883297005F82DA /* moc_avopenglframeuploader.cpp in Compile Sources */,
+				45F0F0792A8831DE005F82DA /* settings.cpp in Compile Sources */,
+				45F0F0A82A883297005F82DA /* moc_loginpindialog.cpp in Compile Sources */,
+				45F0F0742A8831DE005F82DA /* avopenglwidget.cpp in Compile Sources */,
+				45F0F0A32A883297005F82DA /* moc_settingsdialog.cpp in Compile Sources */,
+				45F0F0A62A883297005F82DA /* moc_controllermanager.cpp in Compile Sources */,
+				45F0F0802A8831DE005F82DA /* settingsdialog.cpp in Compile Sources */,
+				45F0F0AC2A883297005F82DA /* moc_registdialog.cpp in Compile Sources */,
+				45F0F07F2A8831DE005F82DA /* avopenglframeuploader.cpp in Compile Sources */,
+				45F0F07B2A8831DE005F82DA /* manualhostdialog.cpp in Compile Sources */,
+				45F0F0762A8831DE005F82DA /* host.cpp in Compile Sources */,
+				45F0F0782A8831DE005F82DA /* streamwindow.cpp in Compile Sources */,
 				45128CF32A88295600D6F2BA /* moc_mainwindow.cpp in Compile Sources */,
-				727DB1EB2E3B15BFA066E2E7 /* moc_serveritemwidget.cpp in Compile Sources */,
-				862D626FE1A84EBD39E33D0C /* moc_settings.cpp in Compile Sources */,
-				990533766568D9FCA6CC342D /* moc_settingsdialog.cpp in Compile Sources */,
-				1A140487B323AC45EE5D647C /* moc_settingskeycapturedialog.cpp in Compile Sources */,
-				C7A1985E659BC3740C9ECDB7 /* moc_streamsession.cpp in Compile Sources */,
-				C3C88E28C4AD5FAE89FD9E30 /* moc_streamwindow.cpp in Compile Sources */,
+				45F0F0A12A883297005F82DA /* moc_mainwindow.cpp in Compile Sources */,
+				45F0F0772A8831DE005F82DA /* main.cpp in Compile Sources */,
+				45F0F0AB2A883297005F82DA /* moc_settingskeycapturedialog.cpp in Compile Sources */,
+				45F0F0A72A883297005F82DA /* moc_servericonwidget.cpp in Compile Sources */,
+				45F0F0A52A883297005F82DA /* moc_serveritemwidget.cpp in Compile Sources */,
+				45F0F0712A8831DE005F82DA /* settingskeycapturedialog.cpp in Compile Sources */,
+				45F0F06A2A8831DE005F82DA /* streamsession.cpp in Compile Sources */,
+				45F0F0A42A883297005F82DA /* moc_avopenglwidget.cpp in Compile Sources */,
+				45F0F07A2A8831DE005F82DA /* loginpindialog.cpp in Compile Sources */,
+				45F0F0AA2A883297005F82DA /* moc_settings.cpp in Compile Sources */,
+				45F0F0892A8831DE005F82DA /* servericonwidget.cpp in Compile Sources */,
+				45F0F09D2A883297005F82DA /* moc_dynamicgridwidget.cpp in Compile Sources */,
+				45F0F0832A8831DE005F82DA /* serveritemwidget.cpp in Compile Sources */,
+				45F0F06B2A8831DE005F82DA /* dynamicgridwidget.cpp in Compile Sources */,
+				45F0F0672A8831DE005F82DA /* mainwindow.cpp in Compile Sources */,
+				45F0F0A22A883297005F82DA /* moc_streamwindow.cpp in Compile Sources */,
+				45F0F07E2A8831DE005F82DA /* chiaki_plugin_import.cpp in Compile Sources */,
+				45F0F07C2A8831DE005F82DA /* sessionlog.cpp in Compile Sources */,
+				45F0F09C2A883297005F82DA /* moc_streamsession.cpp in Compile Sources */,
+				45F0F0702A8831DE005F82DA /* registdialog.cpp in Compile Sources */,
 			);
 			name = "Compile Sources";
 			runOnlyForDeploymentPostprocessing = 0;
