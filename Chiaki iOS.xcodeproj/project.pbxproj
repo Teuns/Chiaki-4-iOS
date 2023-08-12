@@ -25,7 +25,6 @@
 		013CBEF36C08CA8C982F8838 /* manualhostdialog.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = 2F7A8C5B242E959A258C3CFB /* manualhostdialog.cpp */; settings = {ATTRIBUTES = (); }; };
 		0C043A6A8188E66BBF22CB67 /* avopenglwidget.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = 67552239A1FE22E447DB21A5 /* avopenglwidget.cpp */; settings = {ATTRIBUTES = (); }; };
 		0CE02722F00CAD43741297B5 /* CoreGraphics.framework in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 6AE3EC31EE5BB1FCEE84137C /* CoreGraphics.framework */; };
-		0D8C26C8F0A6DC8FD671F51E /* LaunchScreen.storyboard in Copy Bundle Resources */ = {isa = PBXBuildFile; fileRef = D430195E872AE1B72D251323 /* LaunchScreen.storyboard */; };
 		110B02A44248674D4DB4B3D8 /* discoverymanager.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = 3A17CC3089BCC23558E2FC2D /* discoverymanager.cpp */; settings = {ATTRIBUTES = (); }; };
 		172268C483400363EB2E6445 /* moc_controllermanager.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = 08838758D14055EDEBDB18BD /* moc_controllermanager.cpp */; settings = {ATTRIBUTES = (); }; };
 		17C4966B40F03C6A351DBE16 /* settingskeycapturedialog.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = 29BF99551922C9B2480F38DD /* settingskeycapturedialog.cpp */; settings = {ATTRIBUTES = (); }; };
@@ -79,6 +78,9 @@
 		45128D022A8829A200D6F2BA /* add-24px.svg in Copy Bundle Resources */ = {isa = PBXBuildFile; fileRef = 45128CFA2A8829A100D6F2BA /* add-24px.svg */; };
 		45128D032A8829A200D6F2BA /* discover-off-24px.svg in Copy Bundle Resources */ = {isa = PBXBuildFile; fileRef = 45128CFB2A8829A100D6F2BA /* discover-off-24px.svg */; };
 		45128D052A882B3E00D6F2BA /* Media.xcassets in Copy Bundle Resources */ = {isa = PBXBuildFile; fileRef = 45128D042A882B3E00D6F2BA /* Media.xcassets */; };
+		45128D072A88309400D6F2BA /* Settings.bundle in Copy Bundle Resources */ = {isa = PBXBuildFile; fileRef = 45128D062A88309400D6F2BA /* Settings.bundle */; };
+		45128D092A8830A300D6F2BA /* LaunchScreen.storyboard in Copy Bundle Resources */ = {isa = PBXBuildFile; fileRef = 45128D082A8830A300D6F2BA /* LaunchScreen.storyboard */; };
+		45128D0B2A8830A800D6F2BA /* Default-568h@2x.png in Copy Bundle Resources */ = {isa = PBXBuildFile; fileRef = 45128D0A2A8830A800D6F2BA /* Default-568h@2x.png */; };
 		4EB68D0C8182BCE33529C421 /* AudioToolbox.framework in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 3C44131FDCFEF4396B9EA2BA /* AudioToolbox.framework */; };
 		5436AF34FEDD90EF31282F75 /* moc_servericonwidget.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = F350D14589F286C6A277347C /* moc_servericonwidget.cpp */; settings = {ATTRIBUTES = (); }; };
 		5F21E8710E6292F5981C7DB2 /* registdialog.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = 072C4F7F3EF252496CC18645 /* registdialog.cpp */; settings = {ATTRIBUTES = (); }; };
@@ -104,7 +106,6 @@
 		B3C2F14BA90022D5E88F899F /* moc_registdialog.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = A7FECAE93AF16233B87B975F /* moc_registdialog.cpp */; settings = {ATTRIBUTES = (); }; };
 		B3FE8FAC746D3D5BB24FA398 /* Metal.framework in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 1B2543FCC48E9436F21C4F63 /* Metal.framework */; };
 		B460F624007324313696BE86 /* QuartzCore.framework in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 7EC00404ACD5AB0E97726B0E /* QuartzCore.framework */; };
-		B5A6784E8AAD108F64B05857 /* Default-568h@2x.png in Copy Bundle Resources */ = {isa = PBXBuildFile; fileRef = E5444942B812A7F786FC178B /* Default-568h@2x.png */; };
 		B6A9F68BF7DB2C798634CFAE /* servericonwidget.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = 5A4DE35828BE5D0C80E1ED60 /* servericonwidget.cpp */; settings = {ATTRIBUTES = (); }; };
 		C110BE1832F560601C0EF6F3 /* streamsession.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = F62A96A41AB28E0BB5173B35 /* streamsession.cpp */; settings = {ATTRIBUTES = (); }; };
 		C21F47F771649B9E934267D1 /* main.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = 7CFB20846CE7F790C544A253 /* main.cpp */; settings = {ATTRIBUTES = (); }; };
@@ -213,6 +214,9 @@
 		45128CFA2A8829A100D6F2BA /* add-24px.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "add-24px.svg"; sourceTree = "<group>"; };
 		45128CFB2A8829A100D6F2BA /* discover-off-24px.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "discover-off-24px.svg"; sourceTree = "<group>"; };
 		45128D042A882B3E00D6F2BA /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
+		45128D062A88309400D6F2BA /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+		45128D082A8830A300D6F2BA /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = "Chiaki iOS.xcodeproj/LaunchScreen.storyboard"; sourceTree = "<group>"; };
+		45128D0A2A8830A800D6F2BA /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "Chiaki iOS.xcodeproj/Default-568h@2x.png"; sourceTree = "<group>"; };
 		454D1E617B59B658F77582FF /* qwebp */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = qwebp; path = "/Users/teun/Qt/5.15.2/ios/plugins/imageformats/libqwebp$(QT_LIBRARY_SUFFIX).a"; sourceTree = "<absolute>"; };
 		4CFA931D3E069C8C271CBF98 /* sessionlog.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = sessionlog.cpp; path = "/Users/teun/build-untitled1-Qt_5_15_2_for_iOS-Debug/sessionlog.cpp"; sourceTree = "<absolute>"; };
 		4D765E1B1EA6C757220C63E7 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = /System/Library/Frameworks/CoreFoundation.framework; sourceTree = "<absolute>"; };
@@ -263,13 +267,11 @@
 		C69FC58097D4D7C61138A0C5 /* streamwindow.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = streamwindow.cpp; path = "/Users/teun/build-untitled1-Qt_5_15_2_for_iOS-Debug/streamwindow.cpp"; sourceTree = "<absolute>"; };
 		CDDF2972D86AE57F6CD069BD /* loginpindialog.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = loginpindialog.cpp; path = "/Users/teun/build-untitled1-Qt_5_15_2_for_iOS-Debug/loginpindialog.cpp"; sourceTree = "<absolute>"; };
 		CE94A87A6AACAB421B7C81C5 /* moc_avopenglwidget.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = moc_avopenglwidget.cpp; path = "/Users/teun/build-untitled1-Qt_5_15_2_for_iOS-Debug/moc_avopenglwidget.cpp"; sourceTree = "<absolute>"; };
-		D430195E872AE1B72D251323 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = "/Users/teun/build-untitled1-Qt_5_15_2_for_iOS-Debug/chiaki.xcodeproj/LaunchScreen.storyboard"; sourceTree = "<absolute>"; };
 		D790C02937983348F047BACE /* Qt5Widgets */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = Qt5Widgets; path = "/Users/teun/Qt/5.15.2/ios/lib/libQt5Widgets$(QT_LIBRARY_SUFFIX).a"; sourceTree = "<absolute>"; };
 		D7D9BCBFCD7A6C236B2ED243 /* transformmode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = transformmode.h; path = "/Users/teun/build-untitled1-Qt_5_15_2_for_iOS-Debug/transformmode.h"; sourceTree = "<absolute>"; };
 		DE7EE5CC648BE589E6E33D1D /* settings.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = settings.cpp; path = "/Users/teun/build-untitled1-Qt_5_15_2_for_iOS-Debug/settings.cpp"; sourceTree = "<absolute>"; };
 		E059C311960D16F5DBC11D23 /* registdialog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = registdialog.h; path = "/Users/teun/build-untitled1-Qt_5_15_2_for_iOS-Debug/registdialog.h"; sourceTree = "<absolute>"; };
 		E429FAC2EE1C87A7F1095FD0 /* settingskeycapturedialog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = settingskeycapturedialog.h; path = "/Users/teun/build-untitled1-Qt_5_15_2_for_iOS-Debug/settingskeycapturedialog.h"; sourceTree = "<absolute>"; };
-		E5444942B812A7F786FC178B /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "/Users/teun/build-untitled1-Qt_5_15_2_for_iOS-Debug/chiaki.xcodeproj/Default-568h@2x.png"; sourceTree = "<absolute>"; };
 		EB6A070CCB64F8D8D9357CC7 /* avopenglwidget.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = avopenglwidget.h; path = "/Users/teun/build-untitled1-Qt_5_15_2_for_iOS-Debug/avopenglwidget.h"; sourceTree = "<absolute>"; };
 		EFC29ABC60FA6878F57E11CA /* moc_settingskeycapturedialog.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = moc_settingskeycapturedialog.cpp; path = "/Users/teun/build-untitled1-Qt_5_15_2_for_iOS-Debug/moc_settingskeycapturedialog.cpp"; sourceTree = "<absolute>"; };
 		F022C798F166ACC6628AEE9B /* avopenglframeuploader.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = avopenglframeuploader.cpp; path = "/Users/teun/build-untitled1-Qt_5_15_2_for_iOS-Debug/avopenglframeuploader.cpp"; sourceTree = "<absolute>"; };
@@ -438,8 +440,9 @@
 				45128CF52A88299E00D6F2BA /* discover-24px.svg */,
 				45128CFB2A8829A100D6F2BA /* discover-off-24px.svg */,
 				45128CF42A88299D00D6F2BA /* settings-20px.svg */,
-				E5444942B812A7F786FC178B /* Default-568h@2x.png */,
-				D430195E872AE1B72D251323 /* LaunchScreen.storyboard */,
+				45128D0A2A8830A800D6F2BA /* Default-568h@2x.png */,
+				45128D082A8830A300D6F2BA /* LaunchScreen.storyboard */,
+				45128D062A88309400D6F2BA /* Settings.bundle */,
 			);
 			name = "Bundle Data";
 			sourceTree = "<group>";
@@ -595,12 +598,13 @@
 				45128D012A8829A200D6F2BA /* chiaki.svg in Copy Bundle Resources */,
 				45128CFF2A8829A200D6F2BA /* console-ps5.svg in Copy Bundle Resources */,
 				45128CFE2A8829A200D6F2BA /* console-ps4.svg in Copy Bundle Resources */,
+				45128D072A88309400D6F2BA /* Settings.bundle in Copy Bundle Resources */,
+				45128D0B2A8830A800D6F2BA /* Default-568h@2x.png in Copy Bundle Resources */,
 				45128CFD2A8829A200D6F2BA /* discover-24px.svg in Copy Bundle Resources */,
 				45128D052A882B3E00D6F2BA /* Media.xcassets in Copy Bundle Resources */,
+				45128D092A8830A300D6F2BA /* LaunchScreen.storyboard in Copy Bundle Resources */,
 				45128D002A8829A200D6F2BA /* chiaki_macos.svg in Copy Bundle Resources */,
 				45128D022A8829A200D6F2BA /* add-24px.svg in Copy Bundle Resources */,
-				B5A6784E8AAD108F64B05857 /* Default-568h@2x.png in Copy Bundle Resources */,
-				0D8C26C8F0A6DC8FD671F51E /* LaunchScreen.storyboard in Copy Bundle Resources */,
 				45128D032A8829A200D6F2BA /* discover-off-24px.svg in Copy Bundle Resources */,
 			);
 			name = "Copy Bundle Resources";
