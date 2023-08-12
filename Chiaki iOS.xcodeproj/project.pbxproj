@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXAggregateTarget section */
-		C6B879D651856E108D7E98F4 /* Qt Preprocess */ = {
+		48FB2061E6B1901023770F5D /* Qt Preprocess */ = {
 			isa = PBXAggregateTarget;
 			buildConfigurationList = 6CC3B5D2136C7CD6A5CF5A59 /* Build configuration list for PBXNativeTarget "chiaki" */;
 			buildPhases = (
@@ -23,10 +23,11 @@
 
 /* Begin PBXBuildFile section */
 		013CBEF36C08CA8C982F8838 /* manualhostdialog.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = 2F7A8C5B242E959A258C3CFB /* manualhostdialog.cpp */; settings = {ATTRIBUTES = (); }; };
-		02211ED5BEEEEB329A933B86 /* main.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = 7C99044D76167DAD64DBFAAA /* main.cpp */; settings = {ATTRIBUTES = (); }; };
 		0C043A6A8188E66BBF22CB67 /* avopenglwidget.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = 67552239A1FE22E447DB21A5 /* avopenglwidget.cpp */; settings = {ATTRIBUTES = (); }; };
 		0CE02722F00CAD43741297B5 /* CoreGraphics.framework in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 6AE3EC31EE5BB1FCEE84137C /* CoreGraphics.framework */; };
+		0D8C26C8F0A6DC8FD671F51E /* LaunchScreen.storyboard in Copy Bundle Resources */ = {isa = PBXBuildFile; fileRef = D430195E872AE1B72D251323 /* LaunchScreen.storyboard */; };
 		110B02A44248674D4DB4B3D8 /* discoverymanager.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = 3A17CC3089BCC23558E2FC2D /* discoverymanager.cpp */; settings = {ATTRIBUTES = (); }; };
+		172268C483400363EB2E6445 /* moc_controllermanager.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = 08838758D14055EDEBDB18BD /* moc_controllermanager.cpp */; settings = {ATTRIBUTES = (); }; };
 		17C4966B40F03C6A351DBE16 /* settingskeycapturedialog.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = 29BF99551922C9B2480F38DD /* settingskeycapturedialog.cpp */; settings = {ATTRIBUTES = (); }; };
 		1A140487B323AC45EE5D647C /* moc_settingskeycapturedialog.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = EFC29ABC60FA6878F57E11CA /* moc_settingskeycapturedialog.cpp */; settings = {ATTRIBUTES = (); }; };
 		1BF7F2F127BCE9E067CD5878 /* moc_loginpindialog.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = 8EAA999770D298FFE6505F7B /* moc_loginpindialog.cpp */; settings = {ATTRIBUTES = (); }; };
@@ -37,46 +38,48 @@
 		2B02D9DC58A01E45248DDBCE /* CoreText.framework in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 7D7B02101166B76FD2D4F8B4 /* CoreText.framework */; };
 		34FC27B9D2322D16E8E3C47D /* qwebp in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 454D1E617B59B658F77582FF /* qwebp */; };
 		35FD3D0014622250C5A38D6F /* qgif in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 1696BCD1AFC5C81B0D07B6F0 /* qgif */; };
+		3DF670B2A9526D3B64AB4F6D /* chiaki_plugin_import.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = 61FE08D136B221EA254DFA54 /* chiaki_plugin_import.cpp */; settings = {ATTRIBUTES = (); }; };
 		40985A8274FC0872C9EFC89D /* qmacheif in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 888C0DB6CCF8D32D02B29CBD /* qmacheif */; };
 		438CFA7E7A790C8CD88B8C39 /* moc_dynamicgridwidget.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = 56F76DA0CE1EC8185117884D /* moc_dynamicgridwidget.cpp */; settings = {ATTRIBUTES = (); }; };
 		45075F812F485E6BD3B05639 /* Qt5Widgets in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = D790C02937983348F047BACE /* Qt5Widgets */; };
-		45128C772A8708ED00D6F2BA /* libcrypto.a in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 45128C762A8708ED00D6F2BA /* libcrypto.a */; };
-		45128C792A87090F00D6F2BA /* libchiaki.a in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 45128C782A87090F00D6F2BA /* libchiaki.a */; };
-		45128C7B2A87094100D6F2BA /* libiconv.tbd in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 45128C7A2A87094100D6F2BA /* libiconv.tbd */; };
-		45128C7D2A870D4100D6F2BA /* libprotobuf-nanopb.a in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 45128C7C2A870D4100D6F2BA /* libprotobuf-nanopb.a */; };
-		45128C9E2A87196900D6F2BA /* Settings.bundle in Copy Bundle Resources */ = {isa = PBXBuildFile; fileRef = 45128C9D2A87196900D6F2BA /* Settings.bundle */; };
-		45128CA42A87FED400D6F2BA /* libSDL2.a in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 45128CA32A87FED400D6F2BA /* libSDL2.a */; };
-		45128CAE2A88114600D6F2BA /* console-ps5.svg in Copy Bundle Resources */ = {isa = PBXBuildFile; fileRef = 45128CA52A88114600D6F2BA /* console-ps5.svg */; };
-		45128CAF2A88114600D6F2BA /* console-ps4.svg in Copy Bundle Resources */ = {isa = PBXBuildFile; fileRef = 45128CA62A88114600D6F2BA /* console-ps4.svg */; };
-		45128CB02A88114600D6F2BA /* discover-24px.svg in Copy Bundle Resources */ = {isa = PBXBuildFile; fileRef = 45128CA72A88114600D6F2BA /* discover-24px.svg */; };
-		45128CB12A88114600D6F2BA /* discover-off-24px.svg in Copy Bundle Resources */ = {isa = PBXBuildFile; fileRef = 45128CA82A88114600D6F2BA /* discover-off-24px.svg */; };
-		45128CB22A88114600D6F2BA /* Default-568h@2x.png in Copy Bundle Resources */ = {isa = PBXBuildFile; fileRef = 45128CA92A88114600D6F2BA /* Default-568h@2x.png */; };
-		45128CB32A88114600D6F2BA /* add-24px.svg in Copy Bundle Resources */ = {isa = PBXBuildFile; fileRef = 45128CAA2A88114600D6F2BA /* add-24px.svg */; };
-		45128CB52A88114600D6F2BA /* settings-20px.svg in Copy Bundle Resources */ = {isa = PBXBuildFile; fileRef = 45128CAC2A88114600D6F2BA /* settings-20px.svg */; };
-		45128CB62A88114700D6F2BA /* chiaki.svg in Copy Bundle Resources */ = {isa = PBXBuildFile; fileRef = 45128CAD2A88114600D6F2BA /* chiaki.svg */; };
-		45128CB82A88128300D6F2BA /* Media.xcassets in Copy Bundle Resources */ = {isa = PBXBuildFile; fileRef = 45128CB72A88128300D6F2BA /* Media.xcassets */; };
-		45318D782A86F52300B6BA56 /* AVFAudio.framework in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 45318D772A86F52300B6BA56 /* AVFAudio.framework */; };
-		45318D7A2A86F84200B6BA56 /* CoreHaptics.framework in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 45318D792A86F84200B6BA56 /* CoreHaptics.framework */; };
-		45318D7C2A86F84700B6BA56 /* GameController.framework in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 45318D7B2A86F84700B6BA56 /* GameController.framework */; };
-		45318D7E2A86F86800B6BA56 /* CoreMotion.framework in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 45318D7D2A86F86800B6BA56 /* CoreMotion.framework */; };
-		45318D802A86F87100B6BA56 /* CoreAudio.framework in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 45318D7F2A86F87100B6BA56 /* CoreAudio.framework */; };
-		45318D822A86F88D00B6BA56 /* libQt5Multimedia.a in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 45318D812A86F88D00B6BA56 /* libQt5Multimedia.a */; };
-		45318D842A86F8A700B6BA56 /* libQt5Svg.a in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 45318D832A86F8A700B6BA56 /* libQt5Svg.a */; };
-		45318D862A86F8D300B6BA56 /* libavutil.a in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 45318D852A86F8D300B6BA56 /* libavutil.a */; };
-		45318D882A86F8F200B6BA56 /* CoreVideo.framework in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 45318D872A86F8F200B6BA56 /* CoreVideo.framework */; };
-		45318D912A86FC4400B6BA56 /* libavformat.a in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 45318D8B2A86FC4400B6BA56 /* libavformat.a */; };
-		45318D922A86FC4400B6BA56 /* libswresample.a in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 45318D8C2A86FC4400B6BA56 /* libswresample.a */; };
-		45318D932A86FC4400B6BA56 /* libswscale.a in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 45318D8D2A86FC4400B6BA56 /* libswscale.a */; };
-		45318D942A86FC4400B6BA56 /* libavfilter.a in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 45318D8E2A86FC4400B6BA56 /* libavfilter.a */; };
-		45318D952A86FC4400B6BA56 /* libavcodec.a in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 45318D8F2A86FC4400B6BA56 /* libavcodec.a */; };
-		45318D962A86FC4400B6BA56 /* libavdevice.a in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 45318D902A86FC4400B6BA56 /* libavdevice.a */; };
-		45318D982A86FC6100B6BA56 /* CoreMedia.framework in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 45318D972A86FC6100B6BA56 /* CoreMedia.framework */; };
-		45318D9A2A86FDB700B6BA56 /* VideoToolbox.framework in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 45318D992A86FDB700B6BA56 /* VideoToolbox.framework */; };
-		45318D9D2A86FF2200B6BA56 /* libjerasure.a in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 45318D9B2A86FF2200B6BA56 /* libjerasure.a */; };
-		45318D9E2A86FF2200B6BA56 /* libgf_complete.a in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 45318D9C2A86FF2200B6BA56 /* libgf_complete.a */; };
-		47DDC2BDE7C02AB61B824B5F /* moc_logsniffer.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = 658D3EE7879034FF286FCFD2 /* moc_logsniffer.cpp */; settings = {ATTRIBUTES = (); }; };
+		45128CC42A88248D00D6F2BA /* libgf_complete.a in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 45128CBC2A88248D00D6F2BA /* libgf_complete.a */; };
+		45128CC52A88248D00D6F2BA /* libopus.a in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 45128CBD2A88248D00D6F2BA /* libopus.a */; };
+		45128CC62A88248E00D6F2BA /* libSDL2.a in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 45128CBE2A88248D00D6F2BA /* libSDL2.a */; };
+		45128CC72A88248E00D6F2BA /* libssl.a in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 45128CBF2A88248D00D6F2BA /* libssl.a */; };
+		45128CC82A88248E00D6F2BA /* libprotobuf-nanopb.a in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 45128CC02A88248D00D6F2BA /* libprotobuf-nanopb.a */; };
+		45128CC92A88248E00D6F2BA /* libchiaki.a in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 45128CC12A88248D00D6F2BA /* libchiaki.a */; };
+		45128CCA2A88248E00D6F2BA /* libcrypto.a in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 45128CC22A88248D00D6F2BA /* libcrypto.a */; };
+		45128CCB2A88248E00D6F2BA /* libjerasure.a in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 45128CC32A88248D00D6F2BA /* libjerasure.a */; };
+		45128CCD2A88276A00D6F2BA /* AVFAudio.framework in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 45128CCC2A88276A00D6F2BA /* AVFAudio.framework */; };
+		45128CCF2A88277000D6F2BA /* GameController.framework in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 45128CCE2A88277000D6F2BA /* GameController.framework */; };
+		45128CD12A88277500D6F2BA /* CoreVideo.framework in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 45128CD02A88277500D6F2BA /* CoreVideo.framework */; };
+		45128CD32A88277900D6F2BA /* VideoToolbox.framework in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 45128CD22A88277900D6F2BA /* VideoToolbox.framework */; };
+		45128CD52A88278E00D6F2BA /* CoreMedia.framework in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 45128CD42A88278E00D6F2BA /* CoreMedia.framework */; };
+		45128CD72A88279300D6F2BA /* CoreMotion.framework in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 45128CD62A88279300D6F2BA /* CoreMotion.framework */; };
+		45128CD92A8827A000D6F2BA /* CoreHaptics.framework in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 45128CD82A8827A000D6F2BA /* CoreHaptics.framework */; };
+		45128CDB2A8827B200D6F2BA /* QuartzCore.framework in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 45128CDA2A8827B200D6F2BA /* QuartzCore.framework */; };
+		45128CDD2A8827B700D6F2BA /* AudioToolbox.framework in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 45128CDC2A8827B700D6F2BA /* AudioToolbox.framework */; };
+		45128CDF2A88285200D6F2BA /* libQt5Svg.a in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 45128CDE2A88285200D6F2BA /* libQt5Svg.a */; };
+		45128CE12A88285900D6F2BA /* libQt5Multimedia.a in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 45128CE02A88285900D6F2BA /* libQt5Multimedia.a */; };
+		45128CE92A88289600D6F2BA /* libavformat.a in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 45128CE22A88289600D6F2BA /* libavformat.a */; };
+		45128CEA2A88289700D6F2BA /* libavdevice.a in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 45128CE32A88289600D6F2BA /* libavdevice.a */; };
+		45128CEB2A88289700D6F2BA /* libswscale.a in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 45128CE42A88289600D6F2BA /* libswscale.a */; };
+		45128CEC2A88289800D6F2BA /* libswresample.a in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 45128CE52A88289600D6F2BA /* libswresample.a */; };
+		45128CED2A88289800D6F2BA /* libavcodec.a in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 45128CE62A88289600D6F2BA /* libavcodec.a */; };
+		45128CEE2A88289900D6F2BA /* libavfilter.a in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 45128CE72A88289600D6F2BA /* libavfilter.a */; };
+		45128CEF2A88289900D6F2BA /* libavutil.a in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 45128CE82A88289600D6F2BA /* libavutil.a */; };
+		45128CF12A8828B600D6F2BA /* libiconv.tbd in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 45128CF02A8828B600D6F2BA /* libiconv.tbd */; };
+		45128CF32A88295600D6F2BA /* moc_mainwindow.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = 45128CF22A88295600D6F2BA /* moc_mainwindow.cpp */; };
+		45128CFC2A8829A200D6F2BA /* settings-20px.svg in Copy Bundle Resources */ = {isa = PBXBuildFile; fileRef = 45128CF42A88299D00D6F2BA /* settings-20px.svg */; };
+		45128CFD2A8829A200D6F2BA /* discover-24px.svg in Copy Bundle Resources */ = {isa = PBXBuildFile; fileRef = 45128CF52A88299E00D6F2BA /* discover-24px.svg */; };
+		45128CFE2A8829A200D6F2BA /* console-ps4.svg in Copy Bundle Resources */ = {isa = PBXBuildFile; fileRef = 45128CF62A88299F00D6F2BA /* console-ps4.svg */; };
+		45128CFF2A8829A200D6F2BA /* console-ps5.svg in Copy Bundle Resources */ = {isa = PBXBuildFile; fileRef = 45128CF72A88299F00D6F2BA /* console-ps5.svg */; };
+		45128D002A8829A200D6F2BA /* chiaki_macos.svg in Copy Bundle Resources */ = {isa = PBXBuildFile; fileRef = 45128CF82A8829A000D6F2BA /* chiaki_macos.svg */; };
+		45128D012A8829A200D6F2BA /* chiaki.svg in Copy Bundle Resources */ = {isa = PBXBuildFile; fileRef = 45128CF92A8829A000D6F2BA /* chiaki.svg */; };
+		45128D022A8829A200D6F2BA /* add-24px.svg in Copy Bundle Resources */ = {isa = PBXBuildFile; fileRef = 45128CFA2A8829A100D6F2BA /* add-24px.svg */; };
+		45128D032A8829A200D6F2BA /* discover-off-24px.svg in Copy Bundle Resources */ = {isa = PBXBuildFile; fileRef = 45128CFB2A8829A100D6F2BA /* discover-off-24px.svg */; };
+		45128D052A882B3E00D6F2BA /* Media.xcassets in Copy Bundle Resources */ = {isa = PBXBuildFile; fileRef = 45128D042A882B3E00D6F2BA /* Media.xcassets */; };
 		4EB68D0C8182BCE33529C421 /* AudioToolbox.framework in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 3C44131FDCFEF4396B9EA2BA /* AudioToolbox.framework */; };
-		51DDB16D7EB5FBC38067CF5B /* moc_mainwindow.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = 6CB0BDBC6FE7F8CDCB3A4657 /* moc_mainwindow.cpp */; settings = {ATTRIBUTES = (); }; };
 		5436AF34FEDD90EF31282F75 /* moc_servericonwidget.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = F350D14589F286C6A277347C /* moc_servericonwidget.cpp */; settings = {ATTRIBUTES = (); }; };
 		5F21E8710E6292F5981C7DB2 /* registdialog.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = 072C4F7F3EF252496CC18645 /* registdialog.cpp */; settings = {ATTRIBUTES = (); }; };
 		604878DF028F5D1DBBA85449 /* qwbmp in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = BD107EC573F1437222B4A5CA /* qwbmp */; };
@@ -88,7 +91,6 @@
 		71EAF5D5D3C0395852545F7E /* Qt5FontDatabaseSupport in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = B0A00C1B0B528771DF1EC33F /* Qt5FontDatabaseSupport */; };
 		727DB1EB2E3B15BFA066E2E7 /* moc_serveritemwidget.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = 09C149045E79A5F2EE2ACE14 /* moc_serveritemwidget.cpp */; settings = {ATTRIBUTES = (); }; };
 		734DB4BCF7DF292203E726F3 /* settingsdialog.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = B85FE7AD09B3647BA443CFDB /* settingsdialog.cpp */; settings = {ATTRIBUTES = (); }; };
-		7712EFA7C606E30BD703B050 /* untitled1_plugin_import.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = 6DB21A8D94882DAB43D2A889 /* untitled1_plugin_import.cpp */; settings = {ATTRIBUTES = (); }; };
 		84809110A392935EE731CFE0 /* sessionlog.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = 4CFA931D3E069C8C271CBF98 /* sessionlog.cpp */; settings = {ATTRIBUTES = (); }; };
 		862D626FE1A84EBD39E33D0C /* moc_settings.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = 67718B32685F1AE3859AA5C1 /* moc_settings.cpp */; settings = {ATTRIBUTES = (); }; };
 		87034FC3C9AF7F9CE27AE655 /* streamwindow.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = C69FC58097D4D7C61138A0C5 /* streamwindow.cpp */; settings = {ATTRIBUTES = (); }; };
@@ -98,18 +100,20 @@
 		98D62A848B393276A5A837C1 /* qicns in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = AB7EA0C9479C5EF1D6B26C5A /* qicns */; };
 		990533766568D9FCA6CC342D /* moc_settingsdialog.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = 226CA882382CF2DA3EB364EB /* moc_settingsdialog.cpp */; settings = {ATTRIBUTES = (); }; };
 		9F67203B02ACFF2E94B74072 /* moc_discoverymanager.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = 4FC671AABE79F335C4381AE3 /* moc_discoverymanager.cpp */; settings = {ATTRIBUTES = (); }; };
+		A5343EAF03665F8F9BE7B253 /* mainwindow.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = FE3D92B7D2FE651B1069F3BF /* mainwindow.cpp */; settings = {ATTRIBUTES = (); }; };
 		B3C2F14BA90022D5E88F899F /* moc_registdialog.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = A7FECAE93AF16233B87B975F /* moc_registdialog.cpp */; settings = {ATTRIBUTES = (); }; };
 		B3FE8FAC746D3D5BB24FA398 /* Metal.framework in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 1B2543FCC48E9436F21C4F63 /* Metal.framework */; };
 		B460F624007324313696BE86 /* QuartzCore.framework in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 7EC00404ACD5AB0E97726B0E /* QuartzCore.framework */; };
+		B5A6784E8AAD108F64B05857 /* Default-568h@2x.png in Copy Bundle Resources */ = {isa = PBXBuildFile; fileRef = E5444942B812A7F786FC178B /* Default-568h@2x.png */; };
 		B6A9F68BF7DB2C798634CFAE /* servericonwidget.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = 5A4DE35828BE5D0C80E1ED60 /* servericonwidget.cpp */; settings = {ATTRIBUTES = (); }; };
 		C110BE1832F560601C0EF6F3 /* streamsession.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = F62A96A41AB28E0BB5173B35 /* streamsession.cpp */; settings = {ATTRIBUTES = (); }; };
+		C21F47F771649B9E934267D1 /* main.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = 7CFB20846CE7F790C544A253 /* main.cpp */; settings = {ATTRIBUTES = (); }; };
 		C3C88E28C4AD5FAE89FD9E30 /* moc_streamwindow.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = B75C1A3504383967E9D389D6 /* moc_streamwindow.cpp */; settings = {ATTRIBUTES = (); }; };
 		C5FAF61B543F70A10AA3B79D /* qtga in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 83C9505DDDFA16B999BEA3F8 /* qtga */; };
 		C7A1985E659BC3740C9ECDB7 /* moc_streamsession.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = A7860FCB292DD7258813B571 /* moc_streamsession.cpp */; settings = {ATTRIBUTES = (); }; };
 		CF6AA39DF6BE2F6FF122981E /* Qt5Gui in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 9DAD141C56A96DCE56957211 /* Qt5Gui */; };
 		D22CC1A325FA9B2F726A70FF /* settings.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = DE7EE5CC648BE589E6E33D1D /* settings.cpp */; settings = {ATTRIBUTES = (); }; };
 		D504C7AE1EA673474734BA7F /* moc_avopenglframeuploader.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = 36B56A81D187E8D69A137337 /* moc_avopenglframeuploader.cpp */; settings = {ATTRIBUTES = (); }; };
-		DB46E2F24155F550D0EBC798 /* mainwindow.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = 472A1277F102BF84A2FDCE58 /* mainwindow.cpp */; settings = {ATTRIBUTES = (); }; };
 		DC7A30D2B5C1AEA511CDAAB6 /* qtpcre2 in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 985CFCB8485692DF79579FD4 /* qtpcre2 */; };
 		DD6766C41A965A30E218C56A /* dynamicgridwidget.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = C2EC329BBC759B2631186B29 /* dynamicgridwidget.cpp */; settings = {ATTRIBUTES = (); }; };
 		DE95F67F17CFBE3BDD3C721F /* moc_manualhostdialog.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = F251C5BE1408DDDFD3489AB2 /* moc_manualhostdialog.cpp */; settings = {ATTRIBUTES = (); }; };
@@ -124,11 +128,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		45318D762A86F47200B6BA56 /* PBXContainerItemProxy */ = {
+		45128CBB2A88224200D6F2BA /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 6DB9C3763D02B1415CD9D565 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = C6B879D651856E108D7E98F4;
+			remoteGlobalIDString = 48FB2061E6B1901023770F5D;
 			remoteInfo = "Qt Preprocess";
 		};
 /* End PBXContainerItemProxy section */
@@ -147,10 +151,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		03DBE89FF7A948703537F58E /* untitled1.pro */ = {isa = PBXFileReference; lastKnownFileType = text; name = untitled1.pro; path = /Users/teun/untitled1/untitled1.pro; sourceTree = "<absolute>"; };
 		04DCC54C7034190418F8FF12 /* qtlibpng */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = qtlibpng; path = "/Users/teun/Qt/5.15.2/ios/lib/libqtlibpng$(QT_LIBRARY_SUFFIX).a"; sourceTree = "<absolute>"; };
 		072C4F7F3EF252496CC18645 /* registdialog.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = registdialog.cpp; path = "/Users/teun/build-untitled1-Qt_5_15_2_for_iOS-Debug/registdialog.cpp"; sourceTree = "<absolute>"; };
-		0932F26907F924EC647BD488 /* ui_mainwindow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ui_mainwindow.h; path = "/Users/teun/build-untitled1-Qt_5_15_2_for_iOS-Debug/ui_mainwindow.h"; sourceTree = "<absolute>"; };
+		08838758D14055EDEBDB18BD /* moc_controllermanager.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = moc_controllermanager.cpp; path = "/Users/teun/build-untitled1-Qt_5_15_2_for_iOS-Debug/moc_controllermanager.cpp"; sourceTree = "<absolute>"; };
 		09C149045E79A5F2EE2ACE14 /* moc_serveritemwidget.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = moc_serveritemwidget.cpp; path = "/Users/teun/build-untitled1-Qt_5_15_2_for_iOS-Debug/moc_serveritemwidget.cpp"; sourceTree = "<absolute>"; };
 		0BE9C48FF97ADD9EEE0E776D /* .qmake.stash */ = {isa = PBXFileReference; lastKnownFileType = text; name = .qmake.stash; path = "/Users/teun/build-untitled1-Qt_5_15_2_for_iOS-Debug/.qmake.stash"; sourceTree = "<absolute>"; };
 		10192DE9114BF84B09435291 /* qtharfbuzz */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = qtharfbuzz; path = "/Users/teun/Qt/5.15.2/ios/lib/libqtharfbuzz$(QT_LIBRARY_SUFFIX).a"; sourceTree = "<absolute>"; };
@@ -159,7 +162,6 @@
 		1B2543FCC48E9436F21C4F63 /* Metal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Metal.framework; path = /System/Library/Frameworks/Metal.framework; sourceTree = "<absolute>"; };
 		1BD1AE87F437CEAF36EE050A /* Qt5GraphicsSupport */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = Qt5GraphicsSupport; path = "/Users/teun/Qt/5.15.2/ios/lib/libQt5GraphicsSupport$(QT_LIBRARY_SUFFIX).a"; sourceTree = "<absolute>"; };
 		1D84089FAE1992157FB4F27E /* streamwindow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = streamwindow.h; path = "/Users/teun/build-untitled1-Qt_5_15_2_for_iOS-Debug/streamwindow.h"; sourceTree = "<absolute>"; };
-		1DB3A15A37161E09A49930D4 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "/Users/teun/build-untitled1-Qt_5_15_2_for_iOS-Debug/untitled1.xcodeproj/Default-568h@2x.png"; sourceTree = "<absolute>"; };
 		226CA882382CF2DA3EB364EB /* moc_settingsdialog.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = moc_settingsdialog.cpp; path = "/Users/teun/build-untitled1-Qt_5_15_2_for_iOS-Debug/moc_settingsdialog.cpp"; sourceTree = "<absolute>"; };
 		227B622FBF36415322FDE1DE /* serveritemwidget.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = serveritemwidget.cpp; path = "/Users/teun/build-untitled1-Qt_5_15_2_for_iOS-Debug/serveritemwidget.cpp"; sourceTree = "<absolute>"; };
 		23635312C6D724A0245AD0CB /* qjpeg */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = qjpeg; path = "/Users/teun/Qt/5.15.2/ios/plugins/imageformats/libqjpeg$(QT_LIBRARY_SUFFIX).a"; sourceTree = "<absolute>"; };
@@ -174,47 +176,44 @@
 		3A17CC3089BCC23558E2FC2D /* discoverymanager.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = discoverymanager.cpp; path = "/Users/teun/build-untitled1-Qt_5_15_2_for_iOS-Debug/discoverymanager.cpp"; sourceTree = "<absolute>"; };
 		3A8EF9C62A8D4790CBB89CEA /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = /System/Library/Frameworks/ImageIO.framework; sourceTree = "<absolute>"; };
 		3C44131FDCFEF4396B9EA2BA /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = /System/Library/Frameworks/AudioToolbox.framework; sourceTree = "<absolute>"; };
-		45128C762A8708ED00D6F2BA /* libcrypto.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcrypto.a; path = "../libressl/output/libcrypto.xcframework/ios-arm64/libcrypto.a"; sourceTree = "<group>"; };
-		45128C782A87090F00D6F2BA /* libchiaki.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libchiaki.a; path = lib/libchiaki.a; sourceTree = "<group>"; };
-		45128C7A2A87094100D6F2BA /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = usr/lib/libiconv.tbd; sourceTree = SDKROOT; };
-		45128C7C2A870D4100D6F2BA /* libprotobuf-nanopb.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libprotobuf-nanopb.a"; path = "../chiaki/build/third-party/nanopb/libprotobuf-nanopb.a"; sourceTree = "<group>"; };
-		45128C9D2A87196900D6F2BA /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
-		45128C9F2A87C57400D6F2BA /* chiaki.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = chiaki.entitlements; sourceTree = "<group>"; };
-		45128CA32A87FED400D6F2BA /* libSDL2.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libSDL2.a; path = lib/libSDL2.a; sourceTree = "<group>"; };
-		45128CA52A88114600D6F2BA /* console-ps5.svg */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = "console-ps5.svg"; path = "Chiaki iOS.xcodeproj/console-ps5.svg"; sourceTree = "<group>"; };
-		45128CA62A88114600D6F2BA /* console-ps4.svg */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = "console-ps4.svg"; path = "Chiaki iOS.xcodeproj/console-ps4.svg"; sourceTree = "<group>"; };
-		45128CA72A88114600D6F2BA /* discover-24px.svg */ = {isa = PBXFileReference; lastKnownFileType = text; name = "discover-24px.svg"; path = "Chiaki iOS.xcodeproj/discover-24px.svg"; sourceTree = "<group>"; };
-		45128CA82A88114600D6F2BA /* discover-off-24px.svg */ = {isa = PBXFileReference; lastKnownFileType = text; name = "discover-off-24px.svg"; path = "Chiaki iOS.xcodeproj/discover-off-24px.svg"; sourceTree = "<group>"; };
-		45128CA92A88114600D6F2BA /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "Chiaki iOS.xcodeproj/Default-568h@2x.png"; sourceTree = "<group>"; };
-		45128CAA2A88114600D6F2BA /* add-24px.svg */ = {isa = PBXFileReference; lastKnownFileType = text; name = "add-24px.svg"; path = "Chiaki iOS.xcodeproj/add-24px.svg"; sourceTree = "<group>"; };
-		45128CAC2A88114600D6F2BA /* settings-20px.svg */ = {isa = PBXFileReference; lastKnownFileType = text; name = "settings-20px.svg"; path = "Chiaki iOS.xcodeproj/settings-20px.svg"; sourceTree = "<group>"; };
-		45128CAD2A88114600D6F2BA /* chiaki.svg */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = chiaki.svg; path = "Chiaki iOS.xcodeproj/chiaki.svg"; sourceTree = "<group>"; };
-		45128CB72A88128300D6F2BA /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
-		45318D772A86F52300B6BA56 /* AVFAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFAudio.framework; path = System/Library/Frameworks/AVFAudio.framework; sourceTree = SDKROOT; };
-		45318D792A86F84200B6BA56 /* CoreHaptics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreHaptics.framework; path = System/Library/Frameworks/CoreHaptics.framework; sourceTree = SDKROOT; };
-		45318D7B2A86F84700B6BA56 /* GameController.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameController.framework; path = System/Library/Frameworks/GameController.framework; sourceTree = SDKROOT; };
-		45318D7D2A86F86800B6BA56 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
-		45318D7F2A86F87100B6BA56 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
-		45318D812A86F88D00B6BA56 /* libQt5Multimedia.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libQt5Multimedia.a; path = ../Qt/5.15.2/ios/lib/libQt5Multimedia.a; sourceTree = "<group>"; };
-		45318D832A86F8A700B6BA56 /* libQt5Svg.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libQt5Svg.a; path = ../Qt/5.15.2/ios/lib/libQt5Svg.a; sourceTree = "<group>"; };
-		45318D852A86F8D300B6BA56 /* libavutil.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libavutil.a; path = "../FFmpeg-iOS-build-script/thin/arm64/lib/libavutil.a"; sourceTree = "<group>"; };
-		45318D872A86F8F200B6BA56 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
-		45318D892A86F92C00B6BA56 /* libchiaki.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libchiaki.a; path = ../chiaki/build/lib/libchiaki.a; sourceTree = "<group>"; };
-		45318D8B2A86FC4400B6BA56 /* libavformat.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libavformat.a; path = "../FFmpeg-iOS-build-script/thin/arm64/lib/libavformat.a"; sourceTree = "<group>"; };
-		45318D8C2A86FC4400B6BA56 /* libswresample.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libswresample.a; path = "../FFmpeg-iOS-build-script/thin/arm64/lib/libswresample.a"; sourceTree = "<group>"; };
-		45318D8D2A86FC4400B6BA56 /* libswscale.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libswscale.a; path = "../FFmpeg-iOS-build-script/thin/arm64/lib/libswscale.a"; sourceTree = "<group>"; };
-		45318D8E2A86FC4400B6BA56 /* libavfilter.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libavfilter.a; path = "../FFmpeg-iOS-build-script/thin/arm64/lib/libavfilter.a"; sourceTree = "<group>"; };
-		45318D8F2A86FC4400B6BA56 /* libavcodec.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libavcodec.a; path = "../FFmpeg-iOS-build-script/thin/arm64/lib/libavcodec.a"; sourceTree = "<group>"; };
-		45318D902A86FC4400B6BA56 /* libavdevice.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libavdevice.a; path = "../FFmpeg-iOS-build-script/thin/arm64/lib/libavdevice.a"; sourceTree = "<group>"; };
-		45318D972A86FC6100B6BA56 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
-		45318D992A86FDB700B6BA56 /* VideoToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VideoToolbox.framework; path = System/Library/Frameworks/VideoToolbox.framework; sourceTree = SDKROOT; };
-		45318D9B2A86FF2200B6BA56 /* libjerasure.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libjerasure.a; path = lib/libjerasure.a; sourceTree = "<group>"; };
-		45318D9C2A86FF2200B6BA56 /* libgf_complete.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libgf_complete.a; path = lib/libgf_complete.a; sourceTree = "<group>"; };
-		45318D9F2A8704E900B6BA56 /* libssl.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = libssl.xcframework; path = ../libressl/output/libssl.xcframework; sourceTree = "<group>"; };
-		45318DA12A87051E00B6BA56 /* libcrypto.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = libcrypto.xcframework; path = ../libressl/output/libcrypto.xcframework; sourceTree = "<group>"; };
-		45318DA32A87054C00B6BA56 /* libssl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libssl.a; path = "../libressl/output/libssl.xcframework/ios-arm64/libssl.a"; sourceTree = "<group>"; };
+		45128CBC2A88248D00D6F2BA /* libgf_complete.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libgf_complete.a; path = lib/libgf_complete.a; sourceTree = "<group>"; };
+		45128CBD2A88248D00D6F2BA /* libopus.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libopus.a; path = lib/libopus.a; sourceTree = "<group>"; };
+		45128CBE2A88248D00D6F2BA /* libSDL2.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libSDL2.a; path = lib/libSDL2.a; sourceTree = "<group>"; };
+		45128CBF2A88248D00D6F2BA /* libssl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libssl.a; path = lib/libssl.a; sourceTree = "<group>"; };
+		45128CC02A88248D00D6F2BA /* libprotobuf-nanopb.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libprotobuf-nanopb.a"; path = "lib/libprotobuf-nanopb.a"; sourceTree = "<group>"; };
+		45128CC12A88248D00D6F2BA /* libchiaki.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libchiaki.a; path = lib/libchiaki.a; sourceTree = "<group>"; };
+		45128CC22A88248D00D6F2BA /* libcrypto.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcrypto.a; path = lib/libcrypto.a; sourceTree = "<group>"; };
+		45128CC32A88248D00D6F2BA /* libjerasure.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libjerasure.a; path = lib/libjerasure.a; sourceTree = "<group>"; };
+		45128CCC2A88276A00D6F2BA /* AVFAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFAudio.framework; path = System/Library/Frameworks/AVFAudio.framework; sourceTree = SDKROOT; };
+		45128CCE2A88277000D6F2BA /* GameController.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameController.framework; path = System/Library/Frameworks/GameController.framework; sourceTree = SDKROOT; };
+		45128CD02A88277500D6F2BA /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		45128CD22A88277900D6F2BA /* VideoToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VideoToolbox.framework; path = System/Library/Frameworks/VideoToolbox.framework; sourceTree = SDKROOT; };
+		45128CD42A88278E00D6F2BA /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		45128CD62A88279300D6F2BA /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		45128CD82A8827A000D6F2BA /* CoreHaptics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreHaptics.framework; path = System/Library/Frameworks/CoreHaptics.framework; sourceTree = SDKROOT; };
+		45128CDA2A8827B200D6F2BA /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		45128CDC2A8827B700D6F2BA /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		45128CDE2A88285200D6F2BA /* libQt5Svg.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libQt5Svg.a; path = ../Qt/5.15.2/ios/lib/libQt5Svg.a; sourceTree = "<group>"; };
+		45128CE02A88285900D6F2BA /* libQt5Multimedia.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libQt5Multimedia.a; path = ../Qt/5.15.2/ios/lib/libQt5Multimedia.a; sourceTree = "<group>"; };
+		45128CE22A88289600D6F2BA /* libavformat.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libavformat.a; path = lib/libavformat.a; sourceTree = "<group>"; };
+		45128CE32A88289600D6F2BA /* libavdevice.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libavdevice.a; path = lib/libavdevice.a; sourceTree = "<group>"; };
+		45128CE42A88289600D6F2BA /* libswscale.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libswscale.a; path = lib/libswscale.a; sourceTree = "<group>"; };
+		45128CE52A88289600D6F2BA /* libswresample.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libswresample.a; path = lib/libswresample.a; sourceTree = "<group>"; };
+		45128CE62A88289600D6F2BA /* libavcodec.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libavcodec.a; path = lib/libavcodec.a; sourceTree = "<group>"; };
+		45128CE72A88289600D6F2BA /* libavfilter.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libavfilter.a; path = lib/libavfilter.a; sourceTree = "<group>"; };
+		45128CE82A88289600D6F2BA /* libavutil.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libavutil.a; path = lib/libavutil.a; sourceTree = "<group>"; };
+		45128CF02A8828B600D6F2BA /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = usr/lib/libiconv.tbd; sourceTree = SDKROOT; };
+		45128CF22A88295600D6F2BA /* moc_mainwindow.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = moc_mainwindow.cpp; sourceTree = "<group>"; };
+		45128CF42A88299D00D6F2BA /* settings-20px.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "settings-20px.svg"; sourceTree = "<group>"; };
+		45128CF52A88299E00D6F2BA /* discover-24px.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "discover-24px.svg"; sourceTree = "<group>"; };
+		45128CF62A88299F00D6F2BA /* console-ps4.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "console-ps4.svg"; sourceTree = "<group>"; };
+		45128CF72A88299F00D6F2BA /* console-ps5.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "console-ps5.svg"; sourceTree = "<group>"; };
+		45128CF82A8829A000D6F2BA /* chiaki_macos.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = chiaki_macos.svg; sourceTree = "<group>"; };
+		45128CF92A8829A000D6F2BA /* chiaki.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = chiaki.svg; sourceTree = "<group>"; };
+		45128CFA2A8829A100D6F2BA /* add-24px.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "add-24px.svg"; sourceTree = "<group>"; };
+		45128CFB2A8829A100D6F2BA /* discover-off-24px.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "discover-off-24px.svg"; sourceTree = "<group>"; };
+		45128D042A882B3E00D6F2BA /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
 		454D1E617B59B658F77582FF /* qwebp */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = qwebp; path = "/Users/teun/Qt/5.15.2/ios/plugins/imageformats/libqwebp$(QT_LIBRARY_SUFFIX).a"; sourceTree = "<absolute>"; };
-		472A1277F102BF84A2FDCE58 /* mainwindow.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = mainwindow.cpp; path = /Users/teun/untitled1/mainwindow.cpp; sourceTree = "<absolute>"; };
 		4CFA931D3E069C8C271CBF98 /* sessionlog.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = sessionlog.cpp; path = "/Users/teun/build-untitled1-Qt_5_15_2_for_iOS-Debug/sessionlog.cpp"; sourceTree = "<absolute>"; };
 		4D765E1B1EA6C757220C63E7 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = /System/Library/Frameworks/CoreFoundation.framework; sourceTree = "<absolute>"; };
 		4F07AEDEAC4A1AB0F3803031 /* discoverymanager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = discoverymanager.h; path = "/Users/teun/build-untitled1-Qt_5_15_2_for_iOS-Debug/discoverymanager.h"; sourceTree = "<absolute>"; };
@@ -225,61 +224,60 @@
 		5A4DE35828BE5D0C80E1ED60 /* servericonwidget.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = servericonwidget.cpp; path = "/Users/teun/build-untitled1-Qt_5_15_2_for_iOS-Debug/servericonwidget.cpp"; sourceTree = "<absolute>"; };
 		5B6A9B64C2A3EB09E2739A2C /* sessionlog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = sessionlog.h; path = "/Users/teun/build-untitled1-Qt_5_15_2_for_iOS-Debug/sessionlog.h"; sourceTree = "<absolute>"; };
 		5B7A87B839F4D8BA74B0331E /* controllermanager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = controllermanager.h; path = "/Users/teun/build-untitled1-Qt_5_15_2_for_iOS-Debug/controllermanager.h"; sourceTree = "<absolute>"; };
-		658D3EE7879034FF286FCFD2 /* moc_logsniffer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = moc_logsniffer.cpp; path = "/Users/teun/build-untitled1-Qt_5_15_2_for_iOS-Debug/moc_logsniffer.cpp"; sourceTree = "<absolute>"; };
+		61FE08D136B221EA254DFA54 /* chiaki_plugin_import.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = chiaki_plugin_import.cpp; path = "/Users/teun/build-untitled1-Qt_5_15_2_for_iOS-Debug/chiaki_plugin_import.cpp"; sourceTree = "<absolute>"; };
 		67552239A1FE22E447DB21A5 /* avopenglwidget.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = avopenglwidget.cpp; path = "/Users/teun/build-untitled1-Qt_5_15_2_for_iOS-Debug/avopenglwidget.cpp"; sourceTree = "<absolute>"; };
 		67718B32685F1AE3859AA5C1 /* moc_settings.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = moc_settings.cpp; path = "/Users/teun/build-untitled1-Qt_5_15_2_for_iOS-Debug/moc_settings.cpp"; sourceTree = "<absolute>"; };
 		6AE3EC31EE5BB1FCEE84137C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = /System/Library/Frameworks/CoreGraphics.framework; sourceTree = "<absolute>"; };
 		6CAB2F00E09FC9A72EDC0628 /* qios */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = qios; path = "/Users/teun/Qt/5.15.2/ios/plugins/platforms/libqios$(QT_LIBRARY_SUFFIX).a"; sourceTree = "<absolute>"; };
-		6CB0BDBC6FE7F8CDCB3A4657 /* moc_mainwindow.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = moc_mainwindow.cpp; path = "/Users/teun/build-untitled1-Qt_5_15_2_for_iOS-Debug/moc_mainwindow.cpp"; sourceTree = "<absolute>"; };
-		6DB21A8D94882DAB43D2A889 /* untitled1_plugin_import.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = untitled1_plugin_import.cpp; path = "/Users/teun/build-untitled1-Qt_5_15_2_for_iOS-Debug/untitled1_plugin_import.cpp"; sourceTree = "<absolute>"; };
 		6F07EC9CFC16DF73B79DF610 /* qmacjp2 */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = qmacjp2; path = "/Users/teun/Qt/5.15.2/ios/plugins/imageformats/libqmacjp2$(QT_LIBRARY_SUFFIX).a"; sourceTree = "<absolute>"; };
 		7036DD99B0A60261A99F89A3 /* servericonwidget.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = servericonwidget.h; path = "/Users/teun/build-untitled1-Qt_5_15_2_for_iOS-Debug/servericonwidget.h"; sourceTree = "<absolute>"; };
 		74034303F8923DA15AB6D18A /* avopenglframeuploader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = avopenglframeuploader.h; path = "/Users/teun/build-untitled1-Qt_5_15_2_for_iOS-Debug/avopenglframeuploader.h"; sourceTree = "<absolute>"; };
 		752FF3794770B634CA2C9635 /* Qt5ClipboardSupport */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = Qt5ClipboardSupport; path = "/Users/teun/Qt/5.15.2/ios/lib/libQt5ClipboardSupport$(QT_LIBRARY_SUFFIX).a"; sourceTree = "<absolute>"; };
 		7603780903FD7E46E12B16EC /* qtfreetype */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = qtfreetype; path = "/Users/teun/Qt/5.15.2/ios/lib/libqtfreetype$(QT_LIBRARY_SUFFIX).a"; sourceTree = "<absolute>"; };
-		7C99044D76167DAD64DBFAAA /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = /Users/teun/untitled1/main.cpp; sourceTree = "<absolute>"; };
+		7ADF703FA2B0857A366D2EAC /* chiaki.pro */ = {isa = PBXFileReference; lastKnownFileType = text; name = chiaki.pro; path = "/Users/teun/build-untitled1-Qt_5_15_2_for_iOS-Debug/chiaki.pro"; sourceTree = "<absolute>"; };
+		7CFB20846CE7F790C544A253 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = "/Users/teun/build-untitled1-Qt_5_15_2_for_iOS-Debug/main.cpp"; sourceTree = "<absolute>"; };
 		7D7B02101166B76FD2D4F8B4 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = /System/Library/Frameworks/CoreText.framework; sourceTree = "<absolute>"; };
 		7EC00404ACD5AB0E97726B0E /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = /System/Library/Frameworks/QuartzCore.framework; sourceTree = "<absolute>"; };
 		83C9505DDDFA16B999BEA3F8 /* qtga */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = qtga; path = "/Users/teun/Qt/5.15.2/ios/plugins/imageformats/libqtga$(QT_LIBRARY_SUFFIX).a"; sourceTree = "<absolute>"; };
 		888C0DB6CCF8D32D02B29CBD /* qmacheif */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = qmacheif; path = "/Users/teun/Qt/5.15.2/ios/plugins/imageformats/libqmacheif$(QT_LIBRARY_SUFFIX).a"; sourceTree = "<absolute>"; };
-		89F5533E959AECF613647401 /* Chiaki.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Chiaki.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C36CFD1D73954B9BB0FE74A /* host.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = host.h; path = "/Users/teun/build-untitled1-Qt_5_15_2_for_iOS-Debug/host.h"; sourceTree = "<absolute>"; };
 		8E284B7885005FEC523F0968 /* serveritemwidget.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = serveritemwidget.h; path = "/Users/teun/build-untitled1-Qt_5_15_2_for_iOS-Debug/serveritemwidget.h"; sourceTree = "<absolute>"; };
 		8EAA999770D298FFE6505F7B /* moc_loginpindialog.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = moc_loginpindialog.cpp; path = "/Users/teun/build-untitled1-Qt_5_15_2_for_iOS-Debug/moc_loginpindialog.cpp"; sourceTree = "<absolute>"; };
 		985CFCB8485692DF79579FD4 /* qtpcre2 */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = qtpcre2; path = "/Users/teun/Qt/5.15.2/ios/lib/libqtpcre2$(QT_LIBRARY_SUFFIX).a"; sourceTree = "<absolute>"; };
 		9AFB385DA4F9453FAD5AA2F2 /* qtiff */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = qtiff; path = "/Users/teun/Qt/5.15.2/ios/plugins/imageformats/libqtiff$(QT_LIBRARY_SUFFIX).a"; sourceTree = "<absolute>"; };
+		9D635E522D536B91890F7AF9 /* Chiaki.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Chiaki.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DAD141C56A96DCE56957211 /* Qt5Gui */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = Qt5Gui; path = "/Users/teun/Qt/5.15.2/ios/lib/libQt5Gui$(QT_LIBRARY_SUFFIX).a"; sourceTree = "<absolute>"; };
 		9FFC116BF4E393DCD8750569 /* dynamicgridwidget.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = dynamicgridwidget.h; path = "/Users/teun/build-untitled1-Qt_5_15_2_for_iOS-Debug/dynamicgridwidget.h"; sourceTree = "<absolute>"; };
 		A498F86444B8E15340F43EF3 /* settingsdialog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = settingsdialog.h; path = "/Users/teun/build-untitled1-Qt_5_15_2_for_iOS-Debug/settingsdialog.h"; sourceTree = "<absolute>"; };
 		A528CA6AC1BF7466B68A1B17 /* settings.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = settings.h; path = "/Users/teun/build-untitled1-Qt_5_15_2_for_iOS-Debug/settings.h"; sourceTree = "<absolute>"; };
 		A7860FCB292DD7258813B571 /* moc_streamsession.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = moc_streamsession.cpp; path = "/Users/teun/build-untitled1-Qt_5_15_2_for_iOS-Debug/moc_streamsession.cpp"; sourceTree = "<absolute>"; };
 		A7FECAE93AF16233B87B975F /* moc_registdialog.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = moc_registdialog.cpp; path = "/Users/teun/build-untitled1-Qt_5_15_2_for_iOS-Debug/moc_registdialog.cpp"; sourceTree = "<absolute>"; };
-		A852E1C1FE744B75AA9FDD50 /* mainwindow.ui */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = mainwindow.ui; path = /Users/teun/untitled1/mainwindow.ui; sourceTree = "<absolute>"; };
 		AB7EA0C9479C5EF1D6B26C5A /* qicns */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = qicns; path = "/Users/teun/Qt/5.15.2/ios/plugins/imageformats/libqicns$(QT_LIBRARY_SUFFIX).a"; sourceTree = "<absolute>"; };
 		B0A00C1B0B528771DF1EC33F /* Qt5FontDatabaseSupport */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = Qt5FontDatabaseSupport; path = "/Users/teun/Qt/5.15.2/ios/lib/libQt5FontDatabaseSupport$(QT_LIBRARY_SUFFIX).a"; sourceTree = "<absolute>"; };
+		B381ABF403C697E53D54C408 /* mainwindow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = mainwindow.h; path = "/Users/teun/build-untitled1-Qt_5_15_2_for_iOS-Debug/mainwindow.h"; sourceTree = "<absolute>"; };
 		B6D84FE24EC921D49F5D656A /* qico */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = qico; path = "/Users/teun/Qt/5.15.2/ios/plugins/imageformats/libqico$(QT_LIBRARY_SUFFIX).a"; sourceTree = "<absolute>"; };
 		B75C1A3504383967E9D389D6 /* moc_streamwindow.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = moc_streamwindow.cpp; path = "/Users/teun/build-untitled1-Qt_5_15_2_for_iOS-Debug/moc_streamwindow.cpp"; sourceTree = "<absolute>"; };
 		B85FE7AD09B3647BA443CFDB /* settingsdialog.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = settingsdialog.cpp; path = "/Users/teun/build-untitled1-Qt_5_15_2_for_iOS-Debug/settingsdialog.cpp"; sourceTree = "<absolute>"; };
 		BD107EC573F1437222B4A5CA /* qwbmp */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = qwbmp; path = "/Users/teun/Qt/5.15.2/ios/plugins/imageformats/libqwbmp$(QT_LIBRARY_SUFFIX).a"; sourceTree = "<absolute>"; };
-		C08900735A4D8D2CAB151A6C /* mainwindow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = mainwindow.h; path = /Users/teun/untitled1/mainwindow.h; sourceTree = "<absolute>"; };
 		C2EC329BBC759B2631186B29 /* dynamicgridwidget.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = dynamicgridwidget.cpp; path = "/Users/teun/build-untitled1-Qt_5_15_2_for_iOS-Debug/dynamicgridwidget.cpp"; sourceTree = "<absolute>"; };
 		C69FC58097D4D7C61138A0C5 /* streamwindow.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = streamwindow.cpp; path = "/Users/teun/build-untitled1-Qt_5_15_2_for_iOS-Debug/streamwindow.cpp"; sourceTree = "<absolute>"; };
 		CDDF2972D86AE57F6CD069BD /* loginpindialog.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = loginpindialog.cpp; path = "/Users/teun/build-untitled1-Qt_5_15_2_for_iOS-Debug/loginpindialog.cpp"; sourceTree = "<absolute>"; };
 		CE94A87A6AACAB421B7C81C5 /* moc_avopenglwidget.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = moc_avopenglwidget.cpp; path = "/Users/teun/build-untitled1-Qt_5_15_2_for_iOS-Debug/moc_avopenglwidget.cpp"; sourceTree = "<absolute>"; };
+		D430195E872AE1B72D251323 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = "/Users/teun/build-untitled1-Qt_5_15_2_for_iOS-Debug/chiaki.xcodeproj/LaunchScreen.storyboard"; sourceTree = "<absolute>"; };
 		D790C02937983348F047BACE /* Qt5Widgets */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = Qt5Widgets; path = "/Users/teun/Qt/5.15.2/ios/lib/libQt5Widgets$(QT_LIBRARY_SUFFIX).a"; sourceTree = "<absolute>"; };
 		D7D9BCBFCD7A6C236B2ED243 /* transformmode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = transformmode.h; path = "/Users/teun/build-untitled1-Qt_5_15_2_for_iOS-Debug/transformmode.h"; sourceTree = "<absolute>"; };
 		DE7EE5CC648BE589E6E33D1D /* settings.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = settings.cpp; path = "/Users/teun/build-untitled1-Qt_5_15_2_for_iOS-Debug/settings.cpp"; sourceTree = "<absolute>"; };
 		E059C311960D16F5DBC11D23 /* registdialog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = registdialog.h; path = "/Users/teun/build-untitled1-Qt_5_15_2_for_iOS-Debug/registdialog.h"; sourceTree = "<absolute>"; };
 		E429FAC2EE1C87A7F1095FD0 /* settingskeycapturedialog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = settingskeycapturedialog.h; path = "/Users/teun/build-untitled1-Qt_5_15_2_for_iOS-Debug/settingskeycapturedialog.h"; sourceTree = "<absolute>"; };
+		E5444942B812A7F786FC178B /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "/Users/teun/build-untitled1-Qt_5_15_2_for_iOS-Debug/chiaki.xcodeproj/Default-568h@2x.png"; sourceTree = "<absolute>"; };
 		EB6A070CCB64F8D8D9357CC7 /* avopenglwidget.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = avopenglwidget.h; path = "/Users/teun/build-untitled1-Qt_5_15_2_for_iOS-Debug/avopenglwidget.h"; sourceTree = "<absolute>"; };
-		EC2E0D7AD7D9F007A770B436 /* untitled1.pro */ = {isa = PBXFileReference; lastKnownFileType = text; name = untitled1.pro; path = "/Users/teun/build-untitled1-Qt_5_15_2_for_iOS-Debug/untitled1.pro"; sourceTree = "<absolute>"; };
 		EFC29ABC60FA6878F57E11CA /* moc_settingskeycapturedialog.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = moc_settingskeycapturedialog.cpp; path = "/Users/teun/build-untitled1-Qt_5_15_2_for_iOS-Debug/moc_settingskeycapturedialog.cpp"; sourceTree = "<absolute>"; };
 		F022C798F166ACC6628AEE9B /* avopenglframeuploader.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = avopenglframeuploader.cpp; path = "/Users/teun/build-untitled1-Qt_5_15_2_for_iOS-Debug/avopenglframeuploader.cpp"; sourceTree = "<absolute>"; };
 		F251C5BE1408DDDFD3489AB2 /* moc_manualhostdialog.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = moc_manualhostdialog.cpp; path = "/Users/teun/build-untitled1-Qt_5_15_2_for_iOS-Debug/moc_manualhostdialog.cpp"; sourceTree = "<absolute>"; };
 		F350D14589F286C6A277347C /* moc_servericonwidget.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = moc_servericonwidget.cpp; path = "/Users/teun/build-untitled1-Qt_5_15_2_for_iOS-Debug/moc_servericonwidget.cpp"; sourceTree = "<absolute>"; };
 		F62A96A41AB28E0BB5173B35 /* streamsession.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = streamsession.cpp; path = "/Users/teun/build-untitled1-Qt_5_15_2_for_iOS-Debug/streamsession.cpp"; sourceTree = "<absolute>"; };
-		F74633A70E92FE845E1AE9C6 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = "/Users/teun/build-untitled1-Qt_5_15_2_for_iOS-Debug/untitled1.xcodeproj/LaunchScreen.storyboard"; sourceTree = "<absolute>"; };
 		FCC237CA5AD60B9BA4447615 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		FE3D92B7D2FE651B1069F3BF /* mainwindow.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = mainwindow.cpp; path = "/Users/teun/build-untitled1-Qt_5_15_2_for_iOS-Debug/mainwindow.cpp"; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -287,15 +285,16 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				45128C7B2A87094100D6F2BA /* libiconv.tbd in Link Binary With Libraries */,
-				45318D9A2A86FDB700B6BA56 /* VideoToolbox.framework in Link Binary With Libraries */,
-				45318D982A86FC6100B6BA56 /* CoreMedia.framework in Link Binary With Libraries */,
-				45318D882A86F8F200B6BA56 /* CoreVideo.framework in Link Binary With Libraries */,
-				45318D802A86F87100B6BA56 /* CoreAudio.framework in Link Binary With Libraries */,
-				45318D7E2A86F86800B6BA56 /* CoreMotion.framework in Link Binary With Libraries */,
-				45318D7C2A86F84700B6BA56 /* GameController.framework in Link Binary With Libraries */,
-				45318D7A2A86F84200B6BA56 /* CoreHaptics.framework in Link Binary With Libraries */,
-				45318D782A86F52300B6BA56 /* AVFAudio.framework in Link Binary With Libraries */,
+				45128CF12A8828B600D6F2BA /* libiconv.tbd in Link Binary With Libraries */,
+				45128CDD2A8827B700D6F2BA /* AudioToolbox.framework in Link Binary With Libraries */,
+				45128CDB2A8827B200D6F2BA /* QuartzCore.framework in Link Binary With Libraries */,
+				45128CD92A8827A000D6F2BA /* CoreHaptics.framework in Link Binary With Libraries */,
+				45128CD72A88279300D6F2BA /* CoreMotion.framework in Link Binary With Libraries */,
+				45128CD52A88278E00D6F2BA /* CoreMedia.framework in Link Binary With Libraries */,
+				45128CD32A88277900D6F2BA /* VideoToolbox.framework in Link Binary With Libraries */,
+				45128CD12A88277500D6F2BA /* CoreVideo.framework in Link Binary With Libraries */,
+				45128CCF2A88277000D6F2BA /* GameController.framework in Link Binary With Libraries */,
+				45128CCD2A88276A00D6F2BA /* AVFAudio.framework in Link Binary With Libraries */,
 				712CF96E03ABD638FAA52DB2 /* qios in Link Binary With Libraries */,
 				B460F624007324313696BE86 /* QuartzCore.framework in Link Binary With Libraries */,
 				4EB68D0C8182BCE33529C421 /* AudioToolbox.framework in Link Binary With Libraries */,
@@ -311,28 +310,30 @@
 				F716BBE99DA127A8FE7A63B2 /* qmacjp2 in Link Binary With Libraries */,
 				61EEC397DC8556BF8C4E36A7 /* ImageIO.framework in Link Binary With Libraries */,
 				C5FAF61B543F70A10AA3B79D /* qtga in Link Binary With Libraries */,
-				45318D842A86F8A700B6BA56 /* libQt5Svg.a in Link Binary With Libraries */,
-				45318D822A86F88D00B6BA56 /* libQt5Multimedia.a in Link Binary With Libraries */,
 				270090F818B237CEDCFBE7B3 /* qtiff in Link Binary With Libraries */,
 				604878DF028F5D1DBBA85449 /* qwbmp in Link Binary With Libraries */,
+				45128CC42A88248D00D6F2BA /* libgf_complete.a in Link Binary With Libraries */,
+				45128CC52A88248D00D6F2BA /* libopus.a in Link Binary With Libraries */,
+				45128CC62A88248E00D6F2BA /* libSDL2.a in Link Binary With Libraries */,
+				45128CC72A88248E00D6F2BA /* libssl.a in Link Binary With Libraries */,
+				45128CC82A88248E00D6F2BA /* libprotobuf-nanopb.a in Link Binary With Libraries */,
+				45128CC92A88248E00D6F2BA /* libchiaki.a in Link Binary With Libraries */,
+				45128CCA2A88248E00D6F2BA /* libcrypto.a in Link Binary With Libraries */,
+				45128CDF2A88285200D6F2BA /* libQt5Svg.a in Link Binary With Libraries */,
+				45128CCB2A88248E00D6F2BA /* libjerasure.a in Link Binary With Libraries */,
+				45128CE12A88285900D6F2BA /* libQt5Multimedia.a in Link Binary With Libraries */,
+				45128CE92A88289600D6F2BA /* libavformat.a in Link Binary With Libraries */,
+				45128CEA2A88289700D6F2BA /* libavdevice.a in Link Binary With Libraries */,
+				45128CEB2A88289700D6F2BA /* libswscale.a in Link Binary With Libraries */,
+				45128CEC2A88289800D6F2BA /* libswresample.a in Link Binary With Libraries */,
+				45128CED2A88289800D6F2BA /* libavcodec.a in Link Binary With Libraries */,
+				45128CEE2A88289900D6F2BA /* libavfilter.a in Link Binary With Libraries */,
+				45128CEF2A88289900D6F2BA /* libavutil.a in Link Binary With Libraries */,
 				34FC27B9D2322D16E8E3C47D /* qwebp in Link Binary With Libraries */,
-				45318D862A86F8D300B6BA56 /* libavutil.a in Link Binary With Libraries */,
 				45075F812F485E6BD3B05639 /* Qt5Widgets in Link Binary With Libraries */,
-				45128C792A87090F00D6F2BA /* libchiaki.a in Link Binary With Libraries */,
-				45318D912A86FC4400B6BA56 /* libavformat.a in Link Binary With Libraries */,
-				45318D922A86FC4400B6BA56 /* libswresample.a in Link Binary With Libraries */,
-				45318D932A86FC4400B6BA56 /* libswscale.a in Link Binary With Libraries */,
-				45318D942A86FC4400B6BA56 /* libavfilter.a in Link Binary With Libraries */,
-				45318D952A86FC4400B6BA56 /* libavcodec.a in Link Binary With Libraries */,
-				45128CA42A87FED400D6F2BA /* libSDL2.a in Link Binary With Libraries */,
-				45318D962A86FC4400B6BA56 /* libavdevice.a in Link Binary With Libraries */,
-				45318D9D2A86FF2200B6BA56 /* libjerasure.a in Link Binary With Libraries */,
-				45128C772A8708ED00D6F2BA /* libcrypto.a in Link Binary With Libraries */,
-				45318D9E2A86FF2200B6BA56 /* libgf_complete.a in Link Binary With Libraries */,
 				CF6AA39DF6BE2F6FF122981E /* Qt5Gui in Link Binary With Libraries */,
 				B3FE8FAC746D3D5BB24FA398 /* Metal.framework in Link Binary With Libraries */,
 				250AE8B5516EBA8A225E2F05 /* qtlibpng in Link Binary With Libraries */,
-				45128C7D2A870D4100D6F2BA /* libprotobuf-nanopb.a in Link Binary With Libraries */,
 				6EC2D764C807879B2AD2D45B /* qtharfbuzz in Link Binary With Libraries */,
 				2B02D9DC58A01E45248DDBCE /* CoreText.framework in Link Binary With Libraries */,
 				0CE02722F00CAD43741297B5 /* CoreGraphics.framework in Link Binary With Libraries */,
@@ -347,24 +348,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		12E908B8A1C3C07C115504F5 /* Sources [uic] */ = {
-			isa = PBXGroup;
-			children = (
-				A852E1C1FE744B75AA9FDD50 /* mainwindow.ui */,
-			);
-			name = "Sources [uic]";
-			sourceTree = "<group>";
-		};
 		25B08E2869634E9BCBA333A2 /* Generated Sources */ = {
 			isa = PBXGroup;
 			children = (
-				6DB21A8D94882DAB43D2A889 /* untitled1_plugin_import.cpp */,
+				61FE08D136B221EA254DFA54 /* chiaki_plugin_import.cpp */,
 				36B56A81D187E8D69A137337 /* moc_avopenglframeuploader.cpp */,
 				CE94A87A6AACAB421B7C81C5 /* moc_avopenglwidget.cpp */,
+				08838758D14055EDEBDB18BD /* moc_controllermanager.cpp */,
 				4FC671AABE79F335C4381AE3 /* moc_discoverymanager.cpp */,
 				56F76DA0CE1EC8185117884D /* moc_dynamicgridwidget.cpp */,
 				8EAA999770D298FFE6505F7B /* moc_loginpindialog.cpp */,
-				658D3EE7879034FF286FCFD2 /* moc_logsniffer.cpp */,
 				F251C5BE1408DDDFD3489AB2 /* moc_manualhostdialog.cpp */,
 				A7FECAE93AF16233B87B975F /* moc_registdialog.cpp */,
 				F350D14589F286C6A277347C /* moc_servericonwidget.cpp */,
@@ -374,7 +367,6 @@
 				EFC29ABC60FA6878F57E11CA /* moc_settingskeycapturedialog.cpp */,
 				A7860FCB292DD7258813B571 /* moc_streamsession.cpp */,
 				B75C1A3504383967E9D389D6 /* moc_streamwindow.cpp */,
-				0932F26907F924EC647BD488 /* ui_mainwindow.h */,
 			);
 			name = "Generated Sources";
 			sourceTree = "<group>";
@@ -389,10 +381,9 @@
 				C2EC329BBC759B2631186B29 /* dynamicgridwidget.cpp */,
 				3212ACAF55FB0CBA48D76431 /* host.cpp */,
 				CDDF2972D86AE57F6CD069BD /* loginpindialog.cpp */,
-				7C99044D76167DAD64DBFAAA /* main.cpp */,
-				472A1277F102BF84A2FDCE58 /* mainwindow.cpp */,
+				7CFB20846CE7F790C544A253 /* main.cpp */,
+				FE3D92B7D2FE651B1069F3BF /* mainwindow.cpp */,
 				2F7A8C5B242E959A258C3CFB /* manualhostdialog.cpp */,
-				6CB0BDBC6FE7F8CDCB3A4657 /* moc_mainwindow.cpp */,
 				072C4F7F3EF252496CC18645 /* registdialog.cpp */,
 				5A4DE35828BE5D0C80E1ED60 /* servericonwidget.cpp */,
 				227B622FBF36415322FDE1DE /* serveritemwidget.cpp */,
@@ -411,7 +402,7 @@
 				8C36CFD1D73954B9BB0FE74A /* host.h */,
 				358BD29D847D5E3C5366E738 /* loginpindialog.h */,
 				14CD76FF61C114A1CB5C786B /* logsniffer.h */,
-				C08900735A4D8D2CAB151A6C /* mainwindow.h */,
+				B381ABF403C697E53D54C408 /* mainwindow.h */,
 				3365E8FF2B002E66C90CB2F3 /* manualhostdialog.h */,
 				E059C311960D16F5DBC11D23 /* registdialog.h */,
 				7036DD99B0A60261A99F89A3 /* servericonwidget.h */,
@@ -430,9 +421,8 @@
 		74B182DB50CB5611B5C1C297 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				EC2E0D7AD7D9F007A770B436 /* untitled1.pro */,
+				7ADF703FA2B0857A366D2EAC /* chiaki.pro */,
 				0BE9C48FF97ADD9EEE0E776D /* .qmake.stash */,
-				03DBE89FF7A948703537F58E /* untitled1.pro */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -440,16 +430,16 @@
 		858FCAB0EB1F29CF8B07677C /* Bundle Data */ = {
 			isa = PBXGroup;
 			children = (
-				45128CA52A88114600D6F2BA /* console-ps5.svg */,
-				1DB3A15A37161E09A49930D4 /* Default-568h@2x.png */,
-				45128CAA2A88114600D6F2BA /* add-24px.svg */,
-				45128CAD2A88114600D6F2BA /* chiaki.svg */,
-				45128CA62A88114600D6F2BA /* console-ps4.svg */,
-				45128CA92A88114600D6F2BA /* Default-568h@2x.png */,
-				45128CA72A88114600D6F2BA /* discover-24px.svg */,
-				45128CA82A88114600D6F2BA /* discover-off-24px.svg */,
-				45128CAC2A88114600D6F2BA /* settings-20px.svg */,
-				F74633A70E92FE845E1AE9C6 /* LaunchScreen.storyboard */,
+				45128CFA2A8829A100D6F2BA /* add-24px.svg */,
+				45128CF82A8829A000D6F2BA /* chiaki_macos.svg */,
+				45128CF92A8829A000D6F2BA /* chiaki.svg */,
+				45128CF62A88299F00D6F2BA /* console-ps4.svg */,
+				45128CF72A88299F00D6F2BA /* console-ps5.svg */,
+				45128CF52A88299E00D6F2BA /* discover-24px.svg */,
+				45128CFB2A8829A100D6F2BA /* discover-off-24px.svg */,
+				45128CF42A88299D00D6F2BA /* settings-20px.svg */,
+				E5444942B812A7F786FC178B /* Default-568h@2x.png */,
+				D430195E872AE1B72D251323 /* LaunchScreen.storyboard */,
 			);
 			name = "Bundle Data";
 			sourceTree = "<group>";
@@ -457,34 +447,33 @@
 		AF39DD055C3EF8226FBE929D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				45128CA32A87FED400D6F2BA /* libSDL2.a */,
-				45128C7C2A870D4100D6F2BA /* libprotobuf-nanopb.a */,
-				45128C7A2A87094100D6F2BA /* libiconv.tbd */,
-				45128C782A87090F00D6F2BA /* libchiaki.a */,
-				45128C762A8708ED00D6F2BA /* libcrypto.a */,
-				45318DA32A87054C00B6BA56 /* libssl.a */,
-				45318DA12A87051E00B6BA56 /* libcrypto.xcframework */,
-				45318D9F2A8704E900B6BA56 /* libssl.xcframework */,
-				45318D9C2A86FF2200B6BA56 /* libgf_complete.a */,
-				45318D9B2A86FF2200B6BA56 /* libjerasure.a */,
-				45318D992A86FDB700B6BA56 /* VideoToolbox.framework */,
-				45318D972A86FC6100B6BA56 /* CoreMedia.framework */,
-				45318D8F2A86FC4400B6BA56 /* libavcodec.a */,
-				45318D902A86FC4400B6BA56 /* libavdevice.a */,
-				45318D8E2A86FC4400B6BA56 /* libavfilter.a */,
-				45318D8B2A86FC4400B6BA56 /* libavformat.a */,
-				45318D8C2A86FC4400B6BA56 /* libswresample.a */,
-				45318D8D2A86FC4400B6BA56 /* libswscale.a */,
-				45318D892A86F92C00B6BA56 /* libchiaki.a */,
-				45318D872A86F8F200B6BA56 /* CoreVideo.framework */,
-				45318D852A86F8D300B6BA56 /* libavutil.a */,
-				45318D832A86F8A700B6BA56 /* libQt5Svg.a */,
-				45318D812A86F88D00B6BA56 /* libQt5Multimedia.a */,
-				45318D7F2A86F87100B6BA56 /* CoreAudio.framework */,
-				45318D7D2A86F86800B6BA56 /* CoreMotion.framework */,
-				45318D7B2A86F84700B6BA56 /* GameController.framework */,
-				45318D792A86F84200B6BA56 /* CoreHaptics.framework */,
-				45318D772A86F52300B6BA56 /* AVFAudio.framework */,
+				45128CF02A8828B600D6F2BA /* libiconv.tbd */,
+				45128CE62A88289600D6F2BA /* libavcodec.a */,
+				45128CE32A88289600D6F2BA /* libavdevice.a */,
+				45128CE72A88289600D6F2BA /* libavfilter.a */,
+				45128CE22A88289600D6F2BA /* libavformat.a */,
+				45128CE82A88289600D6F2BA /* libavutil.a */,
+				45128CE52A88289600D6F2BA /* libswresample.a */,
+				45128CE42A88289600D6F2BA /* libswscale.a */,
+				45128CE02A88285900D6F2BA /* libQt5Multimedia.a */,
+				45128CDE2A88285200D6F2BA /* libQt5Svg.a */,
+				45128CDC2A8827B700D6F2BA /* AudioToolbox.framework */,
+				45128CDA2A8827B200D6F2BA /* QuartzCore.framework */,
+				45128CD82A8827A000D6F2BA /* CoreHaptics.framework */,
+				45128CD62A88279300D6F2BA /* CoreMotion.framework */,
+				45128CD42A88278E00D6F2BA /* CoreMedia.framework */,
+				45128CD22A88277900D6F2BA /* VideoToolbox.framework */,
+				45128CD02A88277500D6F2BA /* CoreVideo.framework */,
+				45128CCE2A88277000D6F2BA /* GameController.framework */,
+				45128CCC2A88276A00D6F2BA /* AVFAudio.framework */,
+				45128CC12A88248D00D6F2BA /* libchiaki.a */,
+				45128CC22A88248D00D6F2BA /* libcrypto.a */,
+				45128CBC2A88248D00D6F2BA /* libgf_complete.a */,
+				45128CC32A88248D00D6F2BA /* libjerasure.a */,
+				45128CBD2A88248D00D6F2BA /* libopus.a */,
+				45128CC02A88248D00D6F2BA /* libprotobuf-nanopb.a */,
+				45128CBE2A88248D00D6F2BA /* libSDL2.a */,
+				45128CBF2A88248D00D6F2BA /* libssl.a */,
 				6CAB2F00E09FC9A72EDC0628 /* qios */,
 				7EC00404ACD5AB0E97726B0E /* QuartzCore.framework */,
 				3C44131FDCFEF4396B9EA2BA /* AudioToolbox.framework */,
@@ -518,27 +507,25 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		E8C543AB96796ECAA2E65C57 /* untitled1 */ = {
+		E8C543AB96796ECAA2E65C57 /* chiaki */ = {
 			isa = PBXGroup;
 			children = (
-				45128CB72A88128300D6F2BA /* Media.xcassets */,
-				45128C9F2A87C57400D6F2BA /* chiaki.entitlements */,
-				45128C9D2A87196900D6F2BA /* Settings.bundle */,
+				45128CF22A88295600D6F2BA /* moc_mainwindow.cpp */,
+				45128D042A882B3E00D6F2BA /* Media.xcassets */,
 				2EB56BE3C2D93CDAB0C52E67 /* Sources */,
 				25B08E2869634E9BCBA333A2 /* Generated Sources */,
-				12E908B8A1C3C07C115504F5 /* Sources [uic] */,
 				74B182DB50CB5611B5C1C297 /* Supporting Files */,
 				AF39DD055C3EF8226FBE929D /* Frameworks */,
 				858FCAB0EB1F29CF8B07677C /* Bundle Data */,
 				FE0A091FDBFB3E9C31B7A1BD /* Products */,
 			);
-			name = untitled1;
+			name = chiaki;
 			sourceTree = "<group>";
 		};
 		FE0A091FDBFB3E9C31B7A1BD /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				89F5533E959AECF613647401 /* Chiaki.app */,
+				9D635E522D536B91890F7AF9 /* Chiaki.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -546,7 +533,7 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		09206AF770C004313F80157E /* chiaki */ = {
+		0A11CDF8F1CC4D90621CC89B /* chiaki */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6CC3B5D2136C7CD6A5CF5A59 /* Build configuration list for PBXNativeTarget "chiaki" */;
 			buildPhases = (
@@ -558,11 +545,11 @@
 			buildRules = (
 			);
 			dependencies = (
-				F5B12B19D530F1AB700D7984 /* PBXTargetDependency */,
+				DBA3DA477A8FAE620F088A62 /* PBXTargetDependency */,
 			);
 			name = chiaki;
-			productName = untitled1;
-			productReference = 89F5533E959AECF613647401 /* Chiaki.app */;
+			productName = chiaki;
+			productReference = 9D635E522D536B91890F7AF9 /* Chiaki.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -572,13 +559,11 @@
 			isa = PBXProject;
 			attributes = {
 				TargetAttributes = {
-					09206AF770C004313F80157E = {
+					0A11CDF8F1CC4D90621CC89B = {
 						DevelopmentTeam = MRR3LKQADX;
-						ProvisioningStyle = Automatic;
 					};
-					C6B879D651856E108D7E98F4 = {
+					48FB2061E6B1901023770F5D = {
 						DevelopmentTeam = MRR3LKQADX;
-						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -590,13 +575,13 @@
 				en,
 				Base,
 			);
-			mainGroup = E8C543AB96796ECAA2E65C57 /* untitled1 */;
+			mainGroup = E8C543AB96796ECAA2E65C57 /* chiaki */;
 			productRefGroup = FE0A091FDBFB3E9C31B7A1BD /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				09206AF770C004313F80157E /* chiaki */,
-				C6B879D651856E108D7E98F4 /* Qt Preprocess */,
+				0A11CDF8F1CC4D90621CC89B /* chiaki */,
+				48FB2061E6B1901023770F5D /* Qt Preprocess */,
 			);
 		};
 /* End PBXProject section */
@@ -606,16 +591,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				45128CB82A88128300D6F2BA /* Media.xcassets in Copy Bundle Resources */,
-				45128CAE2A88114600D6F2BA /* console-ps5.svg in Copy Bundle Resources */,
-				45128CAF2A88114600D6F2BA /* console-ps4.svg in Copy Bundle Resources */,
-				45128CB02A88114600D6F2BA /* discover-24px.svg in Copy Bundle Resources */,
-				45128CB12A88114600D6F2BA /* discover-off-24px.svg in Copy Bundle Resources */,
-				45128CB22A88114600D6F2BA /* Default-568h@2x.png in Copy Bundle Resources */,
-				45128CB32A88114600D6F2BA /* add-24px.svg in Copy Bundle Resources */,
-				45128CB52A88114600D6F2BA /* settings-20px.svg in Copy Bundle Resources */,
-				45128CB62A88114700D6F2BA /* chiaki.svg in Copy Bundle Resources */,
-				45128C9E2A87196900D6F2BA /* Settings.bundle in Copy Bundle Resources */,
+				45128CFC2A8829A200D6F2BA /* settings-20px.svg in Copy Bundle Resources */,
+				45128D012A8829A200D6F2BA /* chiaki.svg in Copy Bundle Resources */,
+				45128CFF2A8829A200D6F2BA /* console-ps5.svg in Copy Bundle Resources */,
+				45128CFE2A8829A200D6F2BA /* console-ps4.svg in Copy Bundle Resources */,
+				45128CFD2A8829A200D6F2BA /* discover-24px.svg in Copy Bundle Resources */,
+				45128D052A882B3E00D6F2BA /* Media.xcassets in Copy Bundle Resources */,
+				45128D002A8829A200D6F2BA /* chiaki_macos.svg in Copy Bundle Resources */,
+				45128D022A8829A200D6F2BA /* add-24px.svg in Copy Bundle Resources */,
+				B5A6784E8AAD108F64B05857 /* Default-568h@2x.png in Copy Bundle Resources */,
+				0D8C26C8F0A6DC8FD671F51E /* LaunchScreen.storyboard in Copy Bundle Resources */,
+				45128D032A8829A200D6F2BA /* discover-off-24px.svg in Copy Bundle Resources */,
 			);
 			name = "Copy Bundle Resources";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -631,7 +617,7 @@
 			name = "Qt Qmake";
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "make -C . -f chiaki\\ iOS.xcodeproj/qt_makeqmake.mak\n";
+			shellScript = "make -C /Users/teun/build-untitled1-Qt_5_15_2_for_iOS-Debug -f 'Chiaki iOS.xcodeproj/qt_makeqmake.mak'\n";
 			showEnvVarsInLog = 0;
 		};
 		7EF0942E79C014DCEC8976BC /* Qt Preprocessors */ = {
@@ -642,7 +628,7 @@
 			name = "Qt Preprocessors";
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "make -C /Users/teun/build-untitled1-Qt_5_15_2_for_iOS-Debug -f untitled1.xcodeproj/qt_preprocess.mak\n";
+			shellScript = "make -C /Users/teun/build-untitled1-Qt_5_15_2_for_iOS-Debug -f 'Chiaki iOS.xcodeproj/qt_preprocess.mak'\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -659,10 +645,9 @@
 				DD6766C41A965A30E218C56A /* dynamicgridwidget.cpp in Compile Sources */,
 				8CCC7AEF845873A116EA1263 /* host.cpp in Compile Sources */,
 				21F434D32ED3EA112C8647B4 /* loginpindialog.cpp in Compile Sources */,
-				02211ED5BEEEEB329A933B86 /* main.cpp in Compile Sources */,
-				DB46E2F24155F550D0EBC798 /* mainwindow.cpp in Compile Sources */,
+				C21F47F771649B9E934267D1 /* main.cpp in Compile Sources */,
+				A5343EAF03665F8F9BE7B253 /* mainwindow.cpp in Compile Sources */,
 				013CBEF36C08CA8C982F8838 /* manualhostdialog.cpp in Compile Sources */,
-				51DDB16D7EB5FBC38067CF5B /* moc_mainwindow.cpp in Compile Sources */,
 				5F21E8710E6292F5981C7DB2 /* registdialog.cpp in Compile Sources */,
 				B6A9F68BF7DB2C798634CFAE /* servericonwidget.cpp in Compile Sources */,
 				71DDEDD4376C062E771003F2 /* serveritemwidget.cpp in Compile Sources */,
@@ -672,16 +657,17 @@
 				17C4966B40F03C6A351DBE16 /* settingskeycapturedialog.cpp in Compile Sources */,
 				C110BE1832F560601C0EF6F3 /* streamsession.cpp in Compile Sources */,
 				87034FC3C9AF7F9CE27AE655 /* streamwindow.cpp in Compile Sources */,
-				7712EFA7C606E30BD703B050 /* untitled1_plugin_import.cpp in Compile Sources */,
+				3DF670B2A9526D3B64AB4F6D /* chiaki_plugin_import.cpp in Compile Sources */,
 				D504C7AE1EA673474734BA7F /* moc_avopenglframeuploader.cpp in Compile Sources */,
 				8F08BD29682AE5BF5CE26B35 /* moc_avopenglwidget.cpp in Compile Sources */,
+				172268C483400363EB2E6445 /* moc_controllermanager.cpp in Compile Sources */,
 				9F67203B02ACFF2E94B74072 /* moc_discoverymanager.cpp in Compile Sources */,
 				438CFA7E7A790C8CD88B8C39 /* moc_dynamicgridwidget.cpp in Compile Sources */,
 				1BF7F2F127BCE9E067CD5878 /* moc_loginpindialog.cpp in Compile Sources */,
-				47DDC2BDE7C02AB61B824B5F /* moc_logsniffer.cpp in Compile Sources */,
 				DE95F67F17CFBE3BDD3C721F /* moc_manualhostdialog.cpp in Compile Sources */,
 				B3C2F14BA90022D5E88F899F /* moc_registdialog.cpp in Compile Sources */,
 				5436AF34FEDD90EF31282F75 /* moc_servericonwidget.cpp in Compile Sources */,
+				45128CF32A88295600D6F2BA /* moc_mainwindow.cpp in Compile Sources */,
 				727DB1EB2E3B15BFA066E2E7 /* moc_serveritemwidget.cpp in Compile Sources */,
 				862D626FE1A84EBD39E33D0C /* moc_settings.cpp in Compile Sources */,
 				990533766568D9FCA6CC342D /* moc_settingsdialog.cpp in Compile Sources */,
@@ -695,10 +681,10 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		F5B12B19D530F1AB700D7984 /* PBXTargetDependency */ = {
+		DBA3DA477A8FAE620F088A62 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = C6B879D651856E108D7E98F4 /* Qt Preprocess */;
-			targetProxy = 45318D762A86F47200B6BA56 /* PBXContainerItemProxy */;
+			target = 48FB2061E6B1901023770F5D /* Qt Preprocess */;
+			targetProxy = 45128CBB2A88224200D6F2BA /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -715,6 +701,7 @@
 				"ARCHS[sdk=iphonesimulator*]" = x86_64;
 				CC = /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CONFIGURATION_BUILD_DIR = "$(PROJECT_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
 				COPY_PHASE_STRIP = NO;
 				DEVELOPMENT_TEAM = MRR3LKQADX;
 				DYLIB_COMPATIBILITY_VERSION = 1.0;
@@ -723,14 +710,12 @@
 				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				HEADER_SEARCH_PATHS = (
-					../untitled1,
 					.,
 					../Qt/5.15.2/ios/mkspecs/common/uikit,
 					../Qt/5.15.2/ios/include,
 					../Qt/5.15.2/ios/include/QtWidgets,
 					../Qt/5.15.2/ios/include/QtGui,
 					../Qt/5.15.2/ios/include/QtCore,
-					.,
 					.,
 					"../Qt/5.15.2/ios/mkspecs/macx-ios-clang",
 				);
@@ -790,7 +775,7 @@
 					OpenGLES,
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.teunstrik.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = untitled1;
+				PRODUCT_NAME = chiaki;
 				QMAKE_FULL_VERSION = 1.0.0;
 				"QMAKE_MAC_SDK_PATH[sdk=iphoneos*]" = /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS16.4.sdk;
 				"QMAKE_MAC_SDK_PATH[sdk=iphonesimulator*]" = /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator16.4.sdk;
@@ -800,7 +785,7 @@
 				QMAKE_SHORT_VERSION = 1.0;
 				QT_LIBRARY_SUFFIX = "";
 				SDKROOT = iphoneos;
-				SYMROOT = "$(PROJECT_DIR)";
+				SYMROOT = .xcode;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -817,6 +802,7 @@
 				"ARCHS[sdk=iphonesimulator*]" = x86_64;
 				CC = /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CONFIGURATION_BUILD_DIR = "$(PROJECT_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEVELOPMENT_TEAM = MRR3LKQADX;
@@ -827,14 +813,12 @@
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				HEADER_SEARCH_PATHS = (
-					../untitled1,
 					.,
 					../Qt/5.15.2/ios/mkspecs/common/uikit,
 					../Qt/5.15.2/ios/include,
 					../Qt/5.15.2/ios/include/QtWidgets,
 					../Qt/5.15.2/ios/include/QtGui,
 					../Qt/5.15.2/ios/include/QtCore,
-					.,
 					.,
 					"../Qt/5.15.2/ios/mkspecs/macx-ios-clang",
 				);
@@ -895,7 +879,7 @@
 					OpenGLES,
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.teunstrik.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = untitled1;
+				PRODUCT_NAME = chiaki;
 				QMAKE_FULL_VERSION = 1.0.0;
 				"QMAKE_MAC_SDK_PATH[sdk=iphoneos*]" = /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS16.4.sdk;
 				"QMAKE_MAC_SDK_PATH[sdk=iphonesimulator*]" = /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator16.4.sdk;
@@ -905,7 +889,7 @@
 				QMAKE_SHORT_VERSION = 1.0;
 				QT_LIBRARY_SUFFIX = _debug;
 				SDKROOT = iphoneos;
-				SYMROOT = "$(PROJECT_DIR)";
+				SYMROOT = .xcode;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -918,58 +902,30 @@
 				"ARCHS[sdk=iphonesimulator*]" = x86_64;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
-				CODE_SIGN_ENTITLEMENTS = chiaki.entitlements;
-				CODE_SIGN_IDENTITY = "Apple Development";
-				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
 				DEVELOPMENT_TEAM = MRR3LKQADX;
 				ENABLE_BITCODE = NO;
-				GENERATE_MASTER_OBJECT_FILE = NO;
 				HEADER_SEARCH_PATHS = (
-					"../chiaki-ios",
 					.,
 					../Qt/5.15.2/ios/mkspecs/common/uikit,
 					../Qt/5.15.2/ios/include,
 					../Qt/5.15.2/ios/include/QtWidgets,
 					../Qt/5.15.2/ios/include/QtGui,
 					../Qt/5.15.2/ios/include/QtCore,
-					.,
-					.,
 					"../Qt/5.15.2/ios/mkspecs/macx-ios-clang",
-					/Users/teun/chiaki/lib/include,
-					../Qt/5.15.2/ios/include/QtSvg,
 					../Qt/5.15.2/ios/include/QtMultimedia,
-					"/Users/teun/FFmpeg-iOS-build-script/thin/arm64/include",
-					/opt/homebrew/Cellar/sdl2/2.28.2/include/SDL2,
 					../Qt/5.15.2/ios/include/QtConcurrent,
-					"/Users/teun/libressl/output/libssl.xcframework/ios-arm64/Headers/openssl",
-					"\"$(SRCROOT)/../libressl/output/libssl.xcframework/ios-arm64/Headers/openssl\"",
-					"/Users/teun/FFmpeg-iOS-build-script/ffmpeg-4.3.1/fftools",
+					../Qt/5.15.2/ios/include/QtSvg,
+					.,
+					../chiaki/lib/include,
+					"../FFmpeg-iOS-build-script/FFmpeg-iOS/include",
+					/opt/homebrew/Cellar/sdl2/2.28.2/include/SDL2,
 				);
 				INFOPLIST_KEY_CFBundleDisplayName = Chiaki;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				LIBRARY_SEARCH_PATHS = (
-					/Users/teun/Qt/5.15.2/ios/plugins/platforms,
-					/System/Library/Frameworks/,
-					/Users/teun/Qt/5.15.2/ios/lib,
-					/Users/teun/Qt/5.15.2/ios/plugins/imageformats,
-					"/Users/teun/FFmpeg-iOS-build-script/thin/arm64/lib",
+					"$(inherited)",
 					"$(PROJECT_DIR)/lib",
-				);
-				OTHER_CFLAGS = (
-					"-pipe",
-					"-g",
-					"-fobjc-nonfragile-abi",
-					"-fobjc-legacy-dispatch",
-					"-Wall",
-					"-Wextra",
-					"-fPIC",
-					"-DQT_COMPILER_SUPPORTS_SSE2",
-					"-DQT_QML_DEBUG",
-					"-DQT_WIDGETS_LIB",
-					"-DQT_GUI_LIB",
-					"-DQT_CORE_LIB",
-					"-DCHIAKI_GUI_ENABLE_SDL_GAMECONTROLLER",
 				);
 				OTHER_CPLUSPLUSFLAGS = (
 					"-pipe",
@@ -1003,11 +959,10 @@
 					"-lz",
 					"-framework",
 					OpenGLES,
-					"-lopus",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.teun.chiaki;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.teunstrik.${PRODUCT_NAME:rfc1034identifier}";
+				"PRODUCT_BUNDLE_IDENTIFIER[sdk=iphoneos*]" = com.teun.chiaki;
 				PRODUCT_NAME = Chiaki;
-				PROVISIONING_PROFILE_SPECIFIER = "";
 				QMAKE_FULL_VERSION = 1.0.0;
 				"QMAKE_MAC_SDK_PATH[sdk=iphoneos*]" = /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS16.4.sdk;
 				"QMAKE_MAC_SDK_PATH[sdk=iphonesimulator*]" = /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator16.4.sdk;
@@ -1029,62 +984,34 @@
 				"ARCHS[sdk=iphonesimulator*]" = x86_64;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
-				CODE_SIGN_ENTITLEMENTS = chiaki.entitlements;
-				CODE_SIGN_IDENTITY = "Apple Development";
-				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEVELOPMENT_TEAM = MRR3LKQADX;
 				ENABLE_BITCODE = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
-				GENERATE_MASTER_OBJECT_FILE = NO;
 				HEADER_SEARCH_PATHS = (
-					"../chiaki-ios",
 					.,
 					../Qt/5.15.2/ios/mkspecs/common/uikit,
 					../Qt/5.15.2/ios/include,
 					../Qt/5.15.2/ios/include/QtWidgets,
 					../Qt/5.15.2/ios/include/QtGui,
 					../Qt/5.15.2/ios/include/QtCore,
-					.,
-					.,
 					"../Qt/5.15.2/ios/mkspecs/macx-ios-clang",
-					/Users/teun/chiaki/lib/include,
-					../Qt/5.15.2/ios/include/QtSvg,
 					../Qt/5.15.2/ios/include/QtMultimedia,
-					"/Users/teun/FFmpeg-iOS-build-script/thin/arm64/include",
-					/opt/homebrew/Cellar/sdl2/2.28.2/include/SDL2,
 					../Qt/5.15.2/ios/include/QtConcurrent,
-					"/Users/teun/libressl/output/libssl.xcframework/ios-arm64/Headers/openssl",
-					"\"$(SRCROOT)/../libressl/output/libssl.xcframework/ios-arm64/Headers/openssl\"",
-					"/Users/teun/FFmpeg-iOS-build-script/ffmpeg-4.3.1/fftools",
+					../Qt/5.15.2/ios/include/QtSvg,
+					.,
+					../chiaki/lib/include,
+					"../FFmpeg-iOS-build-script/FFmpeg-iOS/include",
+					/opt/homebrew/Cellar/sdl2/2.28.2/include/SDL2,
 				);
 				INFOPLIST_KEY_CFBundleDisplayName = Chiaki;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				LIBRARY_SEARCH_PATHS = (
-					/Users/teun/Qt/5.15.2/ios/plugins/platforms,
-					/System/Library/Frameworks/,
-					/Users/teun/Qt/5.15.2/ios/lib,
-					/Users/teun/Qt/5.15.2/ios/plugins/imageformats,
-					"/Users/teun/FFmpeg-iOS-build-script/thin/arm64/lib",
+					"$(inherited)",
 					"$(PROJECT_DIR)/lib",
 				);
 				ONLY_ACTIVE_ARCH = YES;
-				OTHER_CFLAGS = (
-					"-pipe",
-					"-g",
-					"-fobjc-nonfragile-abi",
-					"-fobjc-legacy-dispatch",
-					"-Wall",
-					"-Wextra",
-					"-fPIC",
-					"-DQT_COMPILER_SUPPORTS_SSE2",
-					"-DQT_QML_DEBUG",
-					"-DQT_WIDGETS_LIB",
-					"-DQT_GUI_LIB",
-					"-DQT_CORE_LIB",
-					"-DCHIAKI_GUI_ENABLE_SDL_GAMECONTROLLER",
-				);
 				OTHER_CPLUSPLUSFLAGS = (
 					"-pipe",
 					"-stdlib=libc++",
@@ -1117,11 +1044,10 @@
 					"-lz",
 					"-framework",
 					OpenGLES,
-					"-lopus",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.teun.chiaki;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.teunstrik.${PRODUCT_NAME:rfc1034identifier}";
+				"PRODUCT_BUNDLE_IDENTIFIER[sdk=iphoneos*]" = com.teun.chiaki;
 				PRODUCT_NAME = Chiaki;
-				PROVISIONING_PROFILE_SPECIFIER = "";
 				QMAKE_FULL_VERSION = 1.0.0;
 				"QMAKE_MAC_SDK_PATH[sdk=iphoneos*]" = /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS16.4.sdk;
 				"QMAKE_MAC_SDK_PATH[sdk=iphonesimulator*]" = /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator16.4.sdk;

@@ -14,8 +14,8 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "09206AF770C004313F80157E"
-               BuildableName = "untitled1.app"
+               BlueprintIdentifier = "0A11CDF8F1CC4D90621CC89B"
+               BuildableName = "chiaki.app"
                BlueprintName = "chiaki"
                ReferencedContainer = "container:Chiaki iOS.xcodeproj">
             </BuildableReference>
@@ -31,8 +31,8 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "09206AF770C004313F80157E"
-            BuildableName = "untitled1.app"
+            BlueprintIdentifier = "0A11CDF8F1CC4D90621CC89B"
+            BuildableName = "chiaki.app"
             BlueprintName = "chiaki"
             ReferencedContainer = "container:Chiaki iOS.xcodeproj">
          </BuildableReference>
@@ -73,8 +73,8 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "09206AF770C004313F80157E"
-            BuildableName = "untitled1.app"
+            BlueprintIdentifier = "0A11CDF8F1CC4D90621CC89B"
+            BuildableName = "chiaki.app"
             BlueprintName = "chiaki"
             ReferencedContainer = "container:Chiaki iOS.xcodeproj">
          </BuildableReference>
@@ -97,8 +97,8 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "09206AF770C004313F80157E"
-            BuildableName = "untitled1.app"
+            BlueprintIdentifier = "0A11CDF8F1CC4D90621CC89B"
+            BuildableName = "chiaki.app"
             BlueprintName = "chiaki"
             ReferencedContainer = "container:Chiaki iOS.xcodeproj">
          </BuildableReference>

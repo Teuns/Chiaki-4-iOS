@@ -1,12 +1,18 @@
 # Chiaki 4 iOS
 
-This fork of the Chiaki macOS GUI application tries to make it working on iOS.
+This is a fork of the Chiaki macOS GUI application with the goal to make it work on iOS.
 
 Current state:
 
 * The discovery manager doesn't work at the moment due to an entitlement issue (https://stackoverflow.com/questions/65490312/multicast-networking-entitlement-on-ios-14). Adding hosts manual should work.
 * Videotoolbox doesn't work and will lead to BAD_EXEC errors.
 * Audio doesn't work: Audio Format with 2 channels @ 48000 Hz not supported by Audio Device
+* Register button is unresponsive. Just enter after typing the pin code
+
+# These scripts are used to build the necessary libraries:
+
+* https://github.com/chrisballinger/Opus-iOS/tree/master
+* https://github.com/kewlbear/FFmpeg-iOS-build-script
 
 ## About Chiaki
 
