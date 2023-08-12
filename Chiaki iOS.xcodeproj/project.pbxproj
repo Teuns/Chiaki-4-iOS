@@ -59,18 +59,9 @@
 		45128CEF2A88289900D6F2BA /* libavutil.a in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 45128CE82A88289600D6F2BA /* libavutil.a */; };
 		45128CF12A8828B600D6F2BA /* libiconv.tbd in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 45128CF02A8828B600D6F2BA /* libiconv.tbd */; };
 		45128CF32A88295600D6F2BA /* moc_mainwindow.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = 45128CF22A88295600D6F2BA /* moc_mainwindow.cpp */; };
-		45128CFC2A8829A200D6F2BA /* settings-20px.svg in Copy Bundle Resources */ = {isa = PBXBuildFile; fileRef = 45128CF42A88299D00D6F2BA /* settings-20px.svg */; };
-		45128CFD2A8829A200D6F2BA /* discover-24px.svg in Copy Bundle Resources */ = {isa = PBXBuildFile; fileRef = 45128CF52A88299E00D6F2BA /* discover-24px.svg */; };
-		45128CFE2A8829A200D6F2BA /* console-ps4.svg in Copy Bundle Resources */ = {isa = PBXBuildFile; fileRef = 45128CF62A88299F00D6F2BA /* console-ps4.svg */; };
-		45128CFF2A8829A200D6F2BA /* console-ps5.svg in Copy Bundle Resources */ = {isa = PBXBuildFile; fileRef = 45128CF72A88299F00D6F2BA /* console-ps5.svg */; };
-		45128D002A8829A200D6F2BA /* chiaki_macos.svg in Copy Bundle Resources */ = {isa = PBXBuildFile; fileRef = 45128CF82A8829A000D6F2BA /* chiaki_macos.svg */; };
-		45128D012A8829A200D6F2BA /* chiaki.svg in Copy Bundle Resources */ = {isa = PBXBuildFile; fileRef = 45128CF92A8829A000D6F2BA /* chiaki.svg */; };
-		45128D022A8829A200D6F2BA /* add-24px.svg in Copy Bundle Resources */ = {isa = PBXBuildFile; fileRef = 45128CFA2A8829A100D6F2BA /* add-24px.svg */; };
-		45128D032A8829A200D6F2BA /* discover-off-24px.svg in Copy Bundle Resources */ = {isa = PBXBuildFile; fileRef = 45128CFB2A8829A100D6F2BA /* discover-off-24px.svg */; };
 		45128D052A882B3E00D6F2BA /* Media.xcassets in Copy Bundle Resources */ = {isa = PBXBuildFile; fileRef = 45128D042A882B3E00D6F2BA /* Media.xcassets */; };
 		45128D072A88309400D6F2BA /* Settings.bundle in Copy Bundle Resources */ = {isa = PBXBuildFile; fileRef = 45128D062A88309400D6F2BA /* Settings.bundle */; };
 		45128D092A8830A300D6F2BA /* LaunchScreen.storyboard in Copy Bundle Resources */ = {isa = PBXBuildFile; fileRef = 45128D082A8830A300D6F2BA /* LaunchScreen.storyboard */; };
-		45128D0B2A8830A800D6F2BA /* Default-568h@2x.png in Copy Bundle Resources */ = {isa = PBXBuildFile; fileRef = 45128D0A2A8830A800D6F2BA /* Default-568h@2x.png */; };
 		45F0F0672A8831DE005F82DA /* mainwindow.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = 45F0F02C2A8831DD005F82DA /* mainwindow.cpp */; };
 		45F0F06A2A8831DE005F82DA /* streamsession.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = 45F0F02F2A8831DD005F82DA /* streamsession.cpp */; };
 		45F0F06B2A8831DE005F82DA /* dynamicgridwidget.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = 45F0F0312A8831DD005F82DA /* dynamicgridwidget.cpp */; };
@@ -107,6 +98,14 @@
 		45F0F0AA2A883297005F82DA /* moc_settings.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = 45F0F0992A883297005F82DA /* moc_settings.cpp */; };
 		45F0F0AB2A883297005F82DA /* moc_settingskeycapturedialog.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = 45F0F09A2A883297005F82DA /* moc_settingskeycapturedialog.cpp */; };
 		45F0F0AC2A883297005F82DA /* moc_registdialog.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = 45F0F09B2A883297005F82DA /* moc_registdialog.cpp */; };
+		45F0F0B42A883413005F82DA /* chiaki.svg in Copy Bundle Resources */ = {isa = PBXBuildFile; fileRef = 45F0F0AD2A883413005F82DA /* chiaki.svg */; };
+		45F0F0B52A883413005F82DA /* console-ps4.svg in Copy Bundle Resources */ = {isa = PBXBuildFile; fileRef = 45F0F0AE2A883413005F82DA /* console-ps4.svg */; };
+		45F0F0B62A883413005F82DA /* discover-off-24px.svg in Copy Bundle Resources */ = {isa = PBXBuildFile; fileRef = 45F0F0AF2A883413005F82DA /* discover-off-24px.svg */; };
+		45F0F0B72A883413005F82DA /* add-24px.svg in Copy Bundle Resources */ = {isa = PBXBuildFile; fileRef = 45F0F0B02A883413005F82DA /* add-24px.svg */; };
+		45F0F0B82A883413005F82DA /* Default-568h@2x.png in Copy Bundle Resources */ = {isa = PBXBuildFile; fileRef = 45F0F0B12A883413005F82DA /* Default-568h@2x.png */; };
+		45F0F0B92A883413005F82DA /* console-ps5.svg in Copy Bundle Resources */ = {isa = PBXBuildFile; fileRef = 45F0F0B22A883413005F82DA /* console-ps5.svg */; };
+		45F0F0BA2A883413005F82DA /* discover-24px.svg in Copy Bundle Resources */ = {isa = PBXBuildFile; fileRef = 45F0F0B32A883413005F82DA /* discover-24px.svg */; };
+		45F0F0BC2A883434005F82DA /* settings-20px.svg in Copy Bundle Resources */ = {isa = PBXBuildFile; fileRef = 45F0F0BB2A883434005F82DA /* settings-20px.svg */; };
 		4EB68D0C8182BCE33529C421 /* AudioToolbox.framework in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 3C44131FDCFEF4396B9EA2BA /* AudioToolbox.framework */; };
 		604878DF028F5D1DBBA85449 /* qwbmp in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = BD107EC573F1437222B4A5CA /* qwbmp */; };
 		61EEC397DC8556BF8C4E36A7 /* ImageIO.framework in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 3A8EF9C62A8D4790CBB89CEA /* ImageIO.framework */; };
@@ -190,14 +189,6 @@
 		45128CE82A88289600D6F2BA /* libavutil.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libavutil.a; path = lib/libavutil.a; sourceTree = "<group>"; };
 		45128CF02A8828B600D6F2BA /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = usr/lib/libiconv.tbd; sourceTree = SDKROOT; };
 		45128CF22A88295600D6F2BA /* moc_mainwindow.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = moc_mainwindow.cpp; sourceTree = "<group>"; };
-		45128CF42A88299D00D6F2BA /* settings-20px.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "settings-20px.svg"; sourceTree = "<group>"; };
-		45128CF52A88299E00D6F2BA /* discover-24px.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "discover-24px.svg"; sourceTree = "<group>"; };
-		45128CF62A88299F00D6F2BA /* console-ps4.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "console-ps4.svg"; sourceTree = "<group>"; };
-		45128CF72A88299F00D6F2BA /* console-ps5.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "console-ps5.svg"; sourceTree = "<group>"; };
-		45128CF82A8829A000D6F2BA /* chiaki_macos.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = chiaki_macos.svg; sourceTree = "<group>"; };
-		45128CF92A8829A000D6F2BA /* chiaki.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = chiaki.svg; sourceTree = "<group>"; };
-		45128CFA2A8829A100D6F2BA /* add-24px.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "add-24px.svg"; sourceTree = "<group>"; };
-		45128CFB2A8829A100D6F2BA /* discover-off-24px.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "discover-off-24px.svg"; sourceTree = "<group>"; };
 		45128D042A882B3E00D6F2BA /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
 		45128D062A88309400D6F2BA /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		45128D082A8830A300D6F2BA /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = "Chiaki iOS.xcodeproj/LaunchScreen.storyboard"; sourceTree = "<group>"; };
@@ -261,6 +252,14 @@
 		45F0F0992A883297005F82DA /* moc_settings.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = moc_settings.cpp; sourceTree = "<group>"; };
 		45F0F09A2A883297005F82DA /* moc_settingskeycapturedialog.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = moc_settingskeycapturedialog.cpp; sourceTree = "<group>"; };
 		45F0F09B2A883297005F82DA /* moc_registdialog.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = moc_registdialog.cpp; sourceTree = "<group>"; };
+		45F0F0AD2A883413005F82DA /* chiaki.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = chiaki.svg; path = "Chiaki iOS.xcodeproj/chiaki.svg"; sourceTree = "<group>"; };
+		45F0F0AE2A883413005F82DA /* console-ps4.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = "console-ps4.svg"; path = "Chiaki iOS.xcodeproj/console-ps4.svg"; sourceTree = "<group>"; };
+		45F0F0AF2A883413005F82DA /* discover-off-24px.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "discover-off-24px.svg"; path = "Chiaki iOS.xcodeproj/discover-off-24px.svg"; sourceTree = "<group>"; };
+		45F0F0B02A883413005F82DA /* add-24px.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "add-24px.svg"; path = "Chiaki iOS.xcodeproj/add-24px.svg"; sourceTree = "<group>"; };
+		45F0F0B12A883413005F82DA /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "Chiaki iOS.xcodeproj/Default-568h@2x.png"; sourceTree = "<group>"; };
+		45F0F0B22A883413005F82DA /* console-ps5.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = "console-ps5.svg"; path = "Chiaki iOS.xcodeproj/console-ps5.svg"; sourceTree = "<group>"; };
+		45F0F0B32A883413005F82DA /* discover-24px.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "discover-24px.svg"; path = "Chiaki iOS.xcodeproj/discover-24px.svg"; sourceTree = "<group>"; };
+		45F0F0BB2A883434005F82DA /* settings-20px.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "settings-20px.svg"; path = "Chiaki iOS.xcodeproj/settings-20px.svg"; sourceTree = "<group>"; };
 		4D765E1B1EA6C757220C63E7 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = /System/Library/Frameworks/CoreFoundation.framework; sourceTree = "<absolute>"; };
 		5A0658F970BE95BDF5A87CE5 /* Qt5Core */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = Qt5Core; path = "/Users/teun/Qt/5.15.2/ios/lib/libQt5Core$(QT_LIBRARY_SUFFIX).a"; sourceTree = "<absolute>"; };
 		6AE3EC31EE5BB1FCEE84137C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = /System/Library/Frameworks/CoreGraphics.framework; sourceTree = "<absolute>"; };
@@ -437,15 +436,15 @@
 		858FCAB0EB1F29CF8B07677C /* Bundle Data */ = {
 			isa = PBXGroup;
 			children = (
-				45128CFA2A8829A100D6F2BA /* add-24px.svg */,
-				45128CF82A8829A000D6F2BA /* chiaki_macos.svg */,
-				45128CF92A8829A000D6F2BA /* chiaki.svg */,
-				45128CF62A88299F00D6F2BA /* console-ps4.svg */,
-				45128CF72A88299F00D6F2BA /* console-ps5.svg */,
-				45128CF52A88299E00D6F2BA /* discover-24px.svg */,
-				45128CFB2A8829A100D6F2BA /* discover-off-24px.svg */,
-				45128CF42A88299D00D6F2BA /* settings-20px.svg */,
+				45F0F0BB2A883434005F82DA /* settings-20px.svg */,
+				45F0F0B22A883413005F82DA /* console-ps5.svg */,
 				45128D0A2A8830A800D6F2BA /* Default-568h@2x.png */,
+				45F0F0B02A883413005F82DA /* add-24px.svg */,
+				45F0F0AD2A883413005F82DA /* chiaki.svg */,
+				45F0F0AE2A883413005F82DA /* console-ps4.svg */,
+				45F0F0B12A883413005F82DA /* Default-568h@2x.png */,
+				45F0F0B32A883413005F82DA /* discover-24px.svg */,
+				45F0F0AF2A883413005F82DA /* discover-off-24px.svg */,
 				45128D082A8830A300D6F2BA /* LaunchScreen.storyboard */,
 				45128D062A88309400D6F2BA /* Settings.bundle */,
 			);
@@ -599,18 +598,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				45128CFC2A8829A200D6F2BA /* settings-20px.svg in Copy Bundle Resources */,
-				45128D012A8829A200D6F2BA /* chiaki.svg in Copy Bundle Resources */,
-				45128CFF2A8829A200D6F2BA /* console-ps5.svg in Copy Bundle Resources */,
-				45128CFE2A8829A200D6F2BA /* console-ps4.svg in Copy Bundle Resources */,
 				45128D072A88309400D6F2BA /* Settings.bundle in Copy Bundle Resources */,
-				45128D0B2A8830A800D6F2BA /* Default-568h@2x.png in Copy Bundle Resources */,
-				45128CFD2A8829A200D6F2BA /* discover-24px.svg in Copy Bundle Resources */,
+				45F0F0BC2A883434005F82DA /* settings-20px.svg in Copy Bundle Resources */,
+				45F0F0B52A883413005F82DA /* console-ps4.svg in Copy Bundle Resources */,
+				45F0F0B42A883413005F82DA /* chiaki.svg in Copy Bundle Resources */,
+				45F0F0BA2A883413005F82DA /* discover-24px.svg in Copy Bundle Resources */,
 				45128D052A882B3E00D6F2BA /* Media.xcassets in Copy Bundle Resources */,
+				45F0F0B92A883413005F82DA /* console-ps5.svg in Copy Bundle Resources */,
+				45F0F0B72A883413005F82DA /* add-24px.svg in Copy Bundle Resources */,
+				45F0F0B82A883413005F82DA /* Default-568h@2x.png in Copy Bundle Resources */,
 				45128D092A8830A300D6F2BA /* LaunchScreen.storyboard in Copy Bundle Resources */,
-				45128D002A8829A200D6F2BA /* chiaki_macos.svg in Copy Bundle Resources */,
-				45128D022A8829A200D6F2BA /* add-24px.svg in Copy Bundle Resources */,
-				45128D032A8829A200D6F2BA /* discover-off-24px.svg in Copy Bundle Resources */,
+				45F0F0B62A883413005F82DA /* discover-off-24px.svg in Copy Bundle Resources */,
 			);
 			name = "Copy Bundle Resources";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -953,6 +951,7 @@
 					"-DQT_GUI_LIB",
 					"-DQT_CORE_LIB",
 					"-DCHIAKI_GUI_ENABLE_SDL_GAMECONTROLLER=1",
+					"-DCHIAKI_VERSION=\\\"2.1.1\\\"",
 				);
 				OTHER_LDFLAGS = (
 					"-stdlib=libc++",
@@ -1038,6 +1037,7 @@
 					"-DQT_GUI_LIB",
 					"-DQT_CORE_LIB",
 					"-DCHIAKI_GUI_ENABLE_SDL_GAMECONTROLLER=1",
+					"-DCHIAKI_VERSION=\\\"2.1.1\\\"",
 				);
 				OTHER_LDFLAGS = (
 					"-stdlib=libc++",

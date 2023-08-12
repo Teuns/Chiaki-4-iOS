@@ -1,5 +1,6 @@
 // SPDX-License-Identifier: LicenseRef-AGPL-3.0-only-OpenSSL
 
+#include <stdio.h>
 #include <settingsdialog.h>
 #include <settings.h>
 #include <settingskeycapturedialog.h>
@@ -24,8 +25,10 @@
 #include <chiaki/config.h>
 #include <chiaki/ffmpegdecoder.h>
 
-const char * const about_string =
-	"<h1>Chiaki</h1> by thestr4ng3r, version "
+std::string version = CHIAKI_VERSION;
+
+std::string about_string =
+"<h1>Chiaki</h1> by thestr4ng3r, version " + version +
 	""
 	"<p>This program is free software: you can redistribute it and/or modify "
 	"it under the terms of the GNU Affero General Public License version 3 "
@@ -128,7 +131,7 @@ SettingsDialog::SettingsDialog(Settings *settings, QWidget *parent) : QDialog(pa
 	auto about_button = new QPushButton(tr("About Chiaki"), this);
 	general_layout->addRow(about_button);
 	connect(about_button, &QPushButton::clicked, this, [this]() {
-		QMessageBox::about(this, tr("About Chiaki"), about_string);
+		QMessageBox::about(this, tr("About Chiaki"), about_string.c_str());
 	});
 
 	// Stream Settings
