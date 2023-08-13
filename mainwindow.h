@@ -46,11 +46,13 @@ class MainWindow : public QMainWindow
 
 		DisplayServer *DisplayServerFromSender();
 		void SendWakeup(const DisplayServer *server);
+        
+        bool eventFilter(QObject *object, QEvent *event);
 
 	private slots:
 		void ServerItemWidgetSelected();
 		void ServerItemWidgetTriggered();
-		void ServerItemWidgetDeleteTriggered();
+		void ServerItemWidgetDeleteTriggered(const DisplayServer *server);
 		void ServerItemWidgetWakeTriggered();
 
 		void UpdateDiscoveryEnabled();

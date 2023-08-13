@@ -39,7 +39,6 @@ class ServerItemWidget : public QFrame
 	signals:
 		void Selected();
 		void Triggered();
-		void DeleteTriggered();
 		void WakeTriggered();
 };
 

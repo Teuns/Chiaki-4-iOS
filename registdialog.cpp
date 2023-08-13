@@ -25,15 +25,16 @@ RegistDialog::RegistDialog(Settings *settings, const QString &host, QWidget *par
 	settings(settings)
 {
 	setWindowTitle(tr("Register Console"));
-
-	auto layout = new QHBoxLayout(this);
+    
+	auto layout = new QVBoxLayout(this);
 	setLayout(layout);
 
 	auto form_layout = new QFormLayout();
 	layout->addLayout(form_layout);
-
+    
 	host_edit = new QLineEdit(this);
-	form_layout->addRow(tr("Host:"), host_edit);
+    host_edit->setPlaceholderText("Host");
+	form_layout->addRow(host_edit);
 	if(host.isEmpty())
 		host_edit->setText("255.255.255.255");
 	else
@@ -65,24 +66,30 @@ RegistDialog::RegistDialog(Settings *settings, const QString &host, QWidget *par
 	form_layout->addRow(tr("Console:"), target_layout);
 
 	psn_online_id_edit = new QLineEdit(this);
-	form_layout->addRow(tr("PSN Online-ID (username, case-sensitive):"), psn_online_id_edit);
+    psn_online_id_edit->setPlaceholderText("PSN Online-ID (username, case-sensitive):");
+	form_layout->addRow(psn_online_id_edit);
 	psn_account_id_edit = new QLineEdit(this);
-	form_layout->addRow(tr("PSN Account-ID (base64):"), psn_account_id_edit);
+    psn_account_id_edit->setPlaceholderText("PSN Account-ID (base64):");
+	form_layout->addRow(psn_account_id_edit);
 
 	ps5_radio_button->setChecked(true);
 
 	UpdatePSNIDEdits();
 
 	pin_edit = new QLineEdit(this);
+    pin_edit->setPlaceholderText("Pin");
 	pin_edit->setValidator(new QRegularExpressionValidator(pin_re, pin_edit));
-	form_layout->addRow(tr("PIN:"), pin_edit);
-
+	form_layout->addRow(pin_edit);
+    
 	button_box = new QDialogButtonBox(QDialogButtonBox::Cancel, this);
-	register_button = button_box->addButton(tr("Register"), QDialogButtonBox::AcceptRole);
+    register_button = button_box->addButton(tr("Register"), QDialogButtonBox::AcceptRole);
+    auto const delete_button = new QPushButton(tr("Delete"), this);
+    button_box->addButton(delete_button, QDialogButtonBox::NoRole);
 	layout->addWidget(button_box);
-	connect(button_box, &QDialogButtonBox::accepted, this, &QDialog::accept);
+    connect(button_box, &QDialogButtonBox::accepted, this, &QDialog::accept);
 	connect(button_box, &QDialogButtonBox::rejected, this, &QDialog::reject);
-
+    connect(delete_button, &QPushButton::clicked, this, [this]{ emit DeleteTriggered(); });
+    
 	connect(host_edit, &QLineEdit::textChanged, this, &RegistDialog::ValidateInput);
 	connect(psn_online_id_edit, &QLineEdit::textChanged, this, &RegistDialog::ValidateInput);
 	connect(pin_edit, &QLineEdit::textChanged, this, &RegistDialog::ValidateInput);
@@ -136,7 +143,8 @@ void RegistDialog::accept()
 		QByteArray account_id = QByteArray::fromBase64(account_id_b64.toUtf8());
 		if(account_id.size() != CHIAKI_PSN_ACCOUNT_ID_SIZE)
 		{
-			QMessageBox::critical(this, tr("Invalid Account-ID"), tr("The PSN Account-ID must be exactly %1 bytes encoded as base64.").arg(CHIAKI_PSN_ACCOUNT_ID_SIZE));
+            // For some reason I had to replace this with QMessageBox::about instead of QMessageBox::critical.
+			QMessageBox::about(this, tr("Invalid Account-ID"), tr("The PSN Account-ID must be exactly %1 bytes encoded as base64.").arg(CHIAKI_PSN_ACCOUNT_ID_SIZE));
 			return;
 		}
 		info.psn_online_id = nullptr;
@@ -146,13 +154,14 @@ void RegistDialog::accept()
 	info.broadcast = broadcast_check_box->isChecked();
 	info.pin = (uint32_t)pin_edit->text().toULong();
 
-	RegistExecuteDialog execute_dialog(settings, info, this);
-	int r = execute_dialog.exec();
-	if(r == QDialog::Accepted)
-	{
-		this->registered_host = execute_dialog.GetRegisteredHost();
-		QDialog::accept();
-	}
+	auto const execute_dialog = new RegistExecuteDialog(settings, info, this);
+    execute_dialog->show();
+//	 int r = execute_dialog.exec();
+//	 if(r == QDialog::Accepted)
+//	 {
+//		this->registered_host = execute_dialog.GetRegisteredHost();
+//		QDialog::accept();
+//	}
 }
 
 static void RegistExecuteDialogLogCb(ChiakiLogLevel level, const char *msg, void *user);

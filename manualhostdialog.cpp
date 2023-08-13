@@ -6,6 +6,7 @@
 
 #include <QVBoxLayout>
 #include <QFormLayout>
+#include <QLabel>
 #include <QLineEdit>
 #include <QComboBox>
 #include <QDialogButtonBox>
@@ -23,27 +24,37 @@ ManualHostDialog::ManualHostDialog(Settings *settings, int id, QWidget *parent)
 	if(id >= 0 && settings->GetManualHostExists(id))
 		host = settings->GetManualHost(id);
 
-	auto layout = new QVBoxLayout(this);
+	auto layout = new QGridLayout(this);
+    layout->setRowStretch(0, 1);
+    layout->setRowStretch(1, 0);
+    layout->setRowStretch(2, 1);
 	setLayout(layout);
-
-	auto form_layout = new QFormLayout();
-	layout->addLayout(form_layout);
-
+    
 	host_edit = new QLineEdit(this);
 	host_edit->setText(host.GetHost());
-	form_layout->addRow(tr("Host:"), host_edit);
+    host_edit->setPlaceholderText("Host");
 	connect(host_edit, &QLineEdit::textChanged, this, &ManualHostDialog::ValidateInput);
+    
+    auto host_label = new QLabel();
+    host_label->setText("Host:");
+    
+    layout->addWidget(host_label, 0, 0, Qt::AlignBottom);
+    layout->addWidget(host_edit, 0, 1, Qt::AlignBottom);
 
 	registered_host_combo_box = new QComboBox(this);
 	registered_host_combo_box->addItem(tr("Register on first Connection"));
 	auto registered_hosts = settings->GetRegisteredHosts();
 	for(const auto &registered_host : registered_hosts)
 		registered_host_combo_box->addItem(QString("%1 (%2)").arg(registered_host.GetServerMAC().ToString(), registered_host.GetServerNickname()), QVariant::fromValue(registered_host.GetServerMAC()));
-	form_layout->addRow(tr("Registered Console:"), registered_host_combo_box);
+    
+    auto registered_host_combo_box_label = new QLabel();
+    registered_host_combo_box_label->setText("Registered Console:");
+    
+    layout->addWidget(registered_host_combo_box_label, 1, 0, Qt::AlignBottom);
+    layout->addWidget(registered_host_combo_box, 1, 1, Qt::AlignBottom);
 
 	button_box = new QDialogButtonBox(QDialogButtonBox::Save | QDialogButtonBox::Discard, this);
-	layout->addWidget(button_box);
-	connect(button_box, &QDialogButtonBox::accepted, this, &QDialog::accept);
+	layout->addWidget(button_box, 2, 1, Qt::AlignTop);
 	connect(button_box, &QDialogButtonBox::clicked, this, &ManualHostDialog::ButtonClicked);
 
 	ValidateInput();
@@ -58,6 +69,9 @@ void ManualHostDialog::ButtonClicked(QAbstractButton *button)
 {
 	if(button_box->buttonRole(button) == QDialogButtonBox::DestructiveRole)
 		reject();
+      else if (button_box->standardButton(button) == QDialogButtonBox::Save) {
+        accept();
+    }
 }
 
 void ManualHostDialog::accept()

@@ -225,6 +225,7 @@ int real_main(int argc, char *argv[])
 int RunMain(QApplication &app, Settings *settings)
 {
 	MainWindow main_window(settings);
+    app.installEventFilter(&main_window);
 	main_window.show();
 	return app.exec();
 }

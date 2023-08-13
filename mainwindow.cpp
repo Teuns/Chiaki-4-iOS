@@ -22,6 +22,7 @@
 #include <QApplication>
 #include <QPushButton>
 #include <QButtonGroup>
+#include <QMouseEvent>
 
 #ifdef CHIAKI_GUI_ENABLE_QT_MACEXTRAS
 #include <QMacToolBar>
@@ -79,7 +80,7 @@ MainWindow::MainWindow(Settings *settings, QWidget *parent)
     settings(settings)
 {
     setWindowTitle(qApp->applicationName());
-
+    
     auto main_widget = new QWidget(this);
     auto layout = new QVBoxLayout();
     main_widget->setLayout(layout);
@@ -183,8 +184,8 @@ MainWindow::MainWindow(Settings *settings, QWidget *parent)
     connect(settings, &Settings::RegisteredHostsUpdated, this, &MainWindow::UpdateDisplayServers);
     connect(settings, &Settings::ManualHostsUpdated, this, &MainWindow::UpdateDisplayServers);
 
-     UpdateDisplayServers();
-     UpdateDiscoveryEnabled();
+    UpdateDisplayServers();
+    UpdateDiscoveryEnabled();
 }
 
 MainWindow::~MainWindow()
@@ -266,13 +267,20 @@ void MainWindow::ServerItemWidgetTriggered()
                 host,
                 server.registered_host.GetRPRegistKey(),
                 server.registered_host.GetRPKey(),
-                false,
+                true,
                 TransformMode::Fit);
         new StreamWindow(info);
     }
     else
     {
         auto const regist_dialog = new RegistDialog(settings, server.GetHostAddr(), this);
+        auto policy = regist_dialog->sizePolicy();
+        policy.setVerticalStretch(20);
+        regist_dialog->setSizePolicy(policy);
+        connect(regist_dialog, &RegistDialog::DeleteTriggered, this, [this, server, regist_dialog]() {
+            MainWindow::ServerItemWidgetDeleteTriggered(&server);
+            regist_dialog->hide();
+        }, Qt::QueuedConnection);
         regist_dialog->show();
 //        if(r == QDialog::Accepted && !server.discovered) // success
 //        {
@@ -291,12 +299,8 @@ void dialogIsFinished(int result){ //this is a slot
    //do another thing
 }
 
-void MainWindow::ServerItemWidgetDeleteTriggered()
+void MainWindow::ServerItemWidgetDeleteTriggered(const DisplayServer *server)
 {
-    auto server = DisplayServerFromSender();
-    if(!server)
-        return;
-
     if(server->discovered)
         return;
 
@@ -381,7 +385,6 @@ void MainWindow::UpdateServerWidgets()
         auto widget = new ServerItemWidget(grid_widget);
         connect(widget, &ServerItemWidget::Selected, this, &MainWindow::ServerItemWidgetSelected);
         connect(widget, &ServerItemWidget::Triggered, this, &MainWindow::ServerItemWidgetTriggered);
-        connect(widget, &ServerItemWidget::DeleteTriggered, this, &MainWindow::ServerItemWidgetDeleteTriggered, Qt::QueuedConnection);
         connect(widget, &ServerItemWidget::WakeTriggered, this, &MainWindow::ServerItemWidgetWakeTriggered);
         server_item_widgets.append(widget);
         grid_widget->AddWidget(widget);
@@ -389,4 +392,16 @@ void MainWindow::UpdateServerWidgets()
 
     for(size_t i=0; i<server_item_widgets.count(); i++)
         server_item_widgets[i]->Update(display_servers[i]);
+}
+
+bool MainWindow::eventFilter(QObject *object, QEvent *event)
+{
+    if (object->inherits("QLineEdit") && event->type() == QEvent::KeyPress) {
+        QKeyEvent* key = static_cast<QKeyEvent*>(event);
+        if ((key->key() == Qt::Key_Enter) || (key->key() == Qt::Key_Return)) {
+            return true;
+       }
+    }
+       
+    return false;
 }

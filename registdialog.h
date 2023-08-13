@@ -51,6 +51,9 @@ class RegistDialog : public QDialog
 
 	public slots:
 		void accept() override;
+    
+    signals:
+        void DeleteTriggered();
 };
 
 class RegistExecuteDialog: public QDialog

@@ -32,23 +32,17 @@ ServerItemWidget::ServerItemWidget(QWidget *parent) : QFrame(parent)
 
 	setContextMenuPolicy(Qt::ActionsContextMenu);
 
-	delete_action = new QAction(tr("Delete"), this);
-	addAction(delete_action);
-	connect(delete_action, &QAction::triggered, this, [this]{ emit DeleteTriggered(); });
-
 	wake_action = new QAction(tr("Send Wakeup Packet"), this);
 	addAction(wake_action);
 	connect(wake_action, &QAction::triggered, this, [this]{ emit WakeTriggered(); });
 
 	this->selected = true;
 	SetSelected(false);
-
-	setFixedSize(200, 200);
 }
 
 void ServerItemWidget::mousePressEvent(QMouseEvent *event)
 {
-	emit Triggered();
+	emit Selected();
 }
 
 void ServerItemWidget::mouseDoubleClickEvent(QMouseEvent *event)
@@ -67,7 +61,6 @@ void ServerItemWidget::SetSelected(bool selected)
 
 void ServerItemWidget::Update(const DisplayServer &display_server)
 {
-	delete_action->setEnabled(!display_server.discovered);
 	wake_action->setEnabled(display_server.registered);
 
 	icon_widget->SetState(display_server.IsPS5(),
