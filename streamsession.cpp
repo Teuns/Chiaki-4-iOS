@@ -339,7 +339,6 @@ void StreamSession::HandleKeyboardEvent(QKeyEvent *event)
 void StreamSession::UpdateGamepads()
 {
 #if CHIAKI_GUI_ENABLE_SDL_GAMECONTROLLER
-    std::cout << "updateGamepads()" << std::endl;
 	for(auto controller_id : controllers.keys())
 	{
 		auto controller = controllers[controller_id];
