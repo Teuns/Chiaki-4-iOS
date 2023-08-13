@@ -11,6 +11,7 @@
 #include <QCoreApplication>
 #include <QAction>
 #include <QMenu>
+#include <QScreen>
 
 StreamWindow::StreamWindow(const StreamSessionConnectInfo &connect_info, QWidget *parent)
 	: QMainWindow(parent),
@@ -18,7 +19,7 @@ StreamWindow::StreamWindow(const StreamSessionConnectInfo &connect_info, QWidget
 {
 	setAttribute(Qt::WA_DeleteOnClose);
 	setWindowTitle(qApp->applicationName() + " | Stream");
-		
+    
 	session = nullptr;
 	av_widget = nullptr;
 
@@ -61,6 +62,8 @@ void StreamWindow::Init()
 	if(session->GetFfmpegDecoder())
 	{
 		av_widget = new AVOpenGLWidget(session, this, connect_info.transform_mode);
+        const QScreen* screen = qApp->primaryScreen();
+        av_widget->setFixedSize(screen->geometry().size());
 		setCentralWidget(av_widget);
 
 		av_widget->setContextMenuPolicy(Qt::CustomContextMenu);
@@ -277,6 +280,8 @@ void StreamWindow::ToggleZoom()
 
 void StreamWindow::resizeEvent(QResizeEvent *event)
 {
+    const QScreen* screen = qApp->primaryScreen();
+    av_widget->setFixedSize(screen->geometry().size());
 	UpdateVideoTransform();
 	QMainWindow::resizeEvent(event);
 }

@@ -344,7 +344,7 @@ void AVOpenGLWidget::initializeGL()
 
 	f->glCullFace(GL_BACK);
 	f->glEnable(GL_CULL_FACE);
-	f->glClearColor(0.0, 0.0, 0.0, 1.0);
+	f->glClearColor(0.0, 0.0, 0.0, 0.0);
 
 	frame_uploader_context = new QOpenGLContext(nullptr);
 	frame_uploader_context->setFormat(context()->format());
