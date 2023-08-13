@@ -22,8 +22,8 @@ QT_BEGIN_MOC_NAMESPACE
 QT_WARNING_PUSH
 QT_WARNING_DISABLE_DEPRECATED
 struct qt_meta_stringdata_MainWindow_t {
-    QByteArrayData data[11];
-    char stringdata0[207];
+    QByteArrayData data[13];
+    char stringdata0[235];
 };
 #define QT_MOC_LITERAL(idx, ofs, len) \
     Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
@@ -37,17 +37,20 @@ QT_MOC_LITERAL(1, 11, 24), // "ServerItemWidgetSelected"
 QT_MOC_LITERAL(2, 36, 0), // ""
 QT_MOC_LITERAL(3, 37, 25), // "ServerItemWidgetTriggered"
 QT_MOC_LITERAL(4, 63, 31), // "ServerItemWidgetDeleteTriggered"
-QT_MOC_LITERAL(5, 95, 29), // "ServerItemWidgetWakeTriggered"
-QT_MOC_LITERAL(6, 125, 22), // "UpdateDiscoveryEnabled"
-QT_MOC_LITERAL(7, 148, 12), // "ShowSettings"
-QT_MOC_LITERAL(8, 161, 4), // "Quit"
-QT_MOC_LITERAL(9, 166, 20), // "UpdateDisplayServers"
-QT_MOC_LITERAL(10, 187, 19) // "UpdateServerWidgets"
+QT_MOC_LITERAL(5, 95, 20), // "const DisplayServer*"
+QT_MOC_LITERAL(6, 116, 6), // "server"
+QT_MOC_LITERAL(7, 123, 29), // "ServerItemWidgetWakeTriggered"
+QT_MOC_LITERAL(8, 153, 22), // "UpdateDiscoveryEnabled"
+QT_MOC_LITERAL(9, 176, 12), // "ShowSettings"
+QT_MOC_LITERAL(10, 189, 4), // "Quit"
+QT_MOC_LITERAL(11, 194, 20), // "UpdateDisplayServers"
+QT_MOC_LITERAL(12, 215, 19) // "UpdateServerWidgets"
 
     },
     "MainWindow\0ServerItemWidgetSelected\0"
     "\0ServerItemWidgetTriggered\0"
     "ServerItemWidgetDeleteTriggered\0"
+    "const DisplayServer*\0server\0"
     "ServerItemWidgetWakeTriggered\0"
     "UpdateDiscoveryEnabled\0ShowSettings\0"
     "Quit\0UpdateDisplayServers\0UpdateServerWidgets"
@@ -70,18 +73,18 @@ static const uint qt_meta_data_MainWindow[] = {
  // slots: name, argc, parameters, tag, flags
        1,    0,   59,    2, 0x08 /* Private */,
        3,    0,   60,    2, 0x08 /* Private */,
-       4,    0,   61,    2, 0x08 /* Private */,
-       5,    0,   62,    2, 0x08 /* Private */,
-       6,    0,   63,    2, 0x08 /* Private */,
+       4,    1,   61,    2, 0x08 /* Private */,
        7,    0,   64,    2, 0x08 /* Private */,
        8,    0,   65,    2, 0x08 /* Private */,
        9,    0,   66,    2, 0x08 /* Private */,
       10,    0,   67,    2, 0x08 /* Private */,
+      11,    0,   68,    2, 0x08 /* Private */,
+      12,    0,   69,    2, 0x08 /* Private */,
 
  // slots: parameters
     QMetaType::Void,
     QMetaType::Void,
-    QMetaType::Void,
+    QMetaType::Void, 0x80000000 | 5,    6,
     QMetaType::Void,
     QMetaType::Void,
     QMetaType::Void,
@@ -100,7 +103,7 @@ void MainWindow::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, 
         switch (_id) {
         case 0: _t->ServerItemWidgetSelected(); break;
         case 1: _t->ServerItemWidgetTriggered(); break;
-        case 2: _t->ServerItemWidgetDeleteTriggered(); break;
+        case 2: _t->ServerItemWidgetDeleteTriggered((*reinterpret_cast< const DisplayServer*(*)>(_a[1]))); break;
         case 3: _t->ServerItemWidgetWakeTriggered(); break;
         case 4: _t->UpdateDiscoveryEnabled(); break;
         case 5: _t->ShowSettings(); break;
@@ -110,7 +113,6 @@ void MainWindow::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, 
         default: ;
         }
     }
-    Q_UNUSED(_a);
 }
 
 QT_INIT_METAOBJECT const QMetaObject MainWindow::staticMetaObject = { {
