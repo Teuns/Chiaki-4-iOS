@@ -22,7 +22,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		rs7GguGc0nr8m8w3473ScXhvemM=
+		Rmtqa5FBtABBxytFys/HRqEGN6o=
 		</data>
 		<key>LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
 		<data>
@@ -75,6 +75,10 @@
 		<key>settings-20px.svg</key>
 		<data>
 		whG33bf12AK87zO0r/Y64jnV1mE=
+		</data>
+		<key>test.mp3</key>
+		<data>
+		CwqgWxZcBaj2dqdHP5yVqvMTN5w=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -189,6 +193,13 @@
 			<key>hash2</key>
 			<data>
 			lhIDdEbgQTws0EOg1LtjPZc9dZQTeM+AknXlzdrYPXk=
+			</data>
+		</dict>
+		<key>test.mp3</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			YaSm4oc75VAGze3Ie/2hJhVOoaQP+3Q3AbxZb63Ntz0=
 			</data>
 		</dict>
 	</dict>

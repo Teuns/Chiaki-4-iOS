@@ -408,10 +408,10 @@ void SettingsDialog::DeleteRegisteredHost()
 		return;
 	auto mac = item->data(Qt::UserRole).value<HostMAC>();
 
-	int r = QMessageBox::question(this, tr("Delete registered Console"),
-			tr("Are you sure you want to delete the registered console with ID %1?").arg(mac.ToString()));
-	if(r != QMessageBox::Yes)
-		return;
+//	int r = QMessageBox::question(this, tr("Delete registered Console"),
+//			tr("Are you sure you want to delete the registered console with ID %1?").arg(mac.ToString()));
+//	if(r != QMessageBox::Yes)
+//		return;
 
 	settings->RemoveRegisteredHost(mac);
 }
