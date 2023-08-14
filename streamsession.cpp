@@ -66,7 +66,7 @@ StreamSession::StreamSession(const StreamSessionConnectInfo &connect_info, QObje
 	pi_decoder(nullptr),
 #endif
 	audio_output(nullptr),
-	audio_io(nullptr),
+	audio_io(0),
 	haptics_output(0),
 	haptics_resampler_buf(nullptr)
 {
@@ -402,31 +402,29 @@ void StreamSession::InitAudio(unsigned int channels, unsigned int rate)
 {
 	delete audio_output;
 	audio_output = nullptr;
-	audio_io = nullptr;
+	audio_io = 0;
+    
+    SDL_AudioSpec wanted;
+    wanted.freq = rate;
+    wanted.format = AUDIO_S16SYS;
+    wanted.channels = channels;
+    wanted.samples = 16;
+    wanted.callback = NULL;
 
-	QAudioFormat audio_format;
-	audio_format.setSampleRate(rate);
-	audio_format.setChannelCount(channels);
-	audio_format.setSampleSize(16);
-	audio_format.setCodec("audio/pcm");
-	audio_format.setSampleType(QAudioFormat::SignedInt);
+    if(SDL_Init(SDL_INIT_AUDIO) < 0)
+    {
+        CHIAKI_LOGE(log.GetChiakiLog(), "Could not initialize SDL Audio for haptics output: %s", SDL_GetError());
+        return;
+    }
 
-	QAudioDeviceInfo audio_device_info = audio_out_device_info;
-	if(!audio_device_info.isFormatSupported(audio_format))
-	{
-		CHIAKI_LOGE(log.GetChiakiLog(), "Audio Format with %u channels @ %u Hz not supported by Audio Device %s",
-					channels, rate,
-					audio_device_info.deviceName().toLocal8Bit().constData());
-		return;
-	}
-
-	audio_output = new QAudioOutput(audio_device_info, audio_format, this);
-	audio_output->setBufferSize(audio_buffer_size);
-	audio_io = audio_output->start();
-
-	CHIAKI_LOGI(log.GetChiakiLog(), "Audio Device %s opened with %u channels @ %u Hz, buffer size %u",
-				audio_device_info.deviceName().toLocal8Bit().constData(),
-				channels, rate, audio_output->bufferSize());
+    const char *device_name = SDL_GetAudioDeviceName(0, 0);
+	audio_io = SDL_OpenAudioDevice(device_name, 0, &wanted, &wanted, 0);
+    if(audio_io == 0)
+    {
+        CHIAKI_LOGE(log.GetChiakiLog(), "Could not open SDL Audio Device %s for haptics output: %s", device_name, SDL_GetError());
+    }
+    SDL_PauseAudioDevice(audio_io, 0);
+    CHIAKI_LOGI(log.GetChiakiLog(), "Audio Device '%s' opened with %d channels @ %d Hz, buffer size %u (driver=%s)", device_name, wanted.channels, wanted.freq, wanted.size, SDL_GetCurrentAudioDriver());
 }
 
 void StreamSession::InitHaptics()
@@ -507,9 +505,14 @@ void StreamSession::ConnectHaptics()
 
 void StreamSession::PushAudioFrame(int16_t *buf, size_t samples_count)
 {
-	if(!audio_io)
-		return;
-	audio_io->write((const char *)buf, static_cast<qint64>(samples_count * 2 * 2));
+    if(audio_io == 0)
+        return;
+    
+    if(SDL_QueueAudio(audio_io, buf, static_cast<qint32>(samples_count * 2 * 2)) < 0)
+    {
+        CHIAKI_LOGE(log.GetChiakiLog(), "Failed to submit audio to device: %s", SDL_GetError());
+        return;
+    }
 }
 
 void StreamSession::PushHapticsFrame(uint8_t *buf, size_t buf_size)

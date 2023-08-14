@@ -102,7 +102,7 @@ class StreamSession : public QObject
 		QAudioDeviceInfo audio_out_device_info;
 		unsigned int audio_buffer_size;
 		QAudioOutput *audio_output;
-		QIODevice *audio_io;
+        SDL_AudioDeviceID audio_io;
 		SDL_AudioDeviceID haptics_output;
 		uint8_t *haptics_resampler_buf;
 
